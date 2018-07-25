@@ -1,27 +1,18 @@
 {
-  "name": "nevinha-js-basic-example",
-  "version": "1.0.0",
   "private": true,
+  "name": "nevinha-site",
+  "version": "0.0.0",
   "scripts": {
-    "start": "webpack-dev-server --content-base public --inline --hot",
-    "format": "prettier-eslint --write 'src/**/*.js'",
-    "lint": "eslint src/"
+    "start": "electric"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^8.2.6",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^5.1.0",
-    "eslint-plugin-react": "^7.10.0",
-    "prettier-eslint-cli": "^4.7.1",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "electric-cli": "^2.2.0",
+    "electric-marble-components": "^4.0.0",
+    "marble": "~3.1.3",
+    "marble-topbar": "^1.0.0",
+    "moment": "^2.19.2"
   },
   "dependencies": {
-    "nevinha-js": "^0.3.3"
+    "clipboard": "^2.0.1"
   }
 }

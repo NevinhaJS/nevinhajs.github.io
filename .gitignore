@@ -1,8 +1,6 @@
-.DS_Store
-node_modules/
-npm-debug.log
-.idea
-.editorconfig
-package-lock.json
-.travis.yml
-.vscode
+.deploy
+.publish
+.temp
+dist
+node_modules
+temp
