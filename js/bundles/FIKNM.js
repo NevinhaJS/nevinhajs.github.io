@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([8],{
+webpackJsonppageComponent([10],{
 
-/***/ 281:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(282);
+var _nulaSoy = __webpack_require__(278);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _nulaSoy2 = _interopRequireDefault(_nulaSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wOlzV = function (_Component) {
-  _inherits(wOlzV, _Component);
+var FIKNM = function (_Component) {
+  _inherits(FIKNM, _Component);
 
-  function wOlzV() {
-    _classCallCheck(this, wOlzV);
+  function FIKNM() {
+    _classCallCheck(this, FIKNM);
 
-    return _possibleConstructorReturn(this, (wOlzV.__proto__ || Object.getPrototypeOf(wOlzV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FIKNM.__proto__ || Object.getPrototypeOf(FIKNM)).apply(this, arguments));
   }
 
-  return wOlzV;
+  return FIKNM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wOlzV, _indexSoy2.default);
+_metalSoy2.default.register(FIKNM, _nulaSoy2.default);
 
-exports.default = wOlzV;
+exports.default = FIKNM;
 
 /***/ }),
 
-/***/ 282:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = wOlzV;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.wOlzV = undefined;
+exports.templates = exports.FIKNM = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from nula.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace wOlzV.
+   * @fileoverview Templates in namespace FIKNM.
    * @public
    */
 
-  goog.module('wOlzV.incrementaldom');
+  goog.module('FIKNM.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param411 = function param411() {
+    var param379 = function param379() {
       ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -164,10 +164,10 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
+      $templateAlias2({ code: 'var oi = function() {\n    console.log(\'Oi mundo\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      $templateAlias2({ code: 'console.info(\'Hola Mundo\');', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
@@ -214,11 +214,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param411 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param379 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'wOlzV.render';
+    $render.soyTemplateName = 'FIKNM.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -227,24 +227,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var wOlzV = function (_Component) {
-  _inherits(wOlzV, _Component);
+var FIKNM = function (_Component) {
+  _inherits(FIKNM, _Component);
 
-  function wOlzV() {
-    _classCallCheck(this, wOlzV);
+  function FIKNM() {
+    _classCallCheck(this, FIKNM);
 
-    return _possibleConstructorReturn(this, (wOlzV.__proto__ || Object.getPrototypeOf(wOlzV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FIKNM.__proto__ || Object.getPrototypeOf(FIKNM)).apply(this, arguments));
   }
 
-  return wOlzV;
+  return FIKNM;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(wOlzV, templates);
-exports.wOlzV = wOlzV;
+_metalSoy2.default.register(FIKNM, templates);
+exports.FIKNM = FIKNM;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[281]);
+},[277]);

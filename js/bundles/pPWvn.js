@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([11],{
+webpackJsonppageComponent([12],{
 
-/***/ 277:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _loremSoy = __webpack_require__(278);
+var _indexSoy = __webpack_require__(274);
 
-var _loremSoy2 = _interopRequireDefault(_loremSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var JvAju = function (_Component) {
-  _inherits(JvAju, _Component);
+var pPWvn = function (_Component) {
+  _inherits(pPWvn, _Component);
 
-  function JvAju() {
-    _classCallCheck(this, JvAju);
+  function pPWvn() {
+    _classCallCheck(this, pPWvn);
 
-    return _possibleConstructorReturn(this, (JvAju.__proto__ || Object.getPrototypeOf(JvAju)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pPWvn.__proto__ || Object.getPrototypeOf(pPWvn)).apply(this, arguments));
   }
 
-  return JvAju;
+  return pPWvn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(JvAju, _loremSoy2.default);
+_metalSoy2.default.register(pPWvn, _indexSoy2.default);
 
-exports.default = JvAju;
+exports.default = pPWvn;
 
 /***/ }),
 
-/***/ 278:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = JvAju;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.JvAju = undefined;
+exports.templates = exports.pPWvn = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from lorem.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace JvAju.
+   * @fileoverview Templates in namespace pPWvn.
    * @public
    */
 
-  goog.module('JvAju.incrementaldom');
+  goog.module('pPWvn.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,18 +152,22 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param363 = function param363() {
+    var param343 = function param343() {
       ie_open('h6');
-      var dyn31 = opt_data.page.description;
-      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
       itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
-      $templateAlias2({ code: '<p>Test, test, test</p>', mode: 'xml' }, null, opt_ijData);
       ie_open('p');
-      itext('Nam eu lobortis ipsum. Sed iaculis, lectus pharetra vehicula luctus, lacus sapien malesuada lacus, non convallis dui mauris a magna. Donec accumsan mi lorem, quis mollis sem tempor vel. Fusce iaculis facilisis accumsan. Sed tempus aliquam nisi, eget commodo quam sodales ut. Duis lacus velit, fringilla congue aliquet nec, vulputate vitae nulla. Aenean ultricies risus vel sapien tincidunt, nec hendrerit purus aliquam. Quisque varius accumsan condimentum. Aliquam erat volutpat.');
+      itext('Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.');
+      ie_close('p');
+      $templateAlias2({ code: 'var hi = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: '.hi:before {\n    content: \'Hello, World\';\n}', mode: 'css' }, null, opt_ijData);
+      ie_open('p');
+      itext('Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.');
       ie_close('p');
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
@@ -211,11 +215,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param363 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param343 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'JvAju.render';
+    $render.soyTemplateName = 'pPWvn.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -224,24 +228,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var JvAju = function (_Component) {
-  _inherits(JvAju, _Component);
+var pPWvn = function (_Component) {
+  _inherits(pPWvn, _Component);
 
-  function JvAju() {
-    _classCallCheck(this, JvAju);
+  function pPWvn() {
+    _classCallCheck(this, pPWvn);
 
-    return _possibleConstructorReturn(this, (JvAju.__proto__ || Object.getPrototypeOf(JvAju)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pPWvn.__proto__ || Object.getPrototypeOf(pPWvn)).apply(this, arguments));
   }
 
-  return JvAju;
+  return pPWvn;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(JvAju, templates);
-exports.JvAju = JvAju;
+_metalSoy2.default.register(pPWvn, templates);
+exports.pPWvn = pPWvn;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[277]);
+},[273]);

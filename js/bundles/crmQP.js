@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([4],{
 
-/***/ 287:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _secondStepSoy = __webpack_require__(288);
+var _firstStepSoy = __webpack_require__(284);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ARMcw = function (_Component) {
-  _inherits(ARMcw, _Component);
+var crmQP = function (_Component) {
+  _inherits(crmQP, _Component);
 
-  function ARMcw() {
-    _classCallCheck(this, ARMcw);
+  function crmQP() {
+    _classCallCheck(this, crmQP);
 
-    return _possibleConstructorReturn(this, (ARMcw.__proto__ || Object.getPrototypeOf(ARMcw)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (crmQP.__proto__ || Object.getPrototypeOf(crmQP)).apply(this, arguments));
   }
 
-  return ARMcw;
+  return crmQP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ARMcw, _secondStepSoy2.default);
+_metalSoy2.default.register(crmQP, _firstStepSoy2.default);
 
-exports.default = ARMcw;
+exports.default = crmQP;
 
 /***/ }),
 
-/***/ 288:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ARMcw;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ARMcw = undefined;
+exports.templates = exports.crmQP = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from second-step.soy.
+  // This file was automatically generated from first-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ARMcw.
+   * @fileoverview Templates in namespace crmQP.
    * @public
    */
 
-  goog.module('ARMcw.incrementaldom');
+  goog.module('crmQP.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param448 = function param448() {
+    var param427 = function param427() {
       ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      var dyn35 = opt_data.page.title;
+      if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
       ie_close('h2');
       $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
@@ -170,11 +170,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param448 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param427 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ARMcw.render';
+    $render.soyTemplateName = 'crmQP.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -183,24 +183,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ARMcw = function (_Component) {
-  _inherits(ARMcw, _Component);
+var crmQP = function (_Component) {
+  _inherits(crmQP, _Component);
 
-  function ARMcw() {
-    _classCallCheck(this, ARMcw);
+  function crmQP() {
+    _classCallCheck(this, crmQP);
 
-    return _possibleConstructorReturn(this, (ARMcw.__proto__ || Object.getPrototypeOf(ARMcw)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (crmQP.__proto__ || Object.getPrototypeOf(crmQP)).apply(this, arguments));
   }
 
-  return ARMcw;
+  return crmQP;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ARMcw, templates);
-exports.ARMcw = ARMcw;
+_metalSoy2.default.register(crmQP, templates);
+exports.crmQP = crmQP;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[287]);
+},[283]);
