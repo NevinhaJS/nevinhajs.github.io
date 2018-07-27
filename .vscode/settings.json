@@ -1,0 +1,8 @@
+{
+  "window.zoomLevel": 0,
+  "editor.renderWhitespace": "all",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "editor.insertSpaces": true,
+  "files.autoSave": "onWindowChange",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
