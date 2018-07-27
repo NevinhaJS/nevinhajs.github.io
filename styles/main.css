@@ -12136,6 +12136,72 @@ li a:not([class]) {
 .features .who-we-are-description {
   text-align: center; }
 
+.about {
+  position: relative; }
+
+#nevinha-app .live-demo .nevinha-app-buttons {
+  width: 60%;
+  padding-top: 3rem; }
+
+#nevinha-app .live-demo figure {
+  width: 40%;
+  float: right; }
+
+#nevinha-app .live-demo .nevinha-app-logo {
+  max-width: 400px;
+  width: 100%; }
+
+#nevinha-app button {
+  border: solid 2px #4285F4;
+  background: transparent;
+  margin: 4px; }
+  #nevinha-app button:hover {
+    border: solid 2px transparent;
+    background: #4285F4; }
+
+#nevinha-app .parallax-provider {
+  border-bottom: solid 2px #4285F4;
+  border-radius: 0;
+  padding: .4rem 2rem;
+  font-size: 2rem;
+  margin-top: 6rem;
+  background: #4285F4; }
+  #nevinha-app .parallax-provider:hover {
+    background: transparent;
+    border-color: #4285F4;
+    border-radius: 4px; }
+
+#nevinha-app .about-title {
+  max-width: 680px;
+  margin: 40px auto; }
+
+#nevinha-app .parallax-provider-tab {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  top: 20rem; }
+  #nevinha-app .parallax-provider-tab > div {
+    height: 200vh;
+    position: relative; }
+  #nevinha-app .parallax-provider-tab img {
+    position: absolute; }
+  #nevinha-app .parallax-provider-tab .parallax-biggest {
+    left: 0px;
+    top: 320px; }
+  #nevinha-app .parallax-provider-tab .parallax-smaller {
+    top: 400px;
+    left: 20%; }
+  #nevinha-app .parallax-provider-tab .parallax-medium {
+    top: -300px; }
+
+#nevinha-app .parallax-container {
+  height: 400px; }
+
+#nevinha-app .z-mask {
+  position: relative;
+  z-index: 2; }
+
 .examples {
   padding: 60px 0; }
   .examples .examples-images {
@@ -12193,3 +12259,6 @@ li a:not([class]) {
   background-size: cover;
   margin-top: 3px;
   margin-right: 6px; }
+
+:root span.download-btn {
+  top: 7px; }

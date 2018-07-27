@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([10],{
+webpackJsonppageComponent([2],{
 
-/***/ 277:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _nulaSoy = __webpack_require__(278);
+var _secondStepSoy = __webpack_require__(292);
 
-var _nulaSoy2 = _interopRequireDefault(_nulaSoy);
+var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var FIKNM = function (_Component) {
-  _inherits(FIKNM, _Component);
+var PQLwS = function (_Component) {
+  _inherits(PQLwS, _Component);
 
-  function FIKNM() {
-    _classCallCheck(this, FIKNM);
+  function PQLwS() {
+    _classCallCheck(this, PQLwS);
 
-    return _possibleConstructorReturn(this, (FIKNM.__proto__ || Object.getPrototypeOf(FIKNM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PQLwS.__proto__ || Object.getPrototypeOf(PQLwS)).apply(this, arguments));
   }
 
-  return FIKNM;
+  return PQLwS;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(FIKNM, _nulaSoy2.default);
+_metalSoy2.default.register(PQLwS, _secondStepSoy2.default);
 
-exports.default = FIKNM;
+exports.default = PQLwS;
 
 /***/ }),
 
-/***/ 278:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = FIKNM;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.FIKNM = undefined;
+exports.templates = exports.PQLwS = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from nula.soy.
+  // This file was automatically generated from second-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace FIKNM.
+   * @fileoverview Templates in namespace PQLwS.
    * @public
    */
 
-  goog.module('FIKNM.incrementaldom');
+  goog.module('PQLwS.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,12 +139,13 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,73 +153,28 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param379 = function param379() {
-      ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param546 = function param546() {
       ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
+      var dyn38 = opt_data.page.title;
+      if (typeof dyn38 == 'function') dyn38();else if (dyn38 != null) itext(dyn38);
       ie_close('h2');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      $templateAlias2({ code: 'var oi = function() {\n    console.log(\'Oi mundo\');\n};', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
+      $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
-      ie_close('h2');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
-      ie_close('h2');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param379 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param546 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'FIKNM.render';
+    $render.soyTemplateName = 'PQLwS.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -227,24 +183,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var FIKNM = function (_Component) {
-  _inherits(FIKNM, _Component);
+var PQLwS = function (_Component) {
+  _inherits(PQLwS, _Component);
 
-  function FIKNM() {
-    _classCallCheck(this, FIKNM);
+  function PQLwS() {
+    _classCallCheck(this, PQLwS);
 
-    return _possibleConstructorReturn(this, (FIKNM.__proto__ || Object.getPrototypeOf(FIKNM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PQLwS.__proto__ || Object.getPrototypeOf(PQLwS)).apply(this, arguments));
   }
 
-  return FIKNM;
+  return PQLwS;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(FIKNM, templates);
-exports.FIKNM = FIKNM;
+_metalSoy2.default.register(PQLwS, templates);
+exports.PQLwS = PQLwS;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[277]);
+},[291]);

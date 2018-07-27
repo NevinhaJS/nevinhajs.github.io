@@ -162,6 +162,7 @@ goog.loadModule(function (exports) {
       $templateAlias2(opt_data, null, opt_ijData);
     };
     $templateAlias1(soy.$$assignDefaults({ content: param161 }, opt_data), null, opt_ijData);
+    ie_void('script', null, null, 'src', './lib/bundle.js');
   }
   exports.render = $render;
   if (goog.DEBUG) {
@@ -231,6 +232,9 @@ goog.loadModule(function (exports) {
     ie_close('p');
     ie_close('div');
     ie_close('div');
+    ie_open('br');
+    ie_close('br');
+    ie_void('div', null, null, 'id', 'nevinha-app');
     ie_close('div');
     ie_close('article');
   }

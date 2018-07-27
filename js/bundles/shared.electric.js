@@ -34,7 +34,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		14: 0
+/******/ 		16: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -5376,9 +5376,9 @@ goog.loadModule(function (exports) {
         ie_close('link');
         ie_open('link', null, null, 'href', 'https://fonts.googleapis.com/css?family=Merienda', 'rel', 'stylesheet');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-12/icon-12.css');
-        ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/galano/galano.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-16/icon-16.css');
         ie_close('link');
@@ -5391,14 +5391,14 @@ goog.loadModule(function (exports) {
         ie_void('script', null, null, 'src', '/js/bundles/shared.electric.js');
         ie_void('script', null, null, 'src', '/vendor/senna/senna.js');
         ie_void('script', null, null, 'src', '/vendor/codemirror/lib/codemirror.js');
-        ie_void('script', null, null, 'src', '/vendor/codemirror/mode/javascript/javascript.js');
         ie_void('script', null, null, 'src', '/vendor/codemirror/mode/css/css.js');
+        ie_void('script', null, null, 'src', '/vendor/codemirror/mode/javascript/javascript.js');
         ie_void('script', null, null, 'src', '/vendor/codemirror/mode/xml/xml.js');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/styles/main.css');
         ie_close('link');
         ie_close('electrichead');
-        ie_open('electricbody', null, null, 'data-senna', '');
-        ie_open('div', null, null, 'data-senna-surface', '', 'id', 'wrapper');
+        ie_open('electricbody');
+        ie_open('div', null, null, 'id', 'wrapper');
         ie_void('div', null, null, 'class', 'senna-loading-bar');
         ie_open('div', null, null, 'id', 'pageComponent');
         var dyn2 = opt_data.content;
@@ -5711,7 +5711,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'main');
     ie_open('main', null, null, 'class', 'guide');
     ie_open('div', null, null, 'class', 'docs');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title } }, null, opt_ijData);
     $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
     ie_close('div');
@@ -5741,7 +5741,6 @@ goog.loadModule(function (exports) {
     ie_open('h1', null, null, 'class', 'title');
     var dyn8 = opt_data.page.title;
     if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
-    itext(' Guide');
     ie_close('h1');
     ie_close('div');
     ie_close('header');
@@ -46621,25 +46620,25 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'posts-list');
     ie_open('div', null, null, 'class', 'container');
     if (opt_data.posts) {
-      var postList202 = opt_data.posts;
-      var postListLen202 = postList202.length;
-      for (var postIndex202 = 0; postIndex202 < postListLen202; postIndex202++) {
-        var postData202 = postList202[postIndex202];
+      var postList203 = opt_data.posts;
+      var postListLen203 = postList203.length;
+      for (var postIndex203 = 0; postIndex203 < postListLen203; postIndex203++) {
+        var postData203 = postList203[postIndex203];
         ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData202.url);
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData203.url);
         ie_open('small');
         itext('By ');
-        var dyn19 = postData202.author;
+        var dyn19 = postData203.author;
         if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
         itext(' ');
         ie_open('span');
         itext('| ');
-        var dyn20 = postData202.date;
+        var dyn20 = postData203.date;
         if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
         ie_close('span');
         ie_close('small');
         ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn21 = postData202.title;
+        var dyn21 = postData203.title;
         if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
         ie_close('h4');
         ie_close('a');
@@ -46791,7 +46790,7 @@ goog.loadModule(function (exports) {
    * @return {void}
    * @suppress {checkTypes}
    */
-  function __deltemplate_s220_d34389eb(opt_data, opt_ignored, opt_ijData) {
+  function __deltemplate_s221_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
     if (opt_data.page.icon) {
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
@@ -46802,11 +46801,11 @@ goog.loadModule(function (exports) {
     ie_close('span');
     ie_close('a');
   }
-  exports.__deltemplate_s220_d34389eb = __deltemplate_s220_d34389eb;
+  exports.__deltemplate_s221_d34389eb = __deltemplate_s221_d34389eb;
   if (goog.DEBUG) {
-    __deltemplate_s220_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s220_d34389eb';
+    __deltemplate_s221_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s221_d34389eb';
   }
-  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s220_d34389eb);
+  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s221_d34389eb);
 
   exports.render.params = ["section", "site"];
   exports.render.types = { "section": "?", "site": "?" };

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([10],{
 
-/***/ 287:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _secondStepSoy = __webpack_require__(288);
+var _indexSoy = __webpack_require__(282);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PlSbr = function (_Component) {
-  _inherits(PlSbr, _Component);
+var hjoHk = function (_Component) {
+  _inherits(hjoHk, _Component);
 
-  function PlSbr() {
-    _classCallCheck(this, PlSbr);
+  function hjoHk() {
+    _classCallCheck(this, hjoHk);
 
-    return _possibleConstructorReturn(this, (PlSbr.__proto__ || Object.getPrototypeOf(PlSbr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hjoHk.__proto__ || Object.getPrototypeOf(hjoHk)).apply(this, arguments));
   }
 
-  return PlSbr;
+  return hjoHk;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PlSbr, _secondStepSoy2.default);
+_metalSoy2.default.register(hjoHk, _indexSoy2.default);
 
-exports.default = PlSbr;
+exports.default = hjoHk;
 
 /***/ }),
 
-/***/ 288:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = PlSbr;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.PlSbr = undefined;
+exports.templates = exports.hjoHk = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from second-step.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace PlSbr.
+   * @fileoverview Templates in namespace hjoHk.
    * @public
    */
 
-  goog.module('PlSbr.incrementaldom');
+  goog.module('hjoHk.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,28 +152,74 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param448 = function param448() {
+    var param473 = function param473() {
+      ie_open('h6');
+      var dyn34 = opt_data.page.description;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
-      $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.');
+      ie_close('p');
+      $templateAlias2({ code: 'var hi = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: '.hi:before {\n    content: \'Hello, World\';\n}', mode: 'css' }, null, opt_ijData);
+      ie_open('p');
+      itext('Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('Lorem ipsum dolor sit amet');
+      ie_close('h2');
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
       itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('Lorem ipsum dolor sit amet');
+      ie_close('h2');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_open('p');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      ie_close('p');
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param448 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param473 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'PlSbr.render';
+    $render.soyTemplateName = 'hjoHk.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -183,24 +228,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var PlSbr = function (_Component) {
-  _inherits(PlSbr, _Component);
+var hjoHk = function (_Component) {
+  _inherits(hjoHk, _Component);
 
-  function PlSbr() {
-    _classCallCheck(this, PlSbr);
+  function hjoHk() {
+    _classCallCheck(this, hjoHk);
 
-    return _possibleConstructorReturn(this, (PlSbr.__proto__ || Object.getPrototypeOf(PlSbr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hjoHk.__proto__ || Object.getPrototypeOf(hjoHk)).apply(this, arguments));
   }
 
-  return PlSbr;
+  return hjoHk;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(PlSbr, templates);
-exports.PlSbr = PlSbr;
+_metalSoy2.default.register(hjoHk, templates);
+exports.hjoHk = hjoHk;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[287]);
+},[281]);

@@ -153,7 +153,7 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param315 = function param315() {
+    var param316 = function param316() {
       ie_open('div');
       ie_open('header', null, null, 'class', 'header');
       ie_open('div', null, null, 'class', 'container');
@@ -170,7 +170,7 @@ goog.loadModule(function (exports) {
       $templateAlias2({ updates: opt_data.page.updates }, null, opt_ijData);
       ie_close('div');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param315 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param316 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7],{
+webpackJsonppageComponent([13],{
 
 /***/ 263:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,7 +157,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'main');
     ie_open('main', null, null, 'class', 'content');
     ie_open('div', null, null, 'class', 'docs');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title } }, null, opt_ijData);
     $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
     $topics(opt_data, null, opt_ijData);
     ie_close('div');
@@ -186,7 +186,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'row');
     ie_open('div', null, null, 'class', 'col-xs-16');
     ie_open('h1', null, null, 'class', 'docs-home-top-title');
-    itext('Docs');
+    itext('NevinhaJs Docs Center');
     ie_close('h1');
     ie_open('p', null, null, 'class', 'docs-home-top-description');
     itext('Start learning how to leverage the power of ');
@@ -227,19 +227,19 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'row');
     ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2 col-xs-16');
     ie_open('div', null, null, 'class', 'row');
-    var childIdList288 = opt_data.page.childIds;
-    var childIdListLen288 = childIdList288.length;
-    for (var childIdIndex288 = 0; childIdIndex288 < childIdListLen288; childIdIndex288++) {
-      var childIdData288 = childIdList288[childIdIndex288];
-      var topic__soy278 = opt_data.page.children[childIdData288];
-      if (!topic__soy278.hidden) {
+    var childIdList289 = opt_data.page.childIds;
+    var childIdListLen289 = childIdList289.length;
+    for (var childIdIndex289 = 0; childIdIndex289 < childIdListLen289; childIdIndex289++) {
+      var childIdData289 = childIdList289[childIdIndex289];
+      var topic__soy279 = opt_data.page.children[childIdData289];
+      if (!topic__soy279.hidden) {
         ie_open('div', null, null, 'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
-        ie_open('a', null, null, 'class', 'topic radial-out', 'href', topic__soy278.url);
+        ie_open('a', null, null, 'class', 'topic radial-out', 'href', topic__soy279.url);
         ie_open('div', null, null, 'class', 'topic-icon');
-        ie_void('span', null, null, 'class', 'icon-16-' + topic__soy278.icon);
+        ie_void('span', null, null, 'class', 'icon-16-' + topic__soy279.icon);
         ie_close('div');
         ie_open('h3', null, null, 'class', 'topic-title');
-        var dyn25 = topic__soy278.title;
+        var dyn25 = topic__soy279.title;
         if (typeof dyn25 == 'function') dyn25();else if (dyn25 != null) itext(dyn25);
         ie_close('h3');
         ie_close('a');

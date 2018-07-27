@@ -154,7 +154,7 @@ goog.loadModule(function (exports) {
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
     var $$temp;
-    var param294 = function param294() {
+    var param295 = function param295() {
       $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
       ie_open('div', null, null, 'class', 'sidebar-offset');
       ie_open('div', null, null, 'class', 'container-hybrid docs-home-top');
@@ -182,7 +182,7 @@ goog.loadModule(function (exports) {
       ie_close('div');
       ie_close('div');
     };
-    $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param294 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param295 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
