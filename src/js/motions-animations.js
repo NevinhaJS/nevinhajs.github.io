@@ -1,5 +1,5 @@
 import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
-import {animations} from './constants';
+import {animations, isSafari} from './constants';
 
 class MotionsAnimations extends NevinhaComponent {
   constructor(props, children){
@@ -21,7 +21,7 @@ class MotionsAnimations extends NevinhaComponent {
 	render() {
     const {animations} = this.state;
 
-		return (
+    return (
 			<div className="row">
         <div className="col-md-12 col-md-offset-2">
           <div className="live-demo">
@@ -32,16 +32,20 @@ class MotionsAnimations extends NevinhaComponent {
             </figure>
 
             {Object.keys(animations).map(categoryName => (
-              <div className="nevinha-app-buttons">
-                <h4 className="about-title">{categoryName}</h4>
+                <div className="nevinha-app-buttons">
+                {(!isSafari() || (safari && categoryName == "Fading Entrances")) && (
+                  <div>
+                    <h4 className="about-title">{categoryName}</h4>
 
-                {animations[categoryName].map(animation => (
-                  <button
-                    className="btn btn-accent"
-                    data-animation-value={animation.value}
-                    onClick={this.handleAnimationClick}
-                  >{animation.name}</button>
-                ))}
+                    {animations[categoryName].map(animation => (
+                      <button
+                        className="btn btn-accent"
+                        data-animation-value={animation.value}
+                        onClick={this.handleAnimationClick}
+                      >{animation.name}</button>
+                    ))}
+                  </div>
+               )}
               </div>
             ))}
           </div>

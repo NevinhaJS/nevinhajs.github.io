@@ -1,9 +1,9 @@
 ---
-title: "Providers"
+title: "Parallax Provider"
 description: ""
 layout: "guide"
 icon: "database"
-weight: 4
+weight: 2
 ---
 
 <article id="1">

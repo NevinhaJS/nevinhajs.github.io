@@ -35,6 +35,10 @@ export const animations = {
       value: "enterLeftBounce"
     },
     {
+      name: "Enter Right Bounce",
+      value: "enterRightBounce"
+    },
+    {
       name: "Scale Bounce",
       value: "scaleBounce"
     },
@@ -64,3 +68,7 @@ export const animations = {
     },
   ]
 }
+
+export const isSafari = ()=> /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+export const isFirefox = typeof InstallTrigger !== 'undefined';

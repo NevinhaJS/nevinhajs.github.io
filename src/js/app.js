@@ -1,5 +1,6 @@
 import {NevinhaComponent, render, ParallaxProvider, NevinhaDOM} from 'nevinha-js';
 import MotionsAnimations from './motions-animations';
+import {isFirefox} from './constants';
 
 class NevinhaApp extends NevinhaComponent {
   constructor(){
@@ -10,7 +11,8 @@ class NevinhaApp extends NevinhaComponent {
   }
 
   changeTab(){
-    this.setState({motionsTab: !this.state.motionsTab})
+    this.setState({motionsTab: !this.state.motionsTab});
+    scrollTo(0, 820);
   }
 
 	render() {
@@ -43,7 +45,7 @@ class NevinhaApp extends NevinhaComponent {
           </div>
         )}
 
-        <button className="btn btn-accent parallax-provider z-mask" onClick={this.changeTab}>{btnText}</button>
+        {!isFirefox && (<button className="btn btn-accent parallax-provider z-mask" onClick={this.changeTab}>{btnText}</button>)}
       </div>
 		);
 	}

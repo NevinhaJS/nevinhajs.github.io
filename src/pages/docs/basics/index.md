@@ -48,5 +48,5 @@ After that in your .babelrc file, you have to put the follow lines:
 ```
 
 ### What's next?
-Now you know how to setup NevinhaJs in your project, let's see how to create our first component.
+Now you know how to setup NevinhaJs in your project, let's see how to [create our first component](/docs/basics/creating-your-fisrt-component.html).
 </article>

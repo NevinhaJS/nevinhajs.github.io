@@ -1,6 +1,6 @@
 ---
 title: "Motions"
-description: "Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. A ordem dos tratores não altera o pão duris Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Ta deprimidis, eu conheço uma cachacis que pode alegrar sua vidis."
+description: "Even states, props and Lifecycles, NevinhaJS has a very special set of animations and providers inside it architecture. It is what makes NevinhaJs be diferent of React and other component frameworks. Our motions you can use in any site, portal or web application."
 layout: "guide"
 icon: "flash"
 weight: 2
@@ -10,53 +10,108 @@ weight: 2
 
 <article id="1">
 
-## Lorem ipsum dolor sit amet
+## The basic idea of motions
 
-Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.
+Creating a motion animation in your component is very simple, all that you need is put your animation name as a prop of your component or tag HTML. Like the example bellow:
 
 ```javascript
-var hi = function() {
-	console.log('Hello, World!');
-};
-```
-```css
-.hi:before {
-	content: 'Hello, World';
+class SomeComponent extends NevinhaComponent {
+  render() {
+    return (
+      <div>
+        <p>Here an component with a motion animation: </p>
+
+        <MyComponent journal />
+
+        <button scaleBounce>You also can animate HTML tags</button>
+      </div>
+    );
+  }
 }
 ```
-
-Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
-
+In the code above, we are using inline motions, wich is the most basic way to use our motions, but if you want to controll the state of your animation, we recommend that you use controlled motions.
 </article>
 
 <article id="2">
 
-## Lorem ipsum dolor sit amet
+## Inline Motions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+As we saw in the last example, you can use motions animations in components or in HTML tags. Each motion, has a default configuration for each property value and it is the reason of you don't need to inform anything when you are using some motion, but if you prefer to subscribe the default configuration of some property, you can parse the property name and value as a object config of your props, like the example bellow:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+```javascript
+class SomeComponent extends NevinhaComponent {
+  render() {
+    return (
+      <div>
+        <p>Here an component with a custom configuration of some motion animation: </p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+        <MyComponent journal={{
+          speed: 1.5
+        }} />
+      </div>
+    );
+  }
+}
+```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
-
+In the case above,our component will be animated using the `journal` animation in a time of 1500 milliseconds.
 </article>
 
 <article id="3">
 
-## Lorem ipsum dolor sit amet
+## Controlled Motions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+Controllod motions are recommended to use when you want to have a controll of your set of motions animations, for example, if you have a component that depending on the context it will use an specific animation to be animated.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+The basic way for using it, is just calling the `setAnimation` method with your element ref and the animation name as argument. As the code bellow:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+```javascript
+class SomeComponent extends NevinhaComponent {
+  constructor(props, children){
+    super(props, children);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.
+  handleClick() {
+    this.setAnimation(this.context.message, {
+      name: "dance"
+    });
+  }
 
+  render() {
+    return (
+      <div>
+        <p ref="message">Hi, I'll be animated when the button bellow is clicked.</p>
+        <button onClick={this.handleClick}>Click to animate</button>
+      </div>
+    );
+  }
+}
+```
+
+The setAnimation method can also receives the configuration of your motion as a second argument:
+
+
+```javascript
+handleClick() {
+  this.setAnimation(this.context.message, {
+    name: "dance",
+    values: {
+      speed: 0.5
+    }
+  });
+}
+```
+
+In the code above, your component, will be animated using the `dance` animation, in the time of 500 milliseconds.
+
+
+When you are using controlled motions, you can remove an animation using `removeAnimation` method with your element ref as paramiter:
+
+```javascript
+removeAnimation(this.context.message);
+```
+
+## What's next
+Now that you know how to use our motions animations, problably you'll want to know what are the name and the configurations of our animations set, wich can be find in the [motions reference section](/docs/motions/motions-reference.html)
 </article>
