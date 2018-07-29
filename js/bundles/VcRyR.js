@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([8],{
 
-/***/ 291:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _secondStepSoy = __webpack_require__(292);
+var _parallaxSoy = __webpack_require__(284);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _parallaxSoy2 = _interopRequireDefault(_parallaxSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PQLwS = function (_Component) {
-  _inherits(PQLwS, _Component);
+var VcRyR = function (_Component) {
+  _inherits(VcRyR, _Component);
 
-  function PQLwS() {
-    _classCallCheck(this, PQLwS);
+  function VcRyR() {
+    _classCallCheck(this, VcRyR);
 
-    return _possibleConstructorReturn(this, (PQLwS.__proto__ || Object.getPrototypeOf(PQLwS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VcRyR.__proto__ || Object.getPrototypeOf(VcRyR)).apply(this, arguments));
   }
 
-  return PQLwS;
+  return VcRyR;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PQLwS, _secondStepSoy2.default);
+_metalSoy2.default.register(VcRyR, _parallaxSoy2.default);
 
-exports.default = PQLwS;
+exports.default = VcRyR;
 
 /***/ }),
 
-/***/ 292:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = PQLwS;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.PQLwS = undefined;
+exports.templates = exports.VcRyR = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from second-step.soy.
+  // This file was automatically generated from parallax.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace PQLwS.
+   * @fileoverview Templates in namespace VcRyR.
    * @public
    */
 
-  goog.module('PQLwS.incrementaldom');
+  goog.module('VcRyR.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,15 +137,12 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,28 +150,38 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param546 = function param546() {
+    var param497 = function param497() {
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn38 = opt_data.page.title;
-      if (typeof dyn38 == 'function') dyn38();else if (dyn38 != null) itext(dyn38);
+      itext('What\'s Providers');
       ie_close('h2');
-      $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('Providers are like NevinhaJs motions, they bring some pre defined behaviors for your application, but instead of just change your component, they changes your component and append another structure HTML in your parent component.');
       ie_close('p');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('So far we have two providers implemented, but we\'re work to implement more, and in the near future, we\'ll separate the providers from the core of NevinhaJS in a especif module, in the case of you don\'t want to use providers in your application, you won\'t need load the provider code in the core of NevinhaJS library.');
       ie_close('p');
+      ie_open('h2');
+      itext('What\'s next?');
+      ie_close('h2');
+      ie_open('p');
+      itext('Now that you know the theory about providers, you can follow reading about our ');
+      ie_open('a', null, null, 'href', '/docs/providers/sticky.html');
+      itext('sticky');
+      ie_close('a');
+      itext(' provider and how to use providers in your NevinhaJs application.');
+      ie_close('p');
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param546 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param497 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'PQLwS.render';
+    $render.soyTemplateName = 'VcRyR.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -183,24 +190,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var PQLwS = function (_Component) {
-  _inherits(PQLwS, _Component);
+var VcRyR = function (_Component) {
+  _inherits(VcRyR, _Component);
 
-  function PQLwS() {
-    _classCallCheck(this, PQLwS);
+  function VcRyR() {
+    _classCallCheck(this, VcRyR);
 
-    return _possibleConstructorReturn(this, (PQLwS.__proto__ || Object.getPrototypeOf(PQLwS)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VcRyR.__proto__ || Object.getPrototypeOf(VcRyR)).apply(this, arguments));
   }
 
-  return PQLwS;
+  return VcRyR;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(PQLwS, templates);
-exports.PQLwS = PQLwS;
+_metalSoy2.default.register(VcRyR, templates);
+exports.VcRyR = VcRyR;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[291]);
+},[283]);

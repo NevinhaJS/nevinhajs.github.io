@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([10],{
+webpackJsonppageComponent([14],{
 
-/***/ 281:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(282);
+var _indexSoy = __webpack_require__(274);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hjoHk = function (_Component) {
-  _inherits(hjoHk, _Component);
+var DdGwk = function (_Component) {
+  _inherits(DdGwk, _Component);
 
-  function hjoHk() {
-    _classCallCheck(this, hjoHk);
+  function DdGwk() {
+    _classCallCheck(this, DdGwk);
 
-    return _possibleConstructorReturn(this, (hjoHk.__proto__ || Object.getPrototypeOf(hjoHk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DdGwk.__proto__ || Object.getPrototypeOf(DdGwk)).apply(this, arguments));
   }
 
-  return hjoHk;
+  return DdGwk;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hjoHk, _indexSoy2.default);
+_metalSoy2.default.register(DdGwk, _indexSoy2.default);
 
-exports.default = hjoHk;
+exports.default = DdGwk;
 
 /***/ }),
 
-/***/ 282:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = hjoHk;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.hjoHk = undefined;
+exports.templates = exports.DdGwk = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace hjoHk.
+   * @fileoverview Templates in namespace DdGwk.
    * @public
    */
 
-  goog.module('hjoHk.incrementaldom');
+  goog.module('DdGwk.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,62 +152,64 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param473 = function param473() {
-      ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
-      ie_close('h6');
+    var param369 = function param369() {
+      ie_open('h2');
+      itext('What\'s NevinhaJs');
+      ie_close('h2');
+      ie_open('p');
+      itext('NevinhaJs is an inteligent javascript framework that helps developers to create components and motions in a very simple and fast way.');
+      ie_close('p');
+      ie_open('p');
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
+      ie_close('p');
       ie_open('article', null, null, 'id', '1');
+      ie_open('div', null, null, 'class', 'guide-btn-cta');
+      ie_open('a', null, null, 'class', 'btn btn-accent btn-lg', 'href', 'http://github.com.br/nevinhajs/boirlaplate', 'target', '_blank');
+      ie_void('span', null, null, 'class', 'icon-16-external download-btn');
+      itext('NevinhaJS Boirlaplate');
+      ie_close('a');
+      ie_close('div');
+      ie_open('p');
+      ie_open('br');
+      ie_close('br');
+      ie_close('p');
       ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
+      itext('Configuring');
       ie_close('h2');
       ie_open('p');
-      itext('Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.');
+      itext('Assuming that you already have your ES6 environment configured with babel (if you dont know how to configure a babel environment, you can download our ');
+      ie_open('a', null, null, 'href', 'http://github.com.br/nevinhajs/boirlaplate');
+      itext('NevinhaJS Boirlaplate');
+      ie_close('a');
+      itext(' \u2B06), you just need to add in your package.json the nevinhajs through the command:');
       ie_close('p');
-      $templateAlias2({ code: 'var hi = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
-      $templateAlias2({ code: '.hi:before {\n    content: \'Hello, World\';\n}', mode: 'css' }, null, opt_ijData);
+      $templateAlias2({ code: 'yarn add nevinha-js', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.');
+      itext('if you don\'t have yarn, you can use the npm command:');
       ie_close('p');
+      $templateAlias2({ code: 'npm install nevinha-js', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('We use JSX syntaxe by default, so you\'ll need to add the ');
+      ie_open('code');
+      itext('transform-react-jsx');
+      ie_close('code');
+      itext(' babel plugin to convert the JSX to javascript:');
       ie_close('p');
+      $templateAlias2({ code: 'yarn add -D babel-plugin-transform-react-jsx', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('After that in your .babelrc file, you have to put the follow lines:');
       ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
-      ie_close('h2');
+      $templateAlias2({ code: '"plugins": [\n  [\n  "transform-react-jsx",\n    { "pragma": "NevinhaDOM" }\n  ]\n]', mode: 'javascript' }, null, opt_ijData);
+      ie_open('h3');
+      itext('What\'s next?');
+      ie_close('h3');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
-      ie_close('h2');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('Now you know how to setup NevinhaJs in your project, let\'s see how to ');
+      ie_open('a', null, null, 'href', '/docs/basics/creating-your-fisrt-component.html');
+      itext('create our first component');
+      ie_close('a');
+      itext('.');
       ie_close('p');
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
@@ -215,11 +217,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param473 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param369 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'hjoHk.render';
+    $render.soyTemplateName = 'DdGwk.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -228,24 +230,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var hjoHk = function (_Component) {
-  _inherits(hjoHk, _Component);
+var DdGwk = function (_Component) {
+  _inherits(DdGwk, _Component);
 
-  function hjoHk() {
-    _classCallCheck(this, hjoHk);
+  function DdGwk() {
+    _classCallCheck(this, DdGwk);
 
-    return _possibleConstructorReturn(this, (hjoHk.__proto__ || Object.getPrototypeOf(hjoHk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DdGwk.__proto__ || Object.getPrototypeOf(DdGwk)).apply(this, arguments));
   }
 
-  return hjoHk;
+  return DdGwk;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(hjoHk, templates);
-exports.hjoHk = hjoHk;
+_metalSoy2.default.register(DdGwk, templates);
+exports.DdGwk = DdGwk;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[281]);
+},[273]);

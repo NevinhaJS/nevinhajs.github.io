@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MDLLJ = function (_Component) {
-  _inherits(MDLLJ, _Component);
+var gsZtO = function (_Component) {
+  _inherits(gsZtO, _Component);
 
-  function MDLLJ() {
-    _classCallCheck(this, MDLLJ);
+  function gsZtO() {
+    _classCallCheck(this, gsZtO);
 
-    return _possibleConstructorReturn(this, (MDLLJ.__proto__ || Object.getPrototypeOf(MDLLJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gsZtO.__proto__ || Object.getPrototypeOf(gsZtO)).apply(this, arguments));
   }
 
-  return MDLLJ;
+  return gsZtO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MDLLJ, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(gsZtO, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = MDLLJ;
+exports.default = gsZtO;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = MDLLJ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.MDLLJ = undefined;
+exports.templates = exports.gsZtO = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace MDLLJ.
+   * @fileoverview Templates in namespace gsZtO.
    * @public
    */
 
-  goog.module('MDLLJ.incrementaldom');
+  goog.module('gsZtO.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -313,7 +313,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'MDLLJ.render';
+    $render.soyTemplateName = 'gsZtO.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,20 +322,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var MDLLJ = function (_Component) {
-  _inherits(MDLLJ, _Component);
+var gsZtO = function (_Component) {
+  _inherits(gsZtO, _Component);
 
-  function MDLLJ() {
-    _classCallCheck(this, MDLLJ);
+  function gsZtO() {
+    _classCallCheck(this, gsZtO);
 
-    return _possibleConstructorReturn(this, (MDLLJ.__proto__ || Object.getPrototypeOf(MDLLJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gsZtO.__proto__ || Object.getPrototypeOf(gsZtO)).apply(this, arguments));
   }
 
-  return MDLLJ;
+  return gsZtO;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(MDLLJ, templates);
-exports.MDLLJ = MDLLJ;
+_metalSoy2.default.register(gsZtO, templates);
+exports.gsZtO = gsZtO;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

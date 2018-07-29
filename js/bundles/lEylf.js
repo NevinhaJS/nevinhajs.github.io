@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DPkBp = function (_Component) {
-  _inherits(DPkBp, _Component);
+var lEylf = function (_Component) {
+  _inherits(lEylf, _Component);
 
-  function DPkBp() {
-    _classCallCheck(this, DPkBp);
+  function lEylf() {
+    _classCallCheck(this, lEylf);
 
-    return _possibleConstructorReturn(this, (DPkBp.__proto__ || Object.getPrototypeOf(DPkBp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lEylf.__proto__ || Object.getPrototypeOf(lEylf)).apply(this, arguments));
   }
 
-  return DPkBp;
+  return lEylf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(DPkBp, _indexSoy2.default);
+_metalSoy2.default.register(lEylf, _indexSoy2.default);
 
-exports.default = DPkBp;
+exports.default = lEylf;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = DPkBp;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.DPkBp = undefined;
+exports.templates = exports.lEylf = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace DPkBp.
+   * @fileoverview Templates in namespace lEylf.
    * @public
    */
 
-  goog.module('DPkBp.incrementaldom');
+  goog.module('lEylf.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -314,7 +314,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'DPkBp.render';
+    $render.soyTemplateName = 'lEylf.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,20 +323,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var DPkBp = function (_Component) {
-  _inherits(DPkBp, _Component);
+var lEylf = function (_Component) {
+  _inherits(lEylf, _Component);
 
-  function DPkBp() {
-    _classCallCheck(this, DPkBp);
+  function lEylf() {
+    _classCallCheck(this, lEylf);
 
-    return _possibleConstructorReturn(this, (DPkBp.__proto__ || Object.getPrototypeOf(DPkBp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lEylf.__proto__ || Object.getPrototypeOf(lEylf)).apply(this, arguments));
   }
 
-  return DPkBp;
+  return lEylf;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(DPkBp, templates);
-exports.DPkBp = DPkBp;
+_metalSoy2.default.register(lEylf, templates);
+exports.lEylf = lEylf;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

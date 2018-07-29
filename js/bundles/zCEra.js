@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([11],{
 
-/***/ 283:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _loremSoy = __webpack_require__(284);
+var _indexSoy = __webpack_require__(278);
 
-var _loremSoy2 = _interopRequireDefault(_loremSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var mJDAY = function (_Component) {
-  _inherits(mJDAY, _Component);
+var zCEra = function (_Component) {
+  _inherits(zCEra, _Component);
 
-  function mJDAY() {
-    _classCallCheck(this, mJDAY);
+  function zCEra() {
+    _classCallCheck(this, zCEra);
 
-    return _possibleConstructorReturn(this, (mJDAY.__proto__ || Object.getPrototypeOf(mJDAY)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zCEra.__proto__ || Object.getPrototypeOf(zCEra)).apply(this, arguments));
   }
 
-  return mJDAY;
+  return zCEra;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(mJDAY, _loremSoy2.default);
+_metalSoy2.default.register(zCEra, _indexSoy2.default);
 
-exports.default = mJDAY;
+exports.default = zCEra;
 
 /***/ }),
 
-/***/ 284:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = mJDAY;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.mJDAY = undefined;
+exports.templates = exports.zCEra = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from lorem.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace mJDAY.
+   * @fileoverview Templates in namespace zCEra.
    * @public
    */
 
-  goog.module('mJDAY.incrementaldom');
+  goog.module('zCEra.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,58 +152,81 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param493 = function param493() {
+    var param441 = function param441() {
       ie_open('h6');
-      var dyn35 = opt_data.page.description;
-      if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
+      itext('The basic idea of motions');
       ie_close('h2');
-      $templateAlias2({ code: '<p>Test, test, test</p>', mode: 'xml' }, null, opt_ijData);
       ie_open('p');
-      itext('Nam eu lobortis ipsum. Sed iaculis, lectus pharetra vehicula luctus, lacus sapien malesuada lacus, non convallis dui mauris a magna. Donec accumsan mi lorem, quis mollis sem tempor vel. Fusce iaculis facilisis accumsan. Sed tempus aliquam nisi, eget commodo quam sodales ut. Duis lacus velit, fringilla congue aliquet nec, vulputate vitae nulla. Aenean ultricies risus vel sapien tincidunt, nec hendrerit purus aliquam. Quisque varius accumsan condimentum. Aliquam erat volutpat.');
+      itext('Creating a motion animation in your component is very simple, all that you need is put your animation name as a prop of your component or tag HTML. Like the example bellow:');
       ie_close('p');
+      $templateAlias2({ code: 'class SomeComponent extends NevinhaComponent {\n  render() {\n    return (\n      <div>\n        <p>Here an component with a motion animation: </p>\n\n        <MyComponent journal />\n\n        <button scaleBounce>You also can animate HTML tags</button>\n      </div>\n    );\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('In the code above, we are using inline motions, wich is the most basic way to use our motions, but if you want to controll the state of your animation, we recommend that you use controlled motions.');
       ie_close('p');
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
+      itext('Inline Motions');
       ie_close('h2');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('As we saw in the last example, you can use motions animations in components or in HTML tags. Each motion, has a default configuration for each property value and it is the reason of you don\'t need to inform anything when you are using some motion, but if you prefer to subscribe the default configuration of some property, you can parse the property name and value as a object config of your props, like the example bellow:');
       ie_close('p');
+      $templateAlias2({ code: 'class SomeComponent extends NevinhaComponent {\n  render() {\n    return (\n      <div>\n        <p>Here an component with a custom configuration of some motion animation: </p>\n\n        <MyComponent journal={{\n          speed: 1.5\n        }} />\n      </div>\n    );\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('In the case above,our component will be animated using the ');
+      ie_open('code');
+      itext('journal');
+      ie_close('code');
+      itext(' animation in a time of 1500 milliseconds.');
       ie_close('p');
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('Lorem ipsum dolor sit amet');
+      itext('Controlled Motions');
       ie_close('h2');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('Controllod motions are recommended to use when you want to have a controll of your set of motions animations, for example, if you have a component that depending on the context it will use an specific animation to be animated.');
       ie_close('p');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('The basic way for using it, is just calling the ');
+      ie_open('code');
+      itext('setAnimation');
+      ie_close('code');
+      itext(' method with your element ref and the animation name as argument. As the code bellow:');
+      ie_close('p');
+      $templateAlias2({ code: 'class SomeComponent extends NevinhaComponent {\n  constructor(props, children){\n    super(props, children);\n    this.handleClick = this.handleClick.bind(this);\n  }\n\n  handleClick() {\n    this.setAnimation(this.context.message, {\n      name: "dance"\n    });\n  }\n\n  render() {\n    return (\n      <div>\n        <p ref="message">Hi, I\'ll be animated when the button bellow is clicked.</p>\n        <button onClick={this.handleClick}>Click to animate</button>\n      </div>\n    );\n  }\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('The setAnimation method can also receives the configuration of your motion as a second argument:');
+      ie_close('p');
+      $templateAlias2({ code: 'handleClick() {\n  this.setAnimation(this.context.message, {\n    name: "dance",\n    values: {\n      speed: 0.5\n    }\n  });\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('In the code above, your component, will be animated using the ');
+      ie_open('code');
+      itext('dance');
+      ie_close('code');
+      itext(' animation, in the time of 500 milliseconds.');
       ie_close('p');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('When you are using controlled motions, you can remove an animation using ');
+      ie_open('code');
+      itext('removeAnimation');
+      ie_close('code');
+      itext(' method with your element ref as paramiter:');
       ie_close('p');
+      $templateAlias2({ code: 'removeAnimation(this.context.message);', mode: 'javascript' }, null, opt_ijData);
+      ie_open('h2');
+      itext('What\'s next');
+      ie_close('h2');
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('Now that you know how to use our motions animations, problably you\'ll want to know what are the name and the configurations of our animations set, wich can be find in the ');
+      ie_open('a', null, null, 'href', '/docs/motions/motions-reference.html');
+      itext('motions reference section');
+      ie_close('a');
       ie_close('p');
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
@@ -211,11 +234,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param493 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param441 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'mJDAY.render';
+    $render.soyTemplateName = 'zCEra.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -224,24 +247,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var mJDAY = function (_Component) {
-  _inherits(mJDAY, _Component);
+var zCEra = function (_Component) {
+  _inherits(zCEra, _Component);
 
-  function mJDAY() {
-    _classCallCheck(this, mJDAY);
+  function zCEra() {
+    _classCallCheck(this, zCEra);
 
-    return _possibleConstructorReturn(this, (mJDAY.__proto__ || Object.getPrototypeOf(mJDAY)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zCEra.__proto__ || Object.getPrototypeOf(zCEra)).apply(this, arguments));
   }
 
-  return mJDAY;
+  return zCEra;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(mJDAY, templates);
-exports.mJDAY = mJDAY;
+_metalSoy2.default.register(zCEra, templates);
+exports.zCEra = zCEra;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[283]);
+},[277]);
