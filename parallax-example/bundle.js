@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 36);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -465,7 +465,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(41);
+var aFunction = __webpack_require__(39);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -499,7 +499,7 @@ exports.f = __webpack_require__(0);
 
 var has = __webpack_require__(4);
 var toIObject = __webpack_require__(9);
-var arrayIndexOf = __webpack_require__(46)(false);
+var arrayIndexOf = __webpack_require__(44)(false);
 var IE_PROTO = __webpack_require__(32)('IE_PROTO');
 
 module.exports = function (object, names) {
@@ -576,110 +576,26 @@ module.exports = function (it) {
 
 /***/ }),
 /* 36 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NevinhaComponent", function() { return NevinhaComponent$$1; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParallaxProvider", function() { return ParallaxProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NevinhaDOM", function() { return NevinhaDOM; });
-var isEvent=function(e){return/^on/.test(e)},_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},classCallCheck=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},createClass=function(){function e(e,t){for(var n=0;n<t.length;n++){var a=t[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}return function(t,n,a){return n&&e(t.prototype,n),a&&e(t,a),t}}(),_extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var a in n)Object.prototype.hasOwnProperty.call(n,a)&&(e[a]=n[a])}return e},inherits=function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)},possibleConstructorReturn=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t},IsomorphicNevinhaComponent=function(){function e(t,n){classCallCheck(this,e),this.props=t||{},this.state=this.state||{},this.context={},this.children=n,this.componentWillMount()}return createClass(e,[{key:"componentWillMount",value:function(){}},{key:"componentDidMount",value:function(){}},{key:"componentWillUnmount",value:function(){}},{key:"setState",value:function(){}}]),e}(),supportTypedOM=function(){return window.CSS&&CSS.number},fromPixelToFloat=function(e){return parseFloat(e.replace("px",""))},formatCSSValue=function(e){return"number"==typeof e?CSS.number(e):"string"==typeof e&&isPXUnit(e)?CSS.px(fromPixelToFloat(e)):e},blackPropsList=function(e){if("sticky"==e)return!0},setTypedStyle=function(e,t,n){if(!supportTypedOM())return blackPropsList(n)&&(e.style[t]="-webkit-"+n),e.style[t]=n;e.attributeStyleMap.set(t,formatCSSValue(n))},setVisibleState=function(e){setTypedStyle(e,"opacity",1),setTypedStyle(e,"display","inherit"),setTypedStyle(e,"visibility","visible")},setTransition=function(e,t,n,a){return setTypedStyle(e,"transition",t+" "+n+"s "+a)},requestTimeout=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1;if(!(window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame&&window.mozCancelRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame))return window.setTimeout(e,t);var n=(new Date).getTime();requestAnimationFrame(function a(){(new Date).getTime()-n>=t?e():requestAnimationFrame(a)})},hideElementToAnimate=function(e,t,n,a){setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",0),setTypedStyle(e,"visibility","hidden"),requestTimeout(function(){var o=e.animate(t,n);addComponentContextAnimation(o,a)},0)},addComponentContextAnimation=function(e,t,n){t&&(t.animation={config:e,infinite:n})},BOMB_MOTION="bomb",bombKeyFrames=[{opacity:1,transform:"rotateZ(0)",transformOrigin:"-50% 0%",visibility:"visible"},{opacity:0,transform:"rotateZ(-100deg)",transformOrigin:"-10% 0%",visibility:"hidden"}],setBombAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",BOMB_MOTION),o=e.animate(bombKeyFrames,{duration:a,easing:"cubic-bezier(0, 0.93, 1, 1)",fill:"forwards"});addComponentContextAnimation(o,n)},bomb={callFn:setBombAnimation,values:{speed:{defaultValue:.4}}},ENTER_DOWN_MOTION="enterDownBounce",enterDownKeyFrames=[{opacity:0,transform:"translateY(-120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateY(0)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateY(-20px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterDownBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_DOWN_MOTION);hideElementToAnimate(e,enterDownKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterDownBounce={callFn:setEnterDownBounce,values:{speed:{defaultValue:.7}}},ENTER_LEFT_MOTION="enterLeftBounce",enterLeftKeyFrames=[{opacity:0,transform:"translateX(-120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateX(0px)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateX(-8px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterLeftBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_LEFT_MOTION);hideElementToAnimate(e,enterLeftKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterLeftBounce={callFn:setEnterLeftBounce,values:{speed:{defaultValue:.7}}},ENTER_RIGHT_MOTION="enterRightBounce",enterRightKeyFrames=[{opacity:0,transform:"translateX(120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateX(0px)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateX(8px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterRightBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_RIGHT_MOTION);hideElementToAnimate(e,enterRightKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterRightBounce={callFn:setEnterRightBounce,values:{speed:{defaultValue:.7}}},ENTER_UP_MOTION="enterUpBounce",enterUpKeyFrames=[{opacity:0,transform:"translateY(120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateY(0)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateY(20px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterUpBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_UP_MOTION);hideElementToAnimate(e,enterUpKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterUpBounce={callFn:setEnterUpBounce,values:{speed:{defaultValue:.7}}},JUMP_BOUNCE_MOTION="jumpBounce",jumpBounceKeyFrames=[{transform:"translateY(0)"},{offset:.1,transform:"translateY(-100px)"},{offset:.4,transform:"translateY(20px)"},{offset:.6,transform:"translateY(-60px)"},{offset:.9,transform:"translateY(30px)"},{transform:"translateY(0)"}],setJumpBounce=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",JUMP_BOUNCE_MOTION),o=e.animate(jumpBounceKeyFrames,{duration:a,easing:"cubic-bezier(0.42, 0, 0.44, 1.21)",fill:"forwards"});addComponentContextAnimation(o,n)},jumpBounce={callFn:setJumpBounce,values:{speed:{defaultValue:1}}},FLASH_MOTION="flash",flashKeyFrames={offset:[0,.1,.2,.3,1],opacity:[0,1,0,1,1]},setFlashAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",FLASH_MOTION),o=e.animate(flashKeyFrames,{duration:a,easing:"linear"});addComponentContextAnimation(o,n)},flash={callFn:setFlashAnimation,values:{speed:{defaultValue:2}}},SCALE_BOUNCE_MOTION="scaleBounce",scaleBounceKeyFrames=[{opacity:0,transform:"scale(1.5)"},{offset:.5,opacity:.5,transform:"scale(1)"},{offset:.7,opacity:.7,transform:"scale(1.1)"},{opacity:1,transform:"scale(1)"}],setScaleBounce=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",SCALE_BOUNCE_MOTION),o=e.animate(scaleBounceKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},scaleBounce={callFn:setScaleBounce,values:{speed:{defaultValue:.7}}},DANCE_MOTION="dance",danceKeyFrames=[{boxShadow:"inset 0 0 0 0 transparent",transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.05,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.1,transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.15,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.2,transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.25,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.35,transform:"scale(1) rotateZ(0deg)"},{boxShadow:"0 0 10px rgba(0,0,0,0.2)",offset:.4,transform:"scale(1.3) rotateZ(0deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.6,transform:"scale(1) rotateZ(0deg)"},{boxShadow:"inset 0 0 0 0 transparent",transform:"scale(1) rotateZ(0deg)"}],setDanceAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",DANCE_MOTION),o=e.animate(danceKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},dance={callFn:setDanceAnimation,values:{speed:{defaultValue:2}}},PULSE_MOTION="pulse",pulseKeyFrames=[{transform:"scale(1)"},{transform:"scale(1.5)"}],setPulseAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",PULSE_MOTION),o=e.animate(pulseKeyFrames,{direction:"alternate",duration:a,easing:"linear",iterations:1/0});addComponentContextAnimation(o,n,!0)},pulse={callFn:setPulseAnimation,values:{speed:{defaultValue:.5}}},ROTATE_SCALE_MOTION="rotateScale",rotateScaleKeyFrames=[{transform:"rotateZ(0) scale(1)"},{offset:.25,transform:"rotateZ(90deg) scale(0.4)"},{offset:.5,transform:"rotateZ(180deg) scale(1)"},{offset:.75,transform:"rotateZ(270deg) scale(0.4)"},{transform:"rotateZ(360deg) scale(1)"}],setRotateScaleAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",ROTATE_SCALE_MOTION),o=e.animate(rotateScaleKeyFrames,{duration:a,easing:"linear",iterations:1/0});addComponentContextAnimation(o,n,!0)},rotateScale={callFn:setRotateScaleAnimation,values:{speed:{defaultValue:3}}},PULSE_SLOW_MOTION="pulseSlow",pulseSlowKeyFrames=[{opacity:1,transform:"scale(1)"},{opacity:.5,transform:"scale(0.85)"}],setPulseSlowAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",PULSE_SLOW_MOTION),o=e.animate(pulseSlowKeyFrames,{direction:"alternate",duration:a,easing:"ease-in-out",iterations:1/0});addComponentContextAnimation(o,n,!0)},pulseSlow={callFn:setPulseSlowAnimation,values:{speed:{defaultValue:1}}},JOURNAL_MOTION="journal",journalKeyFrames=[{transform:"scale(0) rotate(-360deg)"},{offset:.8,transform:"scale(0.5) rotate(-180deg)"},{transform:"scale(1) rotate(0)"}],setJournalAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",JOURNAL_MOTION),o=e.animate(journalKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},journal={callFn:setJournalAnimation,values:{speed:{defaultValue:2}}},STICKY_MOTION="sticky",FADE_OUT_MOTION="fadeOut",FADE_IN_MOTION="fadeOut",PARALLAX_MOTION="parallax",setStickyPosition=function(e,t){setTypedStyle(e,"position",STICKY_MOTION),setTypedStyle(e,"top",getValue(t,"top",STICKY_MOTION))},setFadeOut=function(e,t){var n=getValue(t,"speed",FADE_OUT_MOTION),a=getValue(t,"timingFn",FADE_IN_MOTION);setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",1),setTypedStyle(e,"visibility","visible"),setTransition(e,"opacity",n,a),requestTimeout(function(){return setTypedStyle(e,"opacity",0)},100),requestTimeout(function(){return setTypedStyle(e,"display","none")},1e3*n+100)},setFadeIn=function(e,t){var n=getValue(t,"speed",FADE_IN_MOTION),a=getValue(t,"timingFn",FADE_IN_MOTION);setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",0),setTypedStyle(e,"visibility","visible"),setTransition(e,"opacity",n,a),requestTimeout(function(){return setTypedStyle(e,"opacity",1)},100)},setHide=function(e){setTypedStyle(e,"display","none")},setShow=function(e){setTypedStyle(e,"display","inherit")},setParallax=function(e,t){var n=getValue(t,"size",PARALLAX_MOTION);setTypedStyle(e,"transform","translateZ("+-1*n+"px)")},definedMotionsProps={bomb:bomb,dance:dance,enterDownBounce:enterDownBounce,enterLeftBounce:enterLeftBounce,enterRightBounce:enterRightBounce,enterUpBounce:enterUpBounce,fadeIn:{callFn:setFadeIn,values:{speed:{defaultValue:.5,rulesFn:function(){return[isNumber]}},timingFn:{defaultValue:"ease-out"}}},fadeOut:{callFn:setFadeOut,values:{speed:{defaultValue:.5,rulesFn:function(){return[isNumber]}},timingFn:{defaultValue:"ease-out"}}},flash:flash,hide:{callFn:setHide},journal:journal,jumpBounce:jumpBounce,parallax:{callFn:setParallax,values:{size:{defaultValue:1,rulesFn:function(){return[isNumber]}}}},pulse:pulse,pulseSlow:pulseSlow,rotateScale:rotateScale,scaleBounce:scaleBounce,show:{callFn:setShow},sticky:{callFn:setStickyPosition,values:{top:{defaultValue:"0px"}}}},getDefaultValues=function(e,t){return"object"!==(void 0===e?"undefined":_typeof(e))?definedMotionsProps[t].values:e},getValue=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=arguments[1],n=arguments[2],a=getDefaultValues(!0,n)[t],o=e[t];return o?(a.rulesFn&&a.rulesFn().forEach(function(e){if(!e(o))throw new Error("Invalid CSS value parsed to "+n+" API. For more details, please read more about '"+e.name+"' function validation in NevinhaJS API",e)}),o):a.defaultValue},isClass=function(e){return e.prototype.render},isPXUnit=function(e){return/px$/.test(e)},isNumber=function(e){return"number"==typeof e},isCustomProp=function(e){if(definedMotionsProps[e])return!0},createVirtualElement=function e(t,n){var a=n.createTextNode,o=n.createInstance,r=n.parentComponent,i=t.type,s=t.attributes,l=t.children;if("string"==typeof t||"number"==typeof t)return a(t);if("function"==typeof i&&i.prototype.render){var u=new i(s,l),c=e(u.render(),{createInstance:o,createTextNode:a,parentComponent:u});return u.element=c,c}return"function"==typeof i?e(i(s,l),{createInstance:o,createTextNode:a}):l?o(i,s,l,r):void 0},setProps=function(e,t,n){Object.keys(t).forEach(function(a){if(isEvent(a)){var o=a.split("on")[1].toLowerCase();e.addEventListener(o,t[a])}else setProp(e,a,t[a],n)})},setProp=function(e,t,n,a){return isCustomProp(t)&&n?setCustomProp(e,t,n,a):"className"===t?e.setAttribute("class",n):"boolean"==typeof n?setBooleanProp(e,t,n):"value"===t?e.value=n:"ref"===t?addContextRef(a,n,{element:e}):e.setAttribute(t,n)},setBooleanProp=function(e,t,n){n?(e.setAttribute(t,n),e[t]=!0):e[t]=!1},removeBooleanProp=function(e,t){e.removeAttribute(t),e[t]=!1},removeProp=function(e,t,n){isCustomProp(t)||("className"===t?e.removeAttribute("class"):"boolean"==typeof n?removeBooleanProp(e,t):e.removeAttribute(t))},updateProp=function(e,t,n,a,o){if(!isEvent(t))return void 0===n||null==n?removeProp(e,t,a):a&&n===a?void 0:setProp(e,t,n,o)},updateProps=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},a=arguments[3],o=Object.assign({},t,n);!t.ref&&n.ref&&removeContextRef(a,n.ref),Object.keys(o).forEach(function(o){updateProp(e,o,t[o],n[o],a)})},setStyleProps=function(e,t){var n=t.split(";");n[n.length-1].trim()||n.splice(-1,1),n.map(function(e){var t=e.split(":");return{property:t[0].trim(),value:t[1].trim()}}).forEach(function(t){return setTypedStyle(e,t.property,t.value)})},setCustomProp=function(e,t,n){return"style"==t?setStyleProps(e,n):definedMotionsProps[t].callFn(e,n)},render=function(e,t){var n=new e;n.element=createVirtualElement(n.render(),{createInstance:createInstance,createTextNode:createTextNode,parentComponent:n}),t.appendChild(n.element)},createTextNode=function(e){return document.createTextNode(e)},createInstance=function e(t,n,a,o){var r=document.createElement(t);return a.map(function(t){return createVirtualElement(t,{createInstance:e,createTextNode:createTextNode,parentComponent:o})}).forEach(function(e){e&&r.appendChild(e)}),setProps(r,n,o),r},diffDOM={addToDiff:function(e,t,n){e.appendChild(createVirtualElement(t,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:n}))},removeFromDiff:function(e,t,n,a){return e.removeChild(e.childNodes[a]),a},replaceFromDiff:function(e,t,n,a,o){e.replaceChild(createVirtualElement(t,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:a}),e.childNodes[o])},updatePropsFromDiff:function(e,t,n,a,o){updateProps(e.childNodes[o],t.attributes,n.attributes,a)}},updateElement=function e(t,n,a,o,r){var i=a.addToDiff,s=a.removeFromDiff,l=a.replaceFromDiff,u=a.updatePropsFromDiff,c=arguments.length>5&&void 0!==arguments[5]?arguments[5]:0,f=t;if(n||r){if(r&&"function"==typeof r.type){var p=updateComponentDiff(r),d=p.NodeComponent,m=p.NodeComponentInstance;r=d,m&&(f=m)}if(n&&"function"==typeof n.type)n=updateComponentDiff(n).NodeComponent;if(n){if(!r)return updateContext(f,n),s(o,r,n,c),!0;if(changed(r,n))updateContext(f,n),l(o,r,n,f,c);else if(r.type){var y=r.children.length,v=n.children.length;u(o,r,n,f,c);for(var b=0;b<y||b<v;b++){if(!o.childNodes[c].childNodes[b]&&v>y)return;e(f,n.children[b],{addToDiff:i,removeFromDiff:s,replaceFromDiff:l,updatePropsFromDiff:u},o.childNodes[c],r.children[b],b)&&v>y&&b--}}}else i(o,r,f)}},updateComponentDiff=function(e){var t=void 0;return isClass(e.type)?((t=new e.type(e.attributes,e.children)).element=createVirtualElement(e,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:t}),e=t.render()):e=Object.assign(e.type(e.attributes,e.children)),{NodeComponent:e,NodeComponentInstance:t}},updateContext=function e(t,n){var a=n.attributes,o=n.children;if(a){var r=a.ref;r&&removeContextRef(t,r),o.length&&o.forEach(function(n){return e(t,n)})}},removeContextRef=function(e,t){delete e.context[t]},addContextRef=function(e,t,n){return e.context[t]=n},changed=function(e,t){return(void 0===e?"undefined":_typeof(e))!==(void 0===t?"undefined":_typeof(t))||"string"==typeof e&&e!==t||e.type!==t.type},NevinhaComponent$$1=function(e){function t(e,n){return classCallCheck(this,t),possibleConstructorReturn(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e,n))}return inherits(t,IsomorphicNevinhaComponent),createClass(t,[{key:"removeAnimation",value:function(e){e.animation&&(e.animation.infinite||e.animation.config.finish(),e.animation.config.cancel(),e.animation=null)}},{key:"setAnimation",value:function(e,t){var n=t.name,a=t.values;e.animation&&this.removeAnimation(e),definedMotionsProps[n].callFn(e.element,a,e)}},{key:"setState",value:function(e){var t=this,n=this.render();Object.keys(e).map(function(n){return t.state[n]=e[n]}),updateElement(this,n,diffDOM,this.element.parentNode,this.render())}}]),t}(),NevinhaDOM=function(e,t){for(var n=arguments.length,a=Array(n>2?n-2:0),o=2;o<n;o++)a[o-2]=arguments[o];var r,i=a.length?(r=[]).concat.apply(r,a):[];return{type:e,attributes:t||{},children:i}},ParallaxProvider=function(e){function t(){return classCallCheck(this,t),possibleConstructorReturn(this,(t.__proto__||Object.getPrototypeOf(t)).apply(this,arguments))}return inherits(t,NevinhaComponent$$1),createClass(t,[{key:"render",value:function(){var e=this.children,t=this.props,n={attributes:{},children:e,type:"div"};return{attributes:_extends({style:"perspective: 1px; overflow: auto;"},t),children:[n],type:"div"}}}]),t}();
+__webpack_require__(37);
+__webpack_require__(53);
+__webpack_require__(59);
+__webpack_require__(62);
+module.exports = __webpack_require__(67);
 
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var animations = exports.animations = {
-  Specials: [{
-    name: "Pulse",
-    value: "pulse"
-  }, {
-    name: "Journal",
-    value: "journal"
-  }, {
-    name: "Dance",
-    value: "dance"
-  }, {
-    name: "Pulse Slow",
-    value: "pulseSlow"
-  }, {
-    name: "Rotate Scale",
-    value: "rotateScale"
-  }],
-  Bounce: [{
-    name: "Enter Up Bounce",
-    value: "enterUpBounce"
-  }, {
-    name: "Enter Down Bounce",
-    value: "enterDownBounce"
-  }, {
-    name: "Enter Left Bounce",
-    value: "enterLeftBounce"
-  }, {
-    name: "Enter Right Bounce",
-    value: "enterRightBounce"
-  }, {
-    name: "Scale Bounce",
-    value: "scaleBounce"
-  }, {
-    name: "Jump Bounce",
-    value: "jumpBounce"
-  }],
-  "Fading Entrances": [{
-    name: "Fade In",
-    value: "fadeIn"
-  }, {
-    name: "Fade Out",
-    value: "fadeOut"
-  }],
-  Agrecives: [{
-    name: "Flash Bang",
-    value: "flash"
-  }, {
-    name: "Bomb",
-    value: "bomb"
-  }]
-};
-
-var isSafari = exports.isSafari = function isSafari() {
-  return (/constructor/i.test(window.HTMLElement) || function (p) {
-      return p.toString() === "[object SafariRemoteNotification]";
-    }(!window['safari'] || typeof safari !== 'undefined' && safari.pushNotification)
-  );
-};
-
-var isFirefox = exports.isFirefox = typeof InstallTrigger !== 'undefined';
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(39);
-__webpack_require__(55);
-__webpack_require__(61);
-__webpack_require__(64);
-module.exports = __webpack_require__(69);
-
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(40);
-__webpack_require__(53);
+__webpack_require__(38);
+__webpack_require__(51);
 module.exports = __webpack_require__(2).Symbol;
 
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -690,24 +606,24 @@ var has = __webpack_require__(4);
 var DESCRIPTORS = __webpack_require__(5);
 var $export = __webpack_require__(10);
 var redefine = __webpack_require__(18);
-var META = __webpack_require__(42).KEY;
+var META = __webpack_require__(40).KEY;
 var $fails = __webpack_require__(7);
 var shared = __webpack_require__(19);
-var setToStringTag = __webpack_require__(43);
+var setToStringTag = __webpack_require__(41);
 var uid = __webpack_require__(8);
 var wks = __webpack_require__(0);
 var wksExt = __webpack_require__(29);
-var wksDefine = __webpack_require__(44);
-var enumKeys = __webpack_require__(45);
+var wksDefine = __webpack_require__(42);
+var enumKeys = __webpack_require__(43);
 var isArray = __webpack_require__(33);
 var anObject = __webpack_require__(12);
 var isObject = __webpack_require__(3);
 var toIObject = __webpack_require__(9);
 var toPrimitive = __webpack_require__(16);
 var createDesc = __webpack_require__(17);
-var _create = __webpack_require__(48);
-var gOPNExt = __webpack_require__(51);
-var $GOPD = __webpack_require__(52);
+var _create = __webpack_require__(46);
+var gOPNExt = __webpack_require__(49);
+var $GOPD = __webpack_require__(50);
 var $DP = __webpack_require__(6);
 var $keys = __webpack_require__(13);
 var gOPD = $GOPD.f;
@@ -920,7 +836,7 @@ setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -930,7 +846,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 42 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var META = __webpack_require__(8)('meta');
@@ -989,7 +905,7 @@ var meta = module.exports = {
 
 
 /***/ }),
-/* 43 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(6).f;
@@ -1002,7 +918,7 @@ module.exports = function (it, tag, stat) {
 
 
 /***/ }),
-/* 44 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(1);
@@ -1017,7 +933,7 @@ module.exports = function (name) {
 
 
 /***/ }),
-/* 45 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -1038,14 +954,14 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 46 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(9);
 var toLength = __webpack_require__(23);
-var toAbsoluteIndex = __webpack_require__(47);
+var toAbsoluteIndex = __webpack_require__(45);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -1067,7 +983,7 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 47 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(31);
@@ -1080,12 +996,12 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 48 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(12);
-var dPs = __webpack_require__(49);
+var dPs = __webpack_require__(47);
 var enumBugKeys = __webpack_require__(24);
 var IE_PROTO = __webpack_require__(32)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -1100,7 +1016,7 @@ var createDict = function () {
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(50).appendChild(iframe);
+  __webpack_require__(48).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -1127,7 +1043,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(6);
@@ -1146,7 +1062,7 @@ module.exports = __webpack_require__(5) ? Object.defineProperties : function def
 
 
 /***/ }),
-/* 50 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(1).document;
@@ -1154,7 +1070,7 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 51 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -1179,7 +1095,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 
 
 /***/ }),
-/* 52 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE = __webpack_require__(15);
@@ -1201,13 +1117,13 @@ exports.f = __webpack_require__(5) ? gOPD : function getOwnPropertyDescriptor(O,
 
 
 /***/ }),
-/* 53 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 19.1.3.6 Object.prototype.toString()
-var classof = __webpack_require__(54);
+var classof = __webpack_require__(52);
 var test = {};
 test[__webpack_require__(0)('toStringTag')] = 'z';
 if (test + '' != '[object z]') {
@@ -1218,7 +1134,7 @@ if (test + '' != '[object z]') {
 
 
 /***/ }),
-/* 54 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
@@ -1247,22 +1163,22 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 55 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(56);
+__webpack_require__(54);
 module.exports = __webpack_require__(2).Array.find;
 
 
 /***/ }),
-/* 56 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 var $export = __webpack_require__(10);
-var $find = __webpack_require__(57)(5);
+var $find = __webpack_require__(55)(5);
 var KEY = 'find';
 var forced = true;
 // Shouldn't skip holes
@@ -1272,11 +1188,11 @@ $export($export.P + $export.F * forced, 'Array', {
     return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-__webpack_require__(60)(KEY);
+__webpack_require__(58)(KEY);
 
 
 /***/ }),
-/* 57 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 0 -> Array#forEach
@@ -1290,7 +1206,7 @@ var ctx = __webpack_require__(28);
 var IObject = __webpack_require__(21);
 var toObject = __webpack_require__(35);
 var toLength = __webpack_require__(23);
-var asc = __webpack_require__(58);
+var asc = __webpack_require__(56);
 module.exports = function (TYPE, $create) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
@@ -1326,11 +1242,11 @@ module.exports = function (TYPE, $create) {
 
 
 /***/ }),
-/* 58 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(59);
+var speciesConstructor = __webpack_require__(57);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -1338,7 +1254,7 @@ module.exports = function (original, length) {
 
 
 /***/ }),
-/* 59 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(3);
@@ -1360,7 +1276,7 @@ module.exports = function (original) {
 
 
 /***/ }),
-/* 60 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 22.1.3.31 Array.prototype[@@unscopables]
@@ -1373,25 +1289,25 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 61 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(62);
+__webpack_require__(60);
 module.exports = __webpack_require__(2).Object.assign;
 
 
 /***/ }),
-/* 62 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(10);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(63) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(61) });
 
 
 /***/ }),
-/* 63 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1432,15 +1348,15 @@ module.exports = !$assign || __webpack_require__(7)(function () {
 
 
 /***/ }),
-/* 64 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(65);
+__webpack_require__(63);
 module.exports = __webpack_require__(2).String.endsWith;
 
 
 /***/ }),
-/* 65 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1448,11 +1364,11 @@ module.exports = __webpack_require__(2).String.endsWith;
 
 var $export = __webpack_require__(10);
 var toLength = __webpack_require__(23);
-var context = __webpack_require__(66);
+var context = __webpack_require__(64);
 var ENDS_WITH = 'endsWith';
 var $endsWith = ''[ENDS_WITH];
 
-$export($export.P + $export.F * __webpack_require__(68)(ENDS_WITH), 'String', {
+$export($export.P + $export.F * __webpack_require__(66)(ENDS_WITH), 'String', {
   endsWith: function endsWith(searchString /* , endPosition = @length */) {
     var that = context(this, searchString, ENDS_WITH);
     var endPosition = arguments.length > 1 ? arguments[1] : undefined;
@@ -1467,11 +1383,11 @@ $export($export.P + $export.F * __webpack_require__(68)(ENDS_WITH), 'String', {
 
 
 /***/ }),
-/* 66 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // helper for String#{startsWith, endsWith, includes}
-var isRegExp = __webpack_require__(67);
+var isRegExp = __webpack_require__(65);
 var defined = __webpack_require__(22);
 
 module.exports = function (that, searchString, NAME) {
@@ -1481,7 +1397,7 @@ module.exports = function (that, searchString, NAME) {
 
 
 /***/ }),
-/* 67 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.8 IsRegExp(argument)
@@ -1495,7 +1411,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 68 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MATCH = __webpack_require__(0)('match');
@@ -1513,7 +1429,7 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 69 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1521,15 +1437,7 @@ module.exports = function (KEY) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _nevinhaJs = __webpack_require__(36);
-
-var _motionsAnimations = __webpack_require__(70);
-
-var _motionsAnimations2 = _interopRequireDefault(_motionsAnimations);
-
-var _constants = __webpack_require__(37);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _nevinhaJs = __webpack_require__(68);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1537,187 +1445,135 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var NevinhaApp = function (_NevinhaComponent) {
-  _inherits(NevinhaApp, _NevinhaComponent);
+/*eslint-disable */
+/** @jsx h */
+function h(type, attributes) {
+	var _ref;
 
-  function NevinhaApp() {
-    _classCallCheck(this, NevinhaApp);
+	for (var _len = arguments.length, args = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+		args[_key - 2] = arguments[_key];
+	}
 
-    var _this = _possibleConstructorReturn(this, (NevinhaApp.__proto__ || Object.getPrototypeOf(NevinhaApp)).call(this));
+	var children = args.length ? (_ref = []).concat.apply(_ref, args) : [];
+	return { type: type, attributes: attributes || {}, children: children };
+}
+/*eslint-enable */
 
-    _this.state.motionsTab = true;
-    _this.changeTab = _this.changeTab.bind(_this);
-    return _this;
-  }
+var App = function (_NevinhaComponent) {
+	_inherits(App, _NevinhaComponent);
 
-  _createClass(NevinhaApp, [{
-    key: 'changeTab',
-    value: function changeTab() {
-      this.setState({ motionsTab: !this.state.motionsTab });
-      scrollTo(0, 820);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var motionsTab = this.state.motionsTab;
+	function App() {
+		_classCallCheck(this, App);
 
-      var btnText = "View animations demo";
-      var appTitle = "Experiment the best of our live parallax provider demo";
+		return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	}
 
-      if (motionsTab) {
-        appTitle = "Try to use our live animations demo";
-        btnText = "View parallax provider demo";
-      }
+	_createClass(App, [{
+		key: "render",
+		value: function render() {
+			return h(
+				"div",
+				null,
+				h(
+					_nevinhaJs.ParallaxProvider,
+					{ className: "provider" },
+					h(
+						"h1",
+						null,
+						"Nevinha JS"
+					),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.2
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.9
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.4
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.6
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.4
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.7
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.3
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.9
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.55
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.34
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.22
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.4
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.2
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.6
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.2
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.1
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.3
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.7
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.5
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.6
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 0.9
+						} }),
+					h("img", { src: "img/nevinha-js.png", parallax: {
+							size: 1.4
+						} })
+				)
+			);
+		}
+	}]);
 
-      return (0, _nevinhaJs.NevinhaDOM)(
-        'div',
-        null,
-        (0, _nevinhaJs.NevinhaDOM)(
-          'h3',
-          { 'class': 'about-title z-mask' },
-          appTitle
-        ),
-        motionsTab ? (0, _nevinhaJs.NevinhaDOM)(_motionsAnimations2.default, null) : (0, _nevinhaJs.NevinhaDOM)(
-          'div',
-          { className: 'parallax-container' },
-          (0, _nevinhaJs.NevinhaDOM)(
-            _nevinhaJs.ParallaxProvider,
-            { className: 'parallax-provider-tab' },
-            (0, _nevinhaJs.NevinhaDOM)('img', { src: './images/nevinha-js.png', className: 'parallax-biggest', parallax: {
-                size: 1
-              } }),
-            (0, _nevinhaJs.NevinhaDOM)('img', { src: './images/nevinha-js.png', className: 'parallax-smaller', parallax: {
-                size: 3
-              } }),
-            (0, _nevinhaJs.NevinhaDOM)('img', { src: './images/nevinha-js.png', className: 'parallax-medium', parallax: {
-                size: 2
-              } })
-          )
-        ),
-        !_constants.isFirefox && (0, _nevinhaJs.NevinhaDOM)(
-          'button',
-          { className: 'btn btn-accent parallax-provider z-mask', onClick: this.changeTab },
-          btnText
-        )
-      );
-    }
-  }]);
-
-  return NevinhaApp;
+	return App;
 }(_nevinhaJs.NevinhaComponent);
 
-setTimeout(function () {
-  var $root = document.querySelector('#nevinha-app');
-  (0, _nevinhaJs.render)(NevinhaApp, $root);
-}, 300);
+var $root = document.querySelector('#my-app');
+(0, _nevinhaJs.render)(App, $root);
 
 /***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NevinhaComponent", function() { return NevinhaComponent$$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParallaxProvider", function() { return ParallaxProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NevinhaDOM", function() { return NevinhaDOM; });
+var isEvent=function(e){return/^on/.test(e)},_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},classCallCheck=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},createClass=function(){function e(e,t){for(var n=0;n<t.length;n++){var a=t[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}return function(t,n,a){return n&&e(t.prototype,n),a&&e(t,a),t}}(),_extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var a in n)Object.prototype.hasOwnProperty.call(n,a)&&(e[a]=n[a])}return e},inherits=function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)},possibleConstructorReturn=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t},IsomorphicNevinhaComponent=function(){function e(t,n){classCallCheck(this,e),this.props=t||{},this.state=this.state||{},this.context={},this.children=n,this.componentWillMount()}return createClass(e,[{key:"componentWillMount",value:function(){}},{key:"componentDidMount",value:function(){}},{key:"componentWillUnmount",value:function(){}},{key:"setState",value:function(){}}]),e}(),supportTypedOM=function(){return window.CSS&&CSS.number},fromPixelToFloat=function(e){return parseFloat(e.replace("px",""))},formatCSSValue=function(e){return"number"==typeof e?CSS.number(e):"string"==typeof e&&isPXUnit(e)?CSS.px(fromPixelToFloat(e)):e},blackPropsList=function(e){if("sticky"==e)return!0},setTypedStyle=function(e,t,n){if(!supportTypedOM())return blackPropsList(n)&&(e.style[t]="-webkit-"+n),e.style[t]=n;e.attributeStyleMap.set(t,formatCSSValue(n))},setVisibleState=function(e){setTypedStyle(e,"opacity",1),setTypedStyle(e,"display","inherit"),setTypedStyle(e,"visibility","visible")},setTransition=function(e,t,n,a){return setTypedStyle(e,"transition",t+" "+n+"s "+a)},requestTimeout=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1;if(!(window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame&&window.mozCancelRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame))return window.setTimeout(e,t);var n=(new Date).getTime();requestAnimationFrame(function a(){(new Date).getTime()-n>=t?e():requestAnimationFrame(a)})},hideElementToAnimate=function(e,t,n,a){setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",0),setTypedStyle(e,"visibility","hidden"),requestTimeout(function(){var o=e.animate(t,n);addComponentContextAnimation(o,a)},0)},addComponentContextAnimation=function(e,t,n){t&&(t.animation={config:e,infinite:n})},BOMB_MOTION="bomb",bombKeyFrames=[{opacity:1,transform:"rotateZ(0)",transformOrigin:"-50% 0%",visibility:"visible"},{opacity:0,transform:"rotateZ(-100deg)",transformOrigin:"-10% 0%",visibility:"hidden"}],setBombAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",BOMB_MOTION),o=e.animate(bombKeyFrames,{duration:a,easing:"cubic-bezier(0, 0.93, 1, 1)",fill:"forwards"});addComponentContextAnimation(o,n)},bomb={callFn:setBombAnimation,values:{speed:{defaultValue:.4}}},ENTER_DOWN_MOTION="enterDownBounce",enterDownKeyFrames=[{opacity:0,transform:"translateY(-120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateY(0)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateY(-20px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterDownBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_DOWN_MOTION);hideElementToAnimate(e,enterDownKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterDownBounce={callFn:setEnterDownBounce,values:{speed:{defaultValue:.7}}},ENTER_LEFT_MOTION="enterLeftBounce",enterLeftKeyFrames=[{opacity:0,transform:"translateX(-120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateX(0px)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateX(-8px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterLeftBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_LEFT_MOTION);hideElementToAnimate(e,enterLeftKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterLeftBounce={callFn:setEnterLeftBounce,values:{speed:{defaultValue:.7}}},ENTER_RIGHT_MOTION="enterRightBounce",enterRightKeyFrames=[{opacity:0,transform:"translateX(120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateX(0px)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateX(8px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterRightBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_RIGHT_MOTION);hideElementToAnimate(e,enterRightKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterRightBounce={callFn:setEnterRightBounce,values:{speed:{defaultValue:.7}}},ENTER_UP_MOTION="enterUpBounce",enterUpKeyFrames=[{opacity:0,transform:"translateY(120px)",visibility:"hidden"},{offset:.5,opacity:.5,transform:"translateY(0)",visibility:"visible"},{offset:.7,opacity:.7,transform:"translateY(20px)",visibility:"visible"},{opacity:1,transform:"translateY(0)",visibility:"visible"}],setEnterUpBounce=function(e,t,n){var a=1e3*getValue(t,"speed",ENTER_UP_MOTION);hideElementToAnimate(e,enterUpKeyFrames,{duration:a,easing:"linear",fill:"forwards"},n)},enterUpBounce={callFn:setEnterUpBounce,values:{speed:{defaultValue:.7}}},JUMP_BOUNCE_MOTION="jumpBounce",jumpBounceKeyFrames=[{transform:"translateY(0)"},{offset:.1,transform:"translateY(-100px)"},{offset:.4,transform:"translateY(20px)"},{offset:.6,transform:"translateY(-60px)"},{offset:.9,transform:"translateY(30px)"},{transform:"translateY(0)"}],setJumpBounce=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",JUMP_BOUNCE_MOTION),o=e.animate(jumpBounceKeyFrames,{duration:a,easing:"cubic-bezier(0.42, 0, 0.44, 1.21)",fill:"forwards"});addComponentContextAnimation(o,n)},jumpBounce={callFn:setJumpBounce,values:{speed:{defaultValue:1}}},FLASH_MOTION="flash",flashKeyFrames={offset:[0,.1,.2,.3,1],opacity:[0,1,0,1,1]},setFlashAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",FLASH_MOTION),o=e.animate(flashKeyFrames,{duration:a,easing:"linear"});addComponentContextAnimation(o,n)},flash={callFn:setFlashAnimation,values:{speed:{defaultValue:2}}},SCALE_BOUNCE_MOTION="scaleBounce",scaleBounceKeyFrames=[{opacity:0,transform:"scale(1.5)"},{offset:.5,opacity:.5,transform:"scale(1)"},{offset:.7,opacity:.7,transform:"scale(1.1)"},{opacity:1,transform:"scale(1)"}],setScaleBounce=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",SCALE_BOUNCE_MOTION),o=e.animate(scaleBounceKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},scaleBounce={callFn:setScaleBounce,values:{speed:{defaultValue:.7}}},DANCE_MOTION="dance",danceKeyFrames=[{boxShadow:"inset 0 0 0 0 transparent",transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.05,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.1,transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.15,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.2,transform:"scale(1) rotateZ(10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.25,transform:"scale(1) rotateZ(-10deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.35,transform:"scale(1) rotateZ(0deg)"},{boxShadow:"0 0 10px rgba(0,0,0,0.2)",offset:.4,transform:"scale(1.3) rotateZ(0deg)"},{boxShadow:"inset 0 0 0 0 transparent",offset:.6,transform:"scale(1) rotateZ(0deg)"},{boxShadow:"inset 0 0 0 0 transparent",transform:"scale(1) rotateZ(0deg)"}],setDanceAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",DANCE_MOTION),o=e.animate(danceKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},dance={callFn:setDanceAnimation,values:{speed:{defaultValue:2}}},PULSE_MOTION="pulse",pulseKeyFrames=[{transform:"scale(1)"},{transform:"scale(1.5)"}],setPulseAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",PULSE_MOTION),o=e.animate(pulseKeyFrames,{direction:"alternate",duration:a,easing:"linear",iterations:1/0});addComponentContextAnimation(o,n,!0)},pulse={callFn:setPulseAnimation,values:{speed:{defaultValue:.5}}},ROTATE_SCALE_MOTION="rotateScale",rotateScaleKeyFrames=[{transform:"rotateZ(0) scale(1)"},{offset:.25,transform:"rotateZ(90deg) scale(0.4)"},{offset:.5,transform:"rotateZ(180deg) scale(1)"},{offset:.75,transform:"rotateZ(270deg) scale(0.4)"},{transform:"rotateZ(360deg) scale(1)"}],setRotateScaleAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",ROTATE_SCALE_MOTION),o=e.animate(rotateScaleKeyFrames,{duration:a,easing:"linear",iterations:1/0});addComponentContextAnimation(o,n,!0)},rotateScale={callFn:setRotateScaleAnimation,values:{speed:{defaultValue:3}}},PULSE_SLOW_MOTION="pulseSlow",pulseSlowKeyFrames=[{opacity:1,transform:"scale(1)"},{opacity:.5,transform:"scale(0.85)"}],setPulseSlowAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",PULSE_SLOW_MOTION),o=e.animate(pulseSlowKeyFrames,{direction:"alternate",duration:a,easing:"ease-in-out",iterations:1/0});addComponentContextAnimation(o,n,!0)},pulseSlow={callFn:setPulseSlowAnimation,values:{speed:{defaultValue:1}}},JOURNAL_MOTION="journal",journalKeyFrames=[{transform:"scale(0) rotate(-360deg)"},{offset:.8,transform:"scale(0.5) rotate(-180deg)"},{transform:"scale(1) rotate(0)"}],setJournalAnimation=function(e,t,n){setVisibleState(e);var a=1e3*getValue(t,"speed",JOURNAL_MOTION),o=e.animate(journalKeyFrames,{duration:a,easing:"linear",fill:"forwards"});addComponentContextAnimation(o,n)},journal={callFn:setJournalAnimation,values:{speed:{defaultValue:2}}},STICKY_MOTION="sticky",FADE_OUT_MOTION="fadeOut",FADE_IN_MOTION="fadeOut",PARALLAX_MOTION="parallax",setStickyPosition=function(e,t){setTypedStyle(e,"position",STICKY_MOTION),setTypedStyle(e,"top",getValue(t,"top",STICKY_MOTION))},setFadeOut=function(e,t){var n=getValue(t,"speed",FADE_OUT_MOTION),a=getValue(t,"timingFn",FADE_IN_MOTION);setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",1),setTypedStyle(e,"visibility","visible"),setTransition(e,"opacity",n,a),requestTimeout(function(){return setTypedStyle(e,"opacity",0)},100),requestTimeout(function(){return setTypedStyle(e,"display","none")},1e3*n+100)},setFadeIn=function(e,t){var n=getValue(t,"speed",FADE_IN_MOTION),a=getValue(t,"timingFn",FADE_IN_MOTION);setTypedStyle(e,"display","inherit"),setTypedStyle(e,"opacity",0),setTypedStyle(e,"visibility","visible"),setTransition(e,"opacity",n,a),requestTimeout(function(){return setTypedStyle(e,"opacity",1)},100)},setHide=function(e){setTypedStyle(e,"display","none")},setShow=function(e){setTypedStyle(e,"display","inherit")},setParallax=function(e,t){var n=getValue(t,"size",PARALLAX_MOTION);setTypedStyle(e,"transform","translateZ("+-1*n+"px)")},definedMotionsProps={bomb:bomb,dance:dance,enterDownBounce:enterDownBounce,enterLeftBounce:enterLeftBounce,enterRightBounce:enterRightBounce,enterUpBounce:enterUpBounce,fadeIn:{callFn:setFadeIn,values:{speed:{defaultValue:.5,rulesFn:function(){return[isNumber]}},timingFn:{defaultValue:"ease-out"}}},fadeOut:{callFn:setFadeOut,values:{speed:{defaultValue:.5,rulesFn:function(){return[isNumber]}},timingFn:{defaultValue:"ease-out"}}},flash:flash,hide:{callFn:setHide},journal:journal,jumpBounce:jumpBounce,parallax:{callFn:setParallax,values:{size:{defaultValue:1,rulesFn:function(){return[isNumber]}}}},pulse:pulse,pulseSlow:pulseSlow,rotateScale:rotateScale,scaleBounce:scaleBounce,show:{callFn:setShow},sticky:{callFn:setStickyPosition,values:{top:{defaultValue:"0px"}}}},getDefaultValues=function(e,t){return"object"!==(void 0===e?"undefined":_typeof(e))?definedMotionsProps[t].values:e},getValue=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=arguments[1],n=arguments[2],a=getDefaultValues(!0,n)[t],o=e[t];return o?(a.rulesFn&&a.rulesFn().forEach(function(e){if(!e(o))throw new Error("Invalid CSS value parsed to "+n+" API. For more details, please read more about '"+e.name+"' function validation in NevinhaJS API",e)}),o):a.defaultValue},isClass=function(e){return e.prototype.render},isPXUnit=function(e){return/px$/.test(e)},isNumber=function(e){return"number"==typeof e},isCustomProp=function(e){if(definedMotionsProps[e])return!0},createVirtualElement=function e(t,n){var a=n.createTextNode,o=n.createInstance,r=n.parentComponent,i=t.type,s=t.attributes,l=t.children;if("string"==typeof t||"number"==typeof t)return a(t);if("function"==typeof i&&i.prototype.render){var u=new i(s,l),c=e(u.render(),{createInstance:o,createTextNode:a,parentComponent:u});return u.element=c,c}return"function"==typeof i?e(i(s,l),{createInstance:o,createTextNode:a}):l?o(i,s,l,r):void 0},setProps=function(e,t,n){Object.keys(t).forEach(function(a){if(isEvent(a)){var o=a.split("on")[1].toLowerCase();e.addEventListener(o,t[a])}else setProp(e,a,t[a],n)})},setProp=function(e,t,n,a){return isCustomProp(t)&&n?setCustomProp(e,t,n,a):"className"===t?e.setAttribute("class",n):"boolean"==typeof n?setBooleanProp(e,t,n):"value"===t?e.value=n:"ref"===t?addContextRef(a,n,{element:e}):e.setAttribute(t,n)},setBooleanProp=function(e,t,n){n?(e.setAttribute(t,n),e[t]=!0):e[t]=!1},removeBooleanProp=function(e,t){e.removeAttribute(t),e[t]=!1},removeProp=function(e,t,n){isCustomProp(t)||("className"===t?e.removeAttribute("class"):"boolean"==typeof n?removeBooleanProp(e,t):e.removeAttribute(t))},updateProp=function(e,t,n,a,o){if(!isEvent(t))return void 0===n||null==n?removeProp(e,t,a):a&&n===a?void 0:setProp(e,t,n,o)},updateProps=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},a=arguments[3],o=Object.assign({},t,n);!t.ref&&n.ref&&removeContextRef(a,n.ref),Object.keys(o).forEach(function(o){updateProp(e,o,t[o],n[o],a)})},setStyleProps=function(e,t){var n=t.split(";");n[n.length-1].trim()||n.splice(-1,1),n.map(function(e){var t=e.split(":");return{property:t[0].trim(),value:t[1].trim()}}).forEach(function(t){return setTypedStyle(e,t.property,t.value)})},setCustomProp=function(e,t,n){return"style"==t?setStyleProps(e,n):definedMotionsProps[t].callFn(e,n)},render=function(e,t){var n=new e;n.element=createVirtualElement(n.render(),{createInstance:createInstance,createTextNode:createTextNode,parentComponent:n}),t.appendChild(n.element)},createTextNode=function(e){return document.createTextNode(e)},createInstance=function e(t,n,a,o){var r=document.createElement(t);return a.map(function(t){return createVirtualElement(t,{createInstance:e,createTextNode:createTextNode,parentComponent:o})}).forEach(function(e){e&&r.appendChild(e)}),setProps(r,n,o),r},diffDOM={addToDiff:function(e,t,n){e.appendChild(createVirtualElement(t,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:n}))},removeFromDiff:function(e,t,n,a){return e.removeChild(e.childNodes[a]),a},replaceFromDiff:function(e,t,n,a,o){e.replaceChild(createVirtualElement(t,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:a}),e.childNodes[o])},updatePropsFromDiff:function(e,t,n,a,o){updateProps(e.childNodes[o],t.attributes,n.attributes,a)}},updateElement=function e(t,n,a,o,r){var i=a.addToDiff,s=a.removeFromDiff,l=a.replaceFromDiff,u=a.updatePropsFromDiff,c=arguments.length>5&&void 0!==arguments[5]?arguments[5]:0,f=t;if(n||r){if(r&&"function"==typeof r.type){var p=updateComponentDiff(r),d=p.NodeComponent,m=p.NodeComponentInstance;r=d,m&&(f=m)}if(n&&"function"==typeof n.type)n=updateComponentDiff(n).NodeComponent;if(n){if(!r)return updateContext(f,n),s(o,r,n,c),!0;if(changed(r,n))updateContext(f,n),l(o,r,n,f,c);else if(r.type){var y=r.children.length,v=n.children.length;u(o,r,n,f,c);for(var b=0;b<y||b<v;b++){if(!o.childNodes[c].childNodes[b]&&v>y)return;e(f,n.children[b],{addToDiff:i,removeFromDiff:s,replaceFromDiff:l,updatePropsFromDiff:u},o.childNodes[c],r.children[b],b)&&v>y&&b--}}}else i(o,r,f)}},updateComponentDiff=function(e){var t=void 0;return isClass(e.type)?((t=new e.type(e.attributes,e.children)).element=createVirtualElement(e,{createInstance:createInstance,createTextNode:createTextNode,parentComponent:t}),e=t.render()):e=Object.assign(e.type(e.attributes,e.children)),{NodeComponent:e,NodeComponentInstance:t}},updateContext=function e(t,n){var a=n.attributes,o=n.children;if(a){var r=a.ref;r&&removeContextRef(t,r),o.length&&o.forEach(function(n){return e(t,n)})}},removeContextRef=function(e,t){delete e.context[t]},addContextRef=function(e,t,n){return e.context[t]=n},changed=function(e,t){return(void 0===e?"undefined":_typeof(e))!==(void 0===t?"undefined":_typeof(t))||"string"==typeof e&&e!==t||e.type!==t.type},NevinhaComponent$$1=function(e){function t(e,n){return classCallCheck(this,t),possibleConstructorReturn(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e,n))}return inherits(t,IsomorphicNevinhaComponent),createClass(t,[{key:"removeAnimation",value:function(e){e.animation&&(e.animation.infinite||e.animation.config.finish(),e.animation.config.cancel(),e.animation=null)}},{key:"setAnimation",value:function(e,t){var n=t.name,a=t.values;e.animation&&this.removeAnimation(e),definedMotionsProps[n].callFn(e.element,a,e)}},{key:"setState",value:function(e){var t=this,n=this.render();Object.keys(e).map(function(n){return t.state[n]=e[n]}),updateElement(this,n,diffDOM,this.element.parentNode,this.render())}}]),t}(),NevinhaDOM=function(e,t){for(var n=arguments.length,a=Array(n>2?n-2:0),o=2;o<n;o++)a[o-2]=arguments[o];var r,i=a.length?(r=[]).concat.apply(r,a):[];return{type:e,attributes:t||{},children:i}},ParallaxProvider=function(e){function t(){return classCallCheck(this,t),possibleConstructorReturn(this,(t.__proto__||Object.getPrototypeOf(t)).apply(this,arguments))}return inherits(t,NevinhaComponent$$1),createClass(t,[{key:"render",value:function(){var e=this.children,t=this.props,n={attributes:{},children:e,type:"div"};return{attributes:_extends({style:"perspective: 1px; overflow: auto;"},t),children:[n],type:"div"}}}]),t}();
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _nevinhaJs = __webpack_require__(36);
-
-var _constants = __webpack_require__(37);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MotionsAnimations = function (_NevinhaComponent) {
-  _inherits(MotionsAnimations, _NevinhaComponent);
-
-  function MotionsAnimations(props, children) {
-    _classCallCheck(this, MotionsAnimations);
-
-    var _this = _possibleConstructorReturn(this, (MotionsAnimations.__proto__ || Object.getPrototypeOf(MotionsAnimations)).call(this, props, children));
-
-    _this.state.animations = _constants.animations;
-    _this.handleAnimationClick = _this.handleAnimationClick.bind(_this);
-    return _this;
-  }
-
-  _createClass(MotionsAnimations, [{
-    key: 'handleAnimationClick',
-    value: function handleAnimationClick(e) {
-      var animationValue = e.target.dataset.animationValue;
-      var nevinhaAppImage = this.context.nevinhaAppImage;
-
-
-      this.setAnimation(nevinhaAppImage, {
-        name: animationValue
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var animations = this.state.animations;
-
-
-      return (0, _nevinhaJs.NevinhaDOM)(
-        'div',
-        { className: 'row' },
-        (0, _nevinhaJs.NevinhaDOM)(
-          'div',
-          { className: 'col-md-12 col-md-offset-2' },
-          (0, _nevinhaJs.NevinhaDOM)(
-            'div',
-            { className: 'live-demo' },
-            (0, _nevinhaJs.NevinhaDOM)(
-              'figure',
-              { ref: 'nevinhaAppImage', sticky: {
-                  top: '36%'
-                } },
-              (0, _nevinhaJs.NevinhaDOM)('img', { src: './images/nevinha-js.png', className: 'nevinha-app-logo' })
-            ),
-            Object.keys(animations).map(function (categoryName) {
-              return (0, _nevinhaJs.NevinhaDOM)(
-                'div',
-                { className: 'nevinha-app-buttons' },
-                (!(0, _constants.isSafari)() || safari && categoryName == "Fading Entrances") && (0, _nevinhaJs.NevinhaDOM)(
-                  'div',
-                  null,
-                  (0, _nevinhaJs.NevinhaDOM)(
-                    'h4',
-                    { className: 'about-title' },
-                    categoryName
-                  ),
-                  animations[categoryName].map(function (animation) {
-                    return (0, _nevinhaJs.NevinhaDOM)(
-                      'button',
-                      {
-                        className: 'btn btn-accent',
-                        'data-animation-value': animation.value,
-                        onClick: _this2.handleAnimationClick
-                      },
-                      animation.name
-                    );
-                  })
-                )
-              );
-            })
-          )
-        )
-      );
-    }
-  }]);
-
-  return MotionsAnimations;
-}(_nevinhaJs.NevinhaComponent);
-
-exports.default = MotionsAnimations;
 
 /***/ })
 /******/ ]);

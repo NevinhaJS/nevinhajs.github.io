@@ -336,15 +336,15 @@ goog.loadModule(function (exports) {
     itext('Featured Examples');
     ie_close('h3');
     ie_open('div', null, null, 'class', 'examples-images');
-    ie_open('a', null, null, 'href', '#', 'title', 'Parallax');
+    ie_open('a', null, null, 'href', '/parallax-example/', 'title', 'Parallax');
     ie_open('img', null, null, 'src', './images/nevinha-parallax.gif');
     ie_close('img');
     ie_close('a');
-    ie_open('a', null, null, 'href', '#', 'title', 'Todo list');
+    ie_open('a', null, null, 'href', '/todo-list/', 'title', 'Todo list');
     ie_open('img', null, null, 'src', './images/nevinha-todo-list.gif');
     ie_close('img');
     ie_close('a');
-    ie_open('a', null, null, 'href', '#', 'title', 'Basic example');
+    ie_open('a', null, null, 'href', '/basic-example/', 'title', 'Basic example');
     ie_open('img', null, null, 'src', './images/nevinha-basic-example.gif');
     ie_close('img');
     ie_close('a');
