@@ -153,7 +153,7 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param161 = function param161() {
+    var param3 = function param3() {
       $header(opt_data, null, opt_ijData);
       $why(null, null, opt_ijData);
       $features(null, null, opt_ijData);
@@ -161,7 +161,7 @@ goog.loadModule(function (exports) {
       $examples(null, null, opt_ijData);
       $templateAlias2(opt_data, null, opt_ijData);
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param161 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param3 }, opt_data), null, opt_ijData);
     ie_void('script', null, null, 'src', './lib/bundle.js');
   }
   exports.render = $render;
@@ -186,12 +186,12 @@ goog.loadModule(function (exports) {
     ie_close('img');
     ie_close('figure');
     ie_open('h1', null, null, 'class', 'header-title');
-    var dyn16 = opt_data.site.title;
-    if (typeof dyn16 == 'function') dyn16();else if (dyn16 != null) itext(dyn16);
+    var dyn0 = opt_data.site.title;
+    if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
     ie_close('h1');
     ie_open('h2', null, null, 'class', 'header-subtitle');
-    var dyn17 = opt_data.site.index.description;
-    if (typeof dyn17 == 'function') dyn17();else if (dyn17 != null) itext(dyn17);
+    var dyn1 = opt_data.site.index.description;
+    if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
     ie_close('h2');
     ie_open('div', null, null, 'class', 'header-cta');
     ie_open('button', null, null, 'class', 'btn btn-accent copy-clipboard', 'data-clipboard-text', 'yarn add nevinha-js');
@@ -228,7 +228,7 @@ goog.loadModule(function (exports) {
     itext('What\'s NevinhaJS?');
     ie_close('h3');
     ie_open('p', null, null, 'class', 'about-description');
-    itext('NevinhaJS is a component render based in React but beyond of static methods and component lifecycles (including state and props), we also have methods for make some animations and improve the UX.');
+    itext('NevinhaJS is a component render like React or MetalJs but beyond of static methods and component lifecycles (including state and props), we also have methods for make some animations and improve the UX.');
     ie_close('p');
     ie_close('div');
     ie_close('div');

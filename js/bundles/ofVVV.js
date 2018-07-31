@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([12],{
 
-/***/ 275:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(276);
+var _indexSoy = __webpack_require__(280);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var bRuLM = function (_Component) {
-  _inherits(bRuLM, _Component);
+var ofVVV = function (_Component) {
+  _inherits(ofVVV, _Component);
 
-  function bRuLM() {
-    _classCallCheck(this, bRuLM);
+  function ofVVV() {
+    _classCallCheck(this, ofVVV);
 
-    return _possibleConstructorReturn(this, (bRuLM.__proto__ || Object.getPrototypeOf(bRuLM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ofVVV.__proto__ || Object.getPrototypeOf(ofVVV)).apply(this, arguments));
   }
 
-  return bRuLM;
+  return ofVVV;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(bRuLM, _indexSoy2.default);
+_metalSoy2.default.register(ofVVV, _indexSoy2.default);
 
-exports.default = bRuLM;
+exports.default = ofVVV;
 
 /***/ }),
 
-/***/ 276:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = bRuLM;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.bRuLM = undefined;
+exports.templates = exports.ofVVV = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace bRuLM.
+   * @fileoverview Templates in namespace ofVVV.
    * @public
    */
 
-  goog.module('bRuLM.incrementaldom');
+  goog.module('ofVVV.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -314,7 +314,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'bRuLM.render';
+    $render.soyTemplateName = 'ofVVV.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,24 +323,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var bRuLM = function (_Component) {
-  _inherits(bRuLM, _Component);
+var ofVVV = function (_Component) {
+  _inherits(ofVVV, _Component);
 
-  function bRuLM() {
-    _classCallCheck(this, bRuLM);
+  function ofVVV() {
+    _classCallCheck(this, ofVVV);
 
-    return _possibleConstructorReturn(this, (bRuLM.__proto__ || Object.getPrototypeOf(bRuLM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ofVVV.__proto__ || Object.getPrototypeOf(ofVVV)).apply(this, arguments));
   }
 
-  return bRuLM;
+  return ofVVV;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(bRuLM, templates);
-exports.bRuLM = bRuLM;
+_metalSoy2.default.register(ofVVV, templates);
+exports.ofVVV = ofVVV;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[275]);
+},[279]);

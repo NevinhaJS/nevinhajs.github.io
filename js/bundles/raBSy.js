@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var aQpZn = function (_Component) {
-  _inherits(aQpZn, _Component);
+var raBSy = function (_Component) {
+  _inherits(raBSy, _Component);
 
-  function aQpZn() {
-    _classCallCheck(this, aQpZn);
+  function raBSy() {
+    _classCallCheck(this, raBSy);
 
-    return _possibleConstructorReturn(this, (aQpZn.__proto__ || Object.getPrototypeOf(aQpZn)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (raBSy.__proto__ || Object.getPrototypeOf(raBSy)).apply(this, arguments));
   }
 
-  return aQpZn;
+  return raBSy;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(aQpZn, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(raBSy, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = aQpZn;
+exports.default = raBSy;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = aQpZn;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.aQpZn = undefined;
+exports.templates = exports.raBSy = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace aQpZn.
+   * @fileoverview Templates in namespace raBSy.
    * @public
    */
 
-  goog.module('aQpZn.incrementaldom');
+  goog.module('raBSy.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -313,7 +313,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'aQpZn.render';
+    $render.soyTemplateName = 'raBSy.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,20 +322,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var aQpZn = function (_Component) {
-  _inherits(aQpZn, _Component);
+var raBSy = function (_Component) {
+  _inherits(raBSy, _Component);
 
-  function aQpZn() {
-    _classCallCheck(this, aQpZn);
+  function raBSy() {
+    _classCallCheck(this, raBSy);
 
-    return _possibleConstructorReturn(this, (aQpZn.__proto__ || Object.getPrototypeOf(aQpZn)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (raBSy.__proto__ || Object.getPrototypeOf(raBSy)).apply(this, arguments));
   }
 
-  return aQpZn;
+  return raBSy;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(aQpZn, templates);
-exports.aQpZn = aQpZn;
+_metalSoy2.default.register(raBSy, templates);
+exports.raBSy = raBSy;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
