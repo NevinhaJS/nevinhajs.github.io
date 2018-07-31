@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zCEra = function (_Component) {
-  _inherits(zCEra, _Component);
+var QjVLP = function (_Component) {
+  _inherits(QjVLP, _Component);
 
-  function zCEra() {
-    _classCallCheck(this, zCEra);
+  function QjVLP() {
+    _classCallCheck(this, QjVLP);
 
-    return _possibleConstructorReturn(this, (zCEra.__proto__ || Object.getPrototypeOf(zCEra)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QjVLP.__proto__ || Object.getPrototypeOf(QjVLP)).apply(this, arguments));
   }
 
-  return zCEra;
+  return QjVLP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zCEra, _indexSoy2.default);
+_metalSoy2.default.register(QjVLP, _indexSoy2.default);
 
-exports.default = zCEra;
+exports.default = QjVLP;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = zCEra;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.zCEra = undefined;
+exports.templates = exports.QjVLP = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace zCEra.
+   * @fileoverview Templates in namespace QjVLP.
    * @public
    */
 
-  goog.module('zCEra.incrementaldom');
+  goog.module('QjVLP.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -238,7 +238,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'zCEra.render';
+    $render.soyTemplateName = 'QjVLP.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -247,20 +247,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var zCEra = function (_Component) {
-  _inherits(zCEra, _Component);
+var QjVLP = function (_Component) {
+  _inherits(QjVLP, _Component);
 
-  function zCEra() {
-    _classCallCheck(this, zCEra);
+  function QjVLP() {
+    _classCallCheck(this, QjVLP);
 
-    return _possibleConstructorReturn(this, (zCEra.__proto__ || Object.getPrototypeOf(zCEra)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QjVLP.__proto__ || Object.getPrototypeOf(QjVLP)).apply(this, arguments));
   }
 
-  return zCEra;
+  return QjVLP;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(zCEra, templates);
-exports.zCEra = zCEra;
+_metalSoy2.default.register(QjVLP, templates);
+exports.QjVLP = QjVLP;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

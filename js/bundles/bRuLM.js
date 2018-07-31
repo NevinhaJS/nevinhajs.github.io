@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lEylf = function (_Component) {
-  _inherits(lEylf, _Component);
+var bRuLM = function (_Component) {
+  _inherits(bRuLM, _Component);
 
-  function lEylf() {
-    _classCallCheck(this, lEylf);
+  function bRuLM() {
+    _classCallCheck(this, bRuLM);
 
-    return _possibleConstructorReturn(this, (lEylf.__proto__ || Object.getPrototypeOf(lEylf)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bRuLM.__proto__ || Object.getPrototypeOf(bRuLM)).apply(this, arguments));
   }
 
-  return lEylf;
+  return bRuLM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lEylf, _indexSoy2.default);
+_metalSoy2.default.register(bRuLM, _indexSoy2.default);
 
-exports.default = lEylf;
+exports.default = bRuLM;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = lEylf;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.lEylf = undefined;
+exports.templates = exports.bRuLM = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace lEylf.
+   * @fileoverview Templates in namespace bRuLM.
    * @public
    */
 
-  goog.module('lEylf.incrementaldom');
+  goog.module('bRuLM.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -314,7 +314,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'lEylf.render';
+    $render.soyTemplateName = 'bRuLM.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,20 +323,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var lEylf = function (_Component) {
-  _inherits(lEylf, _Component);
+var bRuLM = function (_Component) {
+  _inherits(bRuLM, _Component);
 
-  function lEylf() {
-    _classCallCheck(this, lEylf);
+  function bRuLM() {
+    _classCallCheck(this, bRuLM);
 
-    return _possibleConstructorReturn(this, (lEylf.__proto__ || Object.getPrototypeOf(lEylf)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bRuLM.__proto__ || Object.getPrototypeOf(bRuLM)).apply(this, arguments));
   }
 
-  return lEylf;
+  return bRuLM;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(lEylf, templates);
-exports.lEylf = lEylf;
+_metalSoy2.default.register(bRuLM, templates);
+exports.bRuLM = bRuLM;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

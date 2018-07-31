@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VcRyR = function (_Component) {
-  _inherits(VcRyR, _Component);
+var wcodS = function (_Component) {
+  _inherits(wcodS, _Component);
 
-  function VcRyR() {
-    _classCallCheck(this, VcRyR);
+  function wcodS() {
+    _classCallCheck(this, wcodS);
 
-    return _possibleConstructorReturn(this, (VcRyR.__proto__ || Object.getPrototypeOf(VcRyR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wcodS.__proto__ || Object.getPrototypeOf(wcodS)).apply(this, arguments));
   }
 
-  return VcRyR;
+  return wcodS;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VcRyR, _parallaxSoy2.default);
+_metalSoy2.default.register(wcodS, _parallaxSoy2.default);
 
-exports.default = VcRyR;
+exports.default = wcodS;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = VcRyR;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.VcRyR = undefined;
+exports.templates = exports.wcodS = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace VcRyR.
+   * @fileoverview Templates in namespace wcodS.
    * @public
    */
 
-  goog.module('VcRyR.incrementaldom');
+  goog.module('wcodS.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -181,7 +181,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'VcRyR.render';
+    $render.soyTemplateName = 'wcodS.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -190,20 +190,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var VcRyR = function (_Component) {
-  _inherits(VcRyR, _Component);
+var wcodS = function (_Component) {
+  _inherits(wcodS, _Component);
 
-  function VcRyR() {
-    _classCallCheck(this, VcRyR);
+  function wcodS() {
+    _classCallCheck(this, wcodS);
 
-    return _possibleConstructorReturn(this, (VcRyR.__proto__ || Object.getPrototypeOf(VcRyR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wcodS.__proto__ || Object.getPrototypeOf(wcodS)).apply(this, arguments));
   }
 
-  return VcRyR;
+  return wcodS;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(VcRyR, templates);
-exports.VcRyR = VcRyR;
+_metalSoy2.default.register(wcodS, templates);
+exports.wcodS = wcodS;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

@@ -273,17 +273,6 @@ goog.loadModule(function (exports) {
     ie_close('p');
     ie_close('section');
     ie_close('div');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('section', null, null, 'class', 'col-md-12 col-md-offset-2 center-feature');
-    ie_void('span', null, null, 'class', 'icon-16-circle-arrow');
-    ie_open('h3', null, null, 'class', 'who-we-are-title');
-    itext('We aren\'t another React');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'who-we-are-description feature-description');
-    itext('We aren\'t another framework and no, we don\'t do the same thing like react does. Our focus is to make the development of animations or transitions easier. We are working to integrate NevinhaJS with popular frontend frameworks like react, for you can use the library that you like and enjoy the maximum of our best motion animations.');
-    ie_close('p');
-    ie_close('section');
-    ie_close('div');
     ie_close('div');
     ie_close('div');
   }

@@ -49,13 +49,13 @@ export const animations = {
   ],
   "Fading Entrances": [
     {
-      name: "Fade In",
-      value: "fadeIn"
-    },
-    {
       name: "Fade Out",
       value: "fadeOut"
     },
+    {
+      name: "Fade In",
+      value: "fadeIn"
+    }
   ],
   Agrecives: [
     {

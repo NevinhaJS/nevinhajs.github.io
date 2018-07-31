@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DdGwk = function (_Component) {
-  _inherits(DdGwk, _Component);
+var XihwV = function (_Component) {
+  _inherits(XihwV, _Component);
 
-  function DdGwk() {
-    _classCallCheck(this, DdGwk);
+  function XihwV() {
+    _classCallCheck(this, XihwV);
 
-    return _possibleConstructorReturn(this, (DdGwk.__proto__ || Object.getPrototypeOf(DdGwk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XihwV.__proto__ || Object.getPrototypeOf(XihwV)).apply(this, arguments));
   }
 
-  return DdGwk;
+  return XihwV;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(DdGwk, _indexSoy2.default);
+_metalSoy2.default.register(XihwV, _indexSoy2.default);
 
-exports.default = DdGwk;
+exports.default = XihwV;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = DdGwk;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.DdGwk = undefined;
+exports.templates = exports.XihwV = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace DdGwk.
+   * @fileoverview Templates in namespace XihwV.
    * @public
    */
 
-  goog.module('DdGwk.incrementaldom');
+  goog.module('XihwV.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -221,7 +221,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'DdGwk.render';
+    $render.soyTemplateName = 'XihwV.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -230,20 +230,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var DdGwk = function (_Component) {
-  _inherits(DdGwk, _Component);
+var XihwV = function (_Component) {
+  _inherits(XihwV, _Component);
 
-  function DdGwk() {
-    _classCallCheck(this, DdGwk);
+  function XihwV() {
+    _classCallCheck(this, XihwV);
 
-    return _possibleConstructorReturn(this, (DdGwk.__proto__ || Object.getPrototypeOf(DdGwk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XihwV.__proto__ || Object.getPrototypeOf(XihwV)).apply(this, arguments));
   }
 
-  return DdGwk;
+  return XihwV;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(DdGwk, templates);
-exports.DdGwk = DdGwk;
+_metalSoy2.default.register(XihwV, templates);
+exports.XihwV = XihwV;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

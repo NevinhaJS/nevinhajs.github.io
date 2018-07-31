@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([2],{
 
-/***/ 281:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(282);
+var _secondStepSoy = __webpack_require__(292);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SJZkg = function (_Component) {
-  _inherits(SJZkg, _Component);
+var dJLeE = function (_Component) {
+  _inherits(dJLeE, _Component);
 
-  function SJZkg() {
-    _classCallCheck(this, SJZkg);
+  function dJLeE() {
+    _classCallCheck(this, dJLeE);
 
-    return _possibleConstructorReturn(this, (SJZkg.__proto__ || Object.getPrototypeOf(SJZkg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dJLeE.__proto__ || Object.getPrototypeOf(dJLeE)).apply(this, arguments));
   }
 
-  return SJZkg;
+  return dJLeE;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(SJZkg, _indexSoy2.default);
+_metalSoy2.default.register(dJLeE, _secondStepSoy2.default);
 
-exports.default = SJZkg;
+exports.default = dJLeE;
 
 /***/ }),
 
-/***/ 282:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = SJZkg;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.SJZkg = undefined;
+exports.templates = exports.dJLeE = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from second-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace SJZkg.
+   * @fileoverview Templates in namespace dJLeE.
    * @public
    */
 
-  goog.module('SJZkg.incrementaldom');
+  goog.module('dJLeE.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,12 +137,15 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -150,38 +153,28 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param488 = function param488() {
-      ie_open('article', null, null, 'id', '1');
+    var param548 = function param548() {
       ie_open('h2');
-      itext('What\'s Providers');
+      var dyn36 = opt_data.page.title;
+      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
       ie_close('h2');
+      $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Providers are like NevinhaJs motions, they bring some pre defined behaviors for your application, but instead of just change your component, they changes your component and append another structure HTML in your parent component.');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
-      itext('So far we have two providers implemented, but we\'re work to implement more, and in the near future, we\'ll separate the providers from the core of NevinhaJS in a especif module, in the case of you don\'t want to use providers in your application, you won\'t need load the provider code in the core of NevinhaJS library.');
+      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('h2');
-      itext('What\'s next?');
-      ie_close('h2');
-      ie_open('p');
-      itext('Now that you know the theory about providers, you can follow reading about our ');
-      ie_open('a', null, null, 'href', '/docs/providers/sticky.html');
-      itext('sticky');
-      ie_close('a');
-      itext(' provider and how to use providers in your NevinhaJs application.');
-      ie_close('p');
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param488 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param548 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'SJZkg.render';
+    $render.soyTemplateName = 'dJLeE.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -190,24 +183,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var SJZkg = function (_Component) {
-  _inherits(SJZkg, _Component);
+var dJLeE = function (_Component) {
+  _inherits(dJLeE, _Component);
 
-  function SJZkg() {
-    _classCallCheck(this, SJZkg);
+  function dJLeE() {
+    _classCallCheck(this, dJLeE);
 
-    return _possibleConstructorReturn(this, (SJZkg.__proto__ || Object.getPrototypeOf(SJZkg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dJLeE.__proto__ || Object.getPrototypeOf(dJLeE)).apply(this, arguments));
   }
 
-  return SJZkg;
+  return dJLeE;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(SJZkg, templates);
-exports.SJZkg = SJZkg;
+_metalSoy2.default.register(dJLeE, templates);
+exports.dJLeE = dJLeE;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[281]);
+},[291]);

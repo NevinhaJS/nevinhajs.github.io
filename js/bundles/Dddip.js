@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([4],{
 
-/***/ 291:
+/***/ 287:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _secondStepSoy = __webpack_require__(292);
+var _firstStepSoy = __webpack_require__(288);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WlXIW = function (_Component) {
-  _inherits(WlXIW, _Component);
+var Dddip = function (_Component) {
+  _inherits(Dddip, _Component);
 
-  function WlXIW() {
-    _classCallCheck(this, WlXIW);
+  function Dddip() {
+    _classCallCheck(this, Dddip);
 
-    return _possibleConstructorReturn(this, (WlXIW.__proto__ || Object.getPrototypeOf(WlXIW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Dddip.__proto__ || Object.getPrototypeOf(Dddip)).apply(this, arguments));
   }
 
-  return WlXIW;
+  return Dddip;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WlXIW, _secondStepSoy2.default);
+_metalSoy2.default.register(Dddip, _firstStepSoy2.default);
 
-exports.default = WlXIW;
+exports.default = Dddip;
 
 /***/ }),
 
-/***/ 292:
+/***/ 288:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = WlXIW;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.WlXIW = undefined;
+exports.templates = exports.Dddip = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from second-step.soy.
+  // This file was automatically generated from first-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace WlXIW.
+   * @fileoverview Templates in namespace Dddip.
    * @public
    */
 
-  goog.module('WlXIW.incrementaldom');
+  goog.module('Dddip.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param548 = function param548() {
+    var param527 = function param527() {
       ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      var dyn35 = opt_data.page.title;
+      if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
       ie_close('h2');
       $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
@@ -170,11 +170,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param548 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param527 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'WlXIW.render';
+    $render.soyTemplateName = 'Dddip.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -183,24 +183,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var WlXIW = function (_Component) {
-  _inherits(WlXIW, _Component);
+var Dddip = function (_Component) {
+  _inherits(Dddip, _Component);
 
-  function WlXIW() {
-    _classCallCheck(this, WlXIW);
+  function Dddip() {
+    _classCallCheck(this, Dddip);
 
-    return _possibleConstructorReturn(this, (WlXIW.__proto__ || Object.getPrototypeOf(WlXIW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Dddip.__proto__ || Object.getPrototypeOf(Dddip)).apply(this, arguments));
   }
 
-  return WlXIW;
+  return Dddip;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(WlXIW, templates);
-exports.WlXIW = WlXIW;
+_metalSoy2.default.register(Dddip, templates);
+exports.Dddip = Dddip;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[291]);
+},[287]);
