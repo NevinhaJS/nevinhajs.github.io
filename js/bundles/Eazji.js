@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([10],{
+webpackJsonppageComponent([11],{
 
-/***/ 277:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _motionsReferenceSoy = __webpack_require__(278);
+var _motionsReferenceSoy = __webpack_require__(280);
 
 var _motionsReferenceSoy2 = _interopRequireDefault(_motionsReferenceSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dhCTN = function (_Component) {
-  _inherits(dhCTN, _Component);
+var Eazji = function (_Component) {
+  _inherits(Eazji, _Component);
 
-  function dhCTN() {
-    _classCallCheck(this, dhCTN);
+  function Eazji() {
+    _classCallCheck(this, Eazji);
 
-    return _possibleConstructorReturn(this, (dhCTN.__proto__ || Object.getPrototypeOf(dhCTN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Eazji.__proto__ || Object.getPrototypeOf(Eazji)).apply(this, arguments));
   }
 
-  return dhCTN;
+  return Eazji;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dhCTN, _motionsReferenceSoy2.default);
+_metalSoy2.default.register(Eazji, _motionsReferenceSoy2.default);
 
-exports.default = dhCTN;
+exports.default = Eazji;
 
 /***/ }),
 
-/***/ 278:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = dhCTN;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.dhCTN = undefined;
+exports.templates = exports.Eazji = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace dhCTN.
+   * @fileoverview Templates in namespace Eazji.
    * @public
    */
 
-  goog.module('dhCTN.incrementaldom');
+  goog.module('Eazji.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -392,7 +392,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'dhCTN.render';
+    $render.soyTemplateName = 'Eazji.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -401,24 +401,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var dhCTN = function (_Component) {
-  _inherits(dhCTN, _Component);
+var Eazji = function (_Component) {
+  _inherits(Eazji, _Component);
 
-  function dhCTN() {
-    _classCallCheck(this, dhCTN);
+  function Eazji() {
+    _classCallCheck(this, Eazji);
 
-    return _possibleConstructorReturn(this, (dhCTN.__proto__ || Object.getPrototypeOf(dhCTN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Eazji.__proto__ || Object.getPrototypeOf(Eazji)).apply(this, arguments));
   }
 
-  return dhCTN;
+  return Eazji;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(dhCTN, templates);
-exports.dhCTN = dhCTN;
+_metalSoy2.default.register(Eazji, templates);
+exports.Eazji = Eazji;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[277]);
+},[279]);

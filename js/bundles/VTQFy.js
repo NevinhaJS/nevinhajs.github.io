@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([12],{
+webpackJsonppageComponent([13],{
 
-/***/ 279:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(280);
+var _indexSoy = __webpack_require__(276);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ofVVV = function (_Component) {
-  _inherits(ofVVV, _Component);
+var VTQFy = function (_Component) {
+  _inherits(VTQFy, _Component);
 
-  function ofVVV() {
-    _classCallCheck(this, ofVVV);
+  function VTQFy() {
+    _classCallCheck(this, VTQFy);
 
-    return _possibleConstructorReturn(this, (ofVVV.__proto__ || Object.getPrototypeOf(ofVVV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VTQFy.__proto__ || Object.getPrototypeOf(VTQFy)).apply(this, arguments));
   }
 
-  return ofVVV;
+  return VTQFy;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ofVVV, _indexSoy2.default);
+_metalSoy2.default.register(VTQFy, _indexSoy2.default);
 
-exports.default = ofVVV;
+exports.default = VTQFy;
 
 /***/ }),
 
-/***/ 280:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ofVVV;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ofVVV = undefined;
+exports.templates = exports.VTQFy = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ofVVV.
+   * @fileoverview Templates in namespace VTQFy.
    * @public
    */
 
-  goog.module('ofVVV.incrementaldom');
+  goog.module('VTQFy.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -314,7 +314,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ofVVV.render';
+    $render.soyTemplateName = 'VTQFy.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,24 +323,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ofVVV = function (_Component) {
-  _inherits(ofVVV, _Component);
+var VTQFy = function (_Component) {
+  _inherits(VTQFy, _Component);
 
-  function ofVVV() {
-    _classCallCheck(this, ofVVV);
+  function VTQFy() {
+    _classCallCheck(this, VTQFy);
 
-    return _possibleConstructorReturn(this, (ofVVV.__proto__ || Object.getPrototypeOf(ofVVV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VTQFy.__proto__ || Object.getPrototypeOf(VTQFy)).apply(this, arguments));
   }
 
-  return ofVVV;
+  return VTQFy;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ofVVV, templates);
-exports.ofVVV = ofVVV;
+_metalSoy2.default.register(VTQFy, templates);
+exports.VTQFy = VTQFy;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[279]);
+},[275]);

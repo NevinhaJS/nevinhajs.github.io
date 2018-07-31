@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4],{
+webpackJsonppageComponent([5],{
 
 /***/ 287:
 /***/ (function(module, exports, __webpack_require__) {
@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hYUKZ = function (_Component) {
-  _inherits(hYUKZ, _Component);
+var NmKRX = function (_Component) {
+  _inherits(NmKRX, _Component);
 
-  function hYUKZ() {
-    _classCallCheck(this, hYUKZ);
+  function NmKRX() {
+    _classCallCheck(this, NmKRX);
 
-    return _possibleConstructorReturn(this, (hYUKZ.__proto__ || Object.getPrototypeOf(hYUKZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NmKRX.__proto__ || Object.getPrototypeOf(NmKRX)).apply(this, arguments));
   }
 
-  return hYUKZ;
+  return NmKRX;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hYUKZ, _firstStepSoy2.default);
+_metalSoy2.default.register(NmKRX, _firstStepSoy2.default);
 
-exports.default = hYUKZ;
+exports.default = NmKRX;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = hYUKZ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.hYUKZ = undefined;
+exports.templates = exports.NmKRX = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace hYUKZ.
+   * @fileoverview Templates in namespace NmKRX.
    * @public
    */
 
-  goog.module('hYUKZ.incrementaldom');
+  goog.module('NmKRX.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -158,12 +158,24 @@ goog.loadModule(function (exports) {
       var dyn35 = opt_data.page.title;
       if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
       ie_close('h2');
-      $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
       ie_close('p');
+      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
+      ie_close('p');
+      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
+      ie_close('p');
+      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Finally, let\'s create our webpack.config file:');
+      ie_close('p');
+      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Now that you have completed the step 1, you can follow to the next section.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
@@ -174,7 +186,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'hYUKZ.render';
+    $render.soyTemplateName = 'NmKRX.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -183,20 +195,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var hYUKZ = function (_Component) {
-  _inherits(hYUKZ, _Component);
+var NmKRX = function (_Component) {
+  _inherits(NmKRX, _Component);
 
-  function hYUKZ() {
-    _classCallCheck(this, hYUKZ);
+  function NmKRX() {
+    _classCallCheck(this, NmKRX);
 
-    return _possibleConstructorReturn(this, (hYUKZ.__proto__ || Object.getPrototypeOf(hYUKZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NmKRX.__proto__ || Object.getPrototypeOf(NmKRX)).apply(this, arguments));
   }
 
-  return hYUKZ;
+  return NmKRX;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(hYUKZ, templates);
-exports.hYUKZ = hYUKZ;
+_metalSoy2.default.register(NmKRX, templates);
+exports.NmKRX = NmKRX;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
