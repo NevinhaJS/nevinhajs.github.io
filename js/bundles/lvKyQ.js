@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([16],{
+webpackJsonppageComponent([15],{
 
-/***/ 271:
+/***/ 269:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _creatingYourFisrtComponentSoy = __webpack_require__(272);
+var _creatingYourFisrtComponentSoy = __webpack_require__(270);
 
 var _creatingYourFisrtComponentSoy2 = _interopRequireDefault(_creatingYourFisrtComponentSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wjZFl = function (_Component) {
-  _inherits(wjZFl, _Component);
+var lvKyQ = function (_Component) {
+  _inherits(lvKyQ, _Component);
 
-  function wjZFl() {
-    _classCallCheck(this, wjZFl);
+  function lvKyQ() {
+    _classCallCheck(this, lvKyQ);
 
-    return _possibleConstructorReturn(this, (wjZFl.__proto__ || Object.getPrototypeOf(wjZFl)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lvKyQ.__proto__ || Object.getPrototypeOf(lvKyQ)).apply(this, arguments));
   }
 
-  return wjZFl;
+  return lvKyQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wjZFl, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(lvKyQ, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = wjZFl;
+exports.default = lvKyQ;
 
 /***/ }),
 
-/***/ 272:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = wjZFl;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.wjZFl = undefined;
+exports.templates = exports.lvKyQ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace wjZFl.
+   * @fileoverview Templates in namespace lvKyQ.
    * @public
    */
 
-  goog.module('wjZFl.incrementaldom');
+  goog.module('lvKyQ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param328 = function param328() {
+    var param409 = function param409() {
       ie_open('h6');
-      var dyn29 = opt_data.page.description;
-      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -309,11 +309,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param328 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param409 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'wjZFl.render';
+    $render.soyTemplateName = 'lvKyQ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,24 +322,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var wjZFl = function (_Component) {
-  _inherits(wjZFl, _Component);
+var lvKyQ = function (_Component) {
+  _inherits(lvKyQ, _Component);
 
-  function wjZFl() {
-    _classCallCheck(this, wjZFl);
+  function lvKyQ() {
+    _classCallCheck(this, lvKyQ);
 
-    return _possibleConstructorReturn(this, (wjZFl.__proto__ || Object.getPrototypeOf(wjZFl)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lvKyQ.__proto__ || Object.getPrototypeOf(lvKyQ)).apply(this, arguments));
   }
 
-  return wjZFl;
+  return lvKyQ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(wjZFl, templates);
-exports.wjZFl = wjZFl;
+_metalSoy2.default.register(lvKyQ, templates);
+exports.lvKyQ = lvKyQ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[271]);
+},[269]);

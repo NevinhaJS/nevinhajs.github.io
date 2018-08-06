@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([1],{
 
-/***/ 293:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _thirdStepSoy = __webpack_require__(294);
+var _thirdStepSoy = __webpack_require__(292);
 
 var _thirdStepSoy2 = _interopRequireDefault(_thirdStepSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var vhSJr = function (_Component) {
-  _inherits(vhSJr, _Component);
+var OOGqo = function (_Component) {
+  _inherits(OOGqo, _Component);
 
-  function vhSJr() {
-    _classCallCheck(this, vhSJr);
+  function OOGqo() {
+    _classCallCheck(this, OOGqo);
 
-    return _possibleConstructorReturn(this, (vhSJr.__proto__ || Object.getPrototypeOf(vhSJr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OOGqo.__proto__ || Object.getPrototypeOf(OOGqo)).apply(this, arguments));
   }
 
-  return vhSJr;
+  return OOGqo;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(vhSJr, _thirdStepSoy2.default);
+_metalSoy2.default.register(OOGqo, _thirdStepSoy2.default);
 
-exports.default = vhSJr;
+exports.default = OOGqo;
 
 /***/ }),
 
-/***/ 294:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = vhSJr;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.vhSJr = undefined;
+exports.templates = exports.OOGqo = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace vhSJr.
+   * @fileoverview Templates in namespace OOGqo.
    * @public
    */
 
-  goog.module('vhSJr.incrementaldom');
+  goog.module('OOGqo.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param584 = function param584() {
+    var param373 = function param373() {
       ie_open('h2');
-      var dyn37 = opt_data.page.title;
-      if (typeof dyn37 == 'function') dyn37();else if (dyn37 != null) itext(dyn37);
+      var dyn29 = opt_data.page.title;
+      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
       ie_close('h2');
       ie_open('p');
       itext('So far we have created a very basic app component, wich don\'t have any state and don\'t use any NevinhaJs animation. Now it\'s time to create a basic component, that will have an input field and a text wich will reflect the value of the input.');
@@ -220,6 +220,13 @@ goog.loadModule(function (exports) {
       ie_close('p');
       $templateAlias2({ code: 'lass App extends NevinhaComponent {\n    constructor() {\n        super();\n\n        this.handleKeyPress = this.handleKeyPress.bind(this);\n    }\n\n    handleKeyPress({target}) {\n        this.setState({\n            name: target.value\n        });\n    }\n\n    render() {\n        const {name} = this.state;\n\n        return (\n            <div enterLeftBounce>\n                <h1 className="hello">\n                    <p className="margin-hello">Hello! This is the new: </p>\n                    {name ? name : \'NevinhaJS\'}\n                </h1>\n\n                <FormComponent handleKeyPress={this.handleKeyPress} />\n            </div>\n        );\n    }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
+      itext('Notice that we update our state through the ');
+      ie_open('code');
+      itext('setState');
+      ie_close('code');
+      itext(' method. This method will trigger our diff internally, wich checks wich changes in the virtual DOM and updates them.');
+      ie_close('p');
+      ie_open('p');
       itext('For finishing our app, you can create a ');
       ie_open('code');
       itext('style.css');
@@ -255,11 +262,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param584 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param373 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'vhSJr.render';
+    $render.soyTemplateName = 'OOGqo.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -268,24 +275,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var vhSJr = function (_Component) {
-  _inherits(vhSJr, _Component);
+var OOGqo = function (_Component) {
+  _inherits(OOGqo, _Component);
 
-  function vhSJr() {
-    _classCallCheck(this, vhSJr);
+  function OOGqo() {
+    _classCallCheck(this, OOGqo);
 
-    return _possibleConstructorReturn(this, (vhSJr.__proto__ || Object.getPrototypeOf(vhSJr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OOGqo.__proto__ || Object.getPrototypeOf(OOGqo)).apply(this, arguments));
   }
 
-  return vhSJr;
+  return OOGqo;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(vhSJr, templates);
-exports.vhSJr = vhSJr;
+_metalSoy2.default.register(OOGqo, templates);
+exports.OOGqo = OOGqo;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[293]);
+},[291]);

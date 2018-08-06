@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([3],{
+webpackJsonppageComponent([2],{
 
-/***/ 291:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _secondStepSoy = __webpack_require__(292);
+var _secondStepSoy = __webpack_require__(290);
 
 var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tyjzG = function (_Component) {
-  _inherits(tyjzG, _Component);
+var HquAA = function (_Component) {
+  _inherits(HquAA, _Component);
 
-  function tyjzG() {
-    _classCallCheck(this, tyjzG);
+  function HquAA() {
+    _classCallCheck(this, HquAA);
 
-    return _possibleConstructorReturn(this, (tyjzG.__proto__ || Object.getPrototypeOf(tyjzG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HquAA.__proto__ || Object.getPrototypeOf(HquAA)).apply(this, arguments));
   }
 
-  return tyjzG;
+  return HquAA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tyjzG, _secondStepSoy2.default);
+_metalSoy2.default.register(HquAA, _secondStepSoy2.default);
 
-exports.default = tyjzG;
+exports.default = HquAA;
 
 /***/ }),
 
-/***/ 292:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tyjzG;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tyjzG = undefined;
+exports.templates = exports.HquAA = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tyjzG.
+   * @fileoverview Templates in namespace HquAA.
    * @public
    */
 
-  goog.module('tyjzG.incrementaldom');
+  goog.module('HquAA.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param563 = function param563() {
+    var param352 = function param352() {
       ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      var dyn28 = opt_data.page.title;
+      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
       ie_close('h2');
       ie_open('p');
       itext('Now that we have all of our environment configurated, we can follow creating our components. But before we do it, we need to create a folder called ');
@@ -235,11 +235,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param563 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param352 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tyjzG.render';
+    $render.soyTemplateName = 'HquAA.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -248,24 +248,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var tyjzG = function (_Component) {
-  _inherits(tyjzG, _Component);
+var HquAA = function (_Component) {
+  _inherits(HquAA, _Component);
 
-  function tyjzG() {
-    _classCallCheck(this, tyjzG);
+  function HquAA() {
+    _classCallCheck(this, HquAA);
 
-    return _possibleConstructorReturn(this, (tyjzG.__proto__ || Object.getPrototypeOf(tyjzG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HquAA.__proto__ || Object.getPrototypeOf(HquAA)).apply(this, arguments));
   }
 
-  return tyjzG;
+  return HquAA;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tyjzG, templates);
-exports.tyjzG = tyjzG;
+_metalSoy2.default.register(HquAA, templates);
+exports.HquAA = HquAA;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[291]);
+},[289]);

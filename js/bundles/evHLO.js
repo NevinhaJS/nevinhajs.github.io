@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([0],{
+webpackJsonppageComponent([4],{
 
-/***/ 269:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(270);
+var _firstStepSoy = __webpack_require__(286);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var updatesIndex = function (_Component) {
-  _inherits(updatesIndex, _Component);
+var evHLO = function (_Component) {
+  _inherits(evHLO, _Component);
 
-  function updatesIndex() {
-    _classCallCheck(this, updatesIndex);
+  function evHLO() {
+    _classCallCheck(this, evHLO);
 
-    return _possibleConstructorReturn(this, (updatesIndex.__proto__ || Object.getPrototypeOf(updatesIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (evHLO.__proto__ || Object.getPrototypeOf(evHLO)).apply(this, arguments));
   }
 
-  return updatesIndex;
+  return evHLO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(updatesIndex, _indexSoy2.default);
+_metalSoy2.default.register(evHLO, _firstStepSoy2.default);
 
-exports.default = updatesIndex;
+exports.default = evHLO;
 
 /***/ }),
 
-/***/ 270:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = updatesIndex;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.updatesIndex = undefined;
+exports.templates = exports.evHLO = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from first-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace updatesIndex.
+   * @fileoverview Templates in namespace evHLO.
    * @public
    */
 
-  goog.module('updatesIndex.incrementaldom');
+  goog.module('evHLO.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,9 +137,9 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricUpdates.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
@@ -154,53 +154,65 @@ goog.loadModule(function (exports) {
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
     var param316 = function param316() {
-      ie_open('div');
-      ie_open('header', null, null, 'class', 'header');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('h1', null, null, 'class', 'header-title');
+      ie_open('h2');
       var dyn27 = opt_data.page.title;
       if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
-      ie_close('h1');
-      ie_open('h2', null, null, 'class', 'header-subtitle');
-      var dyn28 = opt_data.page.description;
-      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
       ie_close('h2');
-      ie_close('div');
-      ie_close('header');
-      $templateAlias2({ updates: opt_data.page.updates }, null, opt_ijData);
-      ie_close('div');
+      ie_open('p');
+      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
+      ie_close('p');
+      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
+      ie_close('p');
+      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
+      ie_close('p');
+      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Finally, let\'s create our webpack.config file:');
+      ie_close('p');
+      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Now that you have completed the step 1, you can follow to the next section.');
+      ie_close('p');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
     };
     $templateAlias1(soy.$$assignDefaults({ content: param316 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'updatesIndex.render';
+    $render.soyTemplateName = 'evHLO.render';
   }
 
-  exports.render.params = ["page"];
-  exports.render.types = { "page": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var updatesIndex = function (_Component) {
-  _inherits(updatesIndex, _Component);
+var evHLO = function (_Component) {
+  _inherits(evHLO, _Component);
 
-  function updatesIndex() {
-    _classCallCheck(this, updatesIndex);
+  function evHLO() {
+    _classCallCheck(this, evHLO);
 
-    return _possibleConstructorReturn(this, (updatesIndex.__proto__ || Object.getPrototypeOf(updatesIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (evHLO.__proto__ || Object.getPrototypeOf(evHLO)).apply(this, arguments));
   }
 
-  return updatesIndex;
+  return evHLO;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(updatesIndex, templates);
-exports.updatesIndex = updatesIndex;
+_metalSoy2.default.register(evHLO, templates);
+exports.evHLO = evHLO;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[269]);
+},[285]);

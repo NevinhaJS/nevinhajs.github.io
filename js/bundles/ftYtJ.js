@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([13],{
+webpackJsonppageComponent([12],{
 
-/***/ 275:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(276);
+var _indexSoy = __webpack_require__(274);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VTQFy = function (_Component) {
-  _inherits(VTQFy, _Component);
+var ftYtJ = function (_Component) {
+  _inherits(ftYtJ, _Component);
 
-  function VTQFy() {
-    _classCallCheck(this, VTQFy);
+  function ftYtJ() {
+    _classCallCheck(this, ftYtJ);
 
-    return _possibleConstructorReturn(this, (VTQFy.__proto__ || Object.getPrototypeOf(VTQFy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ftYtJ.__proto__ || Object.getPrototypeOf(ftYtJ)).apply(this, arguments));
   }
 
-  return VTQFy;
+  return ftYtJ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VTQFy, _indexSoy2.default);
+_metalSoy2.default.register(ftYtJ, _indexSoy2.default);
 
-exports.default = VTQFy;
+exports.default = ftYtJ;
 
 /***/ }),
 
-/***/ 276:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = VTQFy;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.VTQFy = undefined;
+exports.templates = exports.ftYtJ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace VTQFy.
+   * @fileoverview Templates in namespace ftYtJ.
    * @public
    */
 
-  goog.module('VTQFy.incrementaldom');
+  goog.module('ftYtJ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param400 = function param400() {
+    var param481 = function param481() {
       ie_open('h6');
-      var dyn31 = opt_data.page.description;
-      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -233,7 +233,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('If you needs to have a state and props in your child component, you can use a state-full component, like bellow:');
       ie_close('p');
-      $templateAlias2({ code: 'class WelcomeMessage extends NevinhaComponent {\n  constructor(props, children){\n    super(props, children);\n\n    this.state.someState = \'NevinhaJS\';\n  }\n\n  render() {\n    const {userName} = this.props;\n    const {someState} = this.state;\n\n    return (\n      <div>\n        <p>\n          Welcome MR. {userName}\n        </p>\n\n        <p>My state is: {someState}</p>\n\n        <p>These are my children:</p>\n\n        <br />\n\n        {this.children}\n      </div>\n    )\n  }\n}\n\nclass MyCompnoent extends NevinhaComponent {\n  render() {\n    return (\n      <div scaleBounce>\n        <p>This component bellow shows a welcome message:</p>\n\n        <WelcomeMessage userName="Cl\xF3vis">\n          <p>Github User: clovisdasilvaneto</p>\n          <p>Age: 23</p>\n        </WelcomeMessage>\n      </div>\n    );\n  }\n}', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'class WelcomeMessage extends NevinhaComponent {\n  constructor(props, context){\n    super(props, context);\n\n    this.state.someState = \'NevinhaJS\';\n  }\n\n  render() {\n    const {userName} = this.props;\n    const {someState} = this.state;\n\n    return (\n      <div>\n        <p>\n          Welcome MR. {userName}\n        </p>\n\n        <p>My state is: {someState}</p>\n\n        <p>These are my children:</p>\n\n        <br />\n\n        {this.children}\n      </div>\n    )\n  }\n}\n\nclass MyCompnoent extends NevinhaComponent {\n  render() {\n    return (\n      <div scaleBounce>\n        <p>This component bellow shows a welcome message:</p>\n\n        <WelcomeMessage userName="Cl\xF3vis">\n          <p>Github User: clovisdasilvaneto</p>\n          <p>Age: 23</p>\n        </WelcomeMessage>\n      </div>\n    );\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
       ie_open('em');
       ie_open('strong');
@@ -245,7 +245,7 @@ goog.loadModule(function (exports) {
       ie_close('code');
       itext(' and the ');
       ie_open('code');
-      itext('children');
+      itext('context');
       ie_close('code');
       itext(' as paramiters of your ');
       ie_open('code');
@@ -310,11 +310,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param400 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param481 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'VTQFy.render';
+    $render.soyTemplateName = 'ftYtJ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,24 +323,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var VTQFy = function (_Component) {
-  _inherits(VTQFy, _Component);
+var ftYtJ = function (_Component) {
+  _inherits(ftYtJ, _Component);
 
-  function VTQFy() {
-    _classCallCheck(this, VTQFy);
+  function ftYtJ() {
+    _classCallCheck(this, ftYtJ);
 
-    return _possibleConstructorReturn(this, (VTQFy.__proto__ || Object.getPrototypeOf(VTQFy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ftYtJ.__proto__ || Object.getPrototypeOf(ftYtJ)).apply(this, arguments));
   }
 
-  return VTQFy;
+  return ftYtJ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(VTQFy, templates);
-exports.VTQFy = VTQFy;
+_metalSoy2.default.register(ftYtJ, templates);
+exports.ftYtJ = ftYtJ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[275]);
+},[273]);

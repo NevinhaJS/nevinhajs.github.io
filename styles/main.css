@@ -12139,17 +12139,17 @@ li a:not([class]) {
 .about {
   position: relative; }
 
-#nevinha-app .live-demo .nevinha-app-buttons {
-  width: 60%;
-  padding-top: 3rem; }
-
-#nevinha-app .live-demo figure {
-  width: 40%;
-  float: right; }
-
-#nevinha-app .live-demo .nevinha-app-logo {
-  max-width: 400px;
-  width: 100%; }
+#nevinha-app .live-demo {
+  perspective: 1000px; }
+  #nevinha-app .live-demo .nevinha-app-buttons {
+    width: 60%;
+    padding-top: 3rem; }
+  #nevinha-app .live-demo figure {
+    width: 40%;
+    float: right; }
+  #nevinha-app .live-demo .nevinha-app-logo {
+    max-width: 400px;
+    width: 100%; }
 
 #nevinha-app button {
   border: solid 2px #4285F4;
