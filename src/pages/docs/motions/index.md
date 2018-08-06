@@ -67,8 +67,8 @@ The basic way for using it, is just calling the `setAnimation` method with your 
 
 ```javascript
 class SomeComponent extends NevinhaComponent {
-  constructor(props, children){
-    super(props, children);
+  constructor(props, context){
+    super(props, context);
     this.handleClick = this.handleClick.bind(this);
   }
 

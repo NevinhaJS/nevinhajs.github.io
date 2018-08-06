@@ -98,8 +98,8 @@ If you needs to have a state and props in your child component, you can use a st
 
 ```javascript
 class WelcomeMessage extends NevinhaComponent {
-  constructor(props, children){
-    super(props, children);
+  constructor(props, context){
+    super(props, context);
 
     this.state.someState = 'NevinhaJS';
   }
@@ -141,7 +141,7 @@ class MyCompnoent extends NevinhaComponent {
   }
 }
 ```
-***ps**: You don't need to call the constructor method to use props or children in your state-full component, but if you call the constructor method to initialize something like a state property, you will need to parse the `props` and the `children` as paramiters of your `super()` call.*
+***ps**: You don't need to call the constructor method to use props or children in your state-full component, but if you call the constructor method to initialize something like a state property, you will need to parse the `props` and the `context` as paramiters of your `super()` call.*
 
 #### Using refs
 Some times we want to manipulate some rendered node in our component without needs to select it by using querySelector or some related thing. In NevinhaJs it's possible using the `ref` attribute:

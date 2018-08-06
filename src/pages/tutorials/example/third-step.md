@@ -95,6 +95,8 @@ lass App extends NevinhaComponent {
 }
 ```
 
+Notice that we update our state through the `setState` method. This method will trigger our diff internally, wich checks wich changes in the virtual DOM and updates them.
+
 For finishing our app, you can create a `style.css` file in the `public` folder, just to stylize your app:
 
 ```css

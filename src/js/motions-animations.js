@@ -1,9 +1,9 @@
-import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
+import {NevinhaComponent, NevinhaDOM} from 'nevinha-js';
 import {animations, isSafari} from './constants';
 
 class MotionsAnimations extends NevinhaComponent {
-  constructor(props, children){
-    super(props, children);
+  constructor(props, context){
+    super(props, context);
 
     this.state.animations = animations;
     this.handleAnimationClick = this.handleAnimationClick.bind(this);

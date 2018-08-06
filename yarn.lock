@@ -5771,9 +5771,9 @@ neo-async@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee"
 
-nevinha-js@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/nevinha-js/-/nevinha-js-0.5.5.tgz#dfe182226e955368215a6ccad5aa4c025d13ca0a"
+nevinha-js@^0.5.8:
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/nevinha-js/-/nevinha-js-0.5.8.tgz#5f1e69b77958b3cbb1ef9ed2713af5511d178a53"
   dependencies:
     babel-plugin-external-helpers "^6.22.0"
     babel-plugin-transform-object-rest-spread "^6.26.0"

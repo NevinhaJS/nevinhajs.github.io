@@ -6,6 +6,8 @@ $c: '#nevinha-app';
 
 #{$c} {
   .live-demo {
+    perspective: 1000px;
+
     .nevinha-app-buttons {
       width: 60%;
       padding-top: 3rem;

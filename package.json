@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "clipboard": "^2.0.1",
-    "nevinha-js": "^0.5.5"
+    "nevinha-js": "^0.5.8"
   }
 }

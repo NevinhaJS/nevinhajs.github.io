@@ -66,6 +66,16 @@ export const animations = {
       name: "Bomb",
       value: "bomb"
     },
+  ],
+  Perspectives: [
+    {
+      name: "Flip Left Bounce",
+      value: "flipLeftBounce"
+    },
+    {
+      name: "Flip Right Bounce",
+      value: "flipRightBounce"
+    },
   ]
 }
 
