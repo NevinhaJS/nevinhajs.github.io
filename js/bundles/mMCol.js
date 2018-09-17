@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([8],{
+webpackJsonppageComponent([4],{
 
-/***/ 277:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _parallaxSoy = __webpack_require__(278);
+var _firstStepSoy = __webpack_require__(286);
 
-var _parallaxSoy2 = _interopRequireDefault(_parallaxSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VxgCY = function (_Component) {
-  _inherits(VxgCY, _Component);
+var mMCol = function (_Component) {
+  _inherits(mMCol, _Component);
 
-  function VxgCY() {
-    _classCallCheck(this, VxgCY);
+  function mMCol() {
+    _classCallCheck(this, mMCol);
 
-    return _possibleConstructorReturn(this, (VxgCY.__proto__ || Object.getPrototypeOf(VxgCY)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mMCol.__proto__ || Object.getPrototypeOf(mMCol)).apply(this, arguments));
   }
 
-  return VxgCY;
+  return mMCol;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VxgCY, _parallaxSoy2.default);
+_metalSoy2.default.register(mMCol, _firstStepSoy2.default);
 
-exports.default = VxgCY;
+exports.default = mMCol;
 
 /***/ }),
 
-/***/ 278:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = VxgCY;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.VxgCY = undefined;
+exports.templates = exports.mMCol = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from parallax.soy.
+  // This file was automatically generated from first-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace VxgCY.
+   * @fileoverview Templates in namespace mMCol.
    * @public
    */
 
-  goog.module('VxgCY.incrementaldom');
+  goog.module('mMCol.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,12 +137,15 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -150,38 +153,40 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param486 = function param486() {
-      ie_open('article', null, null, 'id', '1');
+    var param516 = function param516() {
       ie_open('h2');
-      itext('What\'s Providers');
+      var dyn33 = opt_data.page.title;
+      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
       ie_close('h2');
       ie_open('p');
-      itext('Providers are like NevinhaJs motions, they bring some pre defined behaviors for your application, but instead of just change your component, they changes your component and append another structure HTML in your parent component.');
+      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
       ie_close('p');
+      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('So far we have two providers implemented, but we\'re work to implement more, and in the near future, we\'ll separate the providers from the core of NevinhaJS in a especif module, in the case of you don\'t want to use providers in your application, you won\'t need load the provider code in the core of NevinhaJS library.');
+      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
       ie_close('p');
-      ie_open('h2');
-      itext('What\'s next?');
-      ie_close('h2');
+      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Now that you know the theory about providers, you can follow reading about our ');
-      ie_open('a', null, null, 'href', '/docs/providers/sticky.html');
-      itext('sticky');
-      ie_close('a');
-      itext(' provider and how to use providers in your NevinhaJs application.');
+      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
       ie_close('p');
-      ie_close('article');
+      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Finally, let\'s create our webpack.config file:');
+      ie_close('p');
+      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Now that you have completed the step 1, you can follow to the next section.');
+      ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param486 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param516 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'VxgCY.render';
+    $render.soyTemplateName = 'mMCol.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -190,24 +195,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var VxgCY = function (_Component) {
-  _inherits(VxgCY, _Component);
+var mMCol = function (_Component) {
+  _inherits(mMCol, _Component);
 
-  function VxgCY() {
-    _classCallCheck(this, VxgCY);
+  function mMCol() {
+    _classCallCheck(this, mMCol);
 
-    return _possibleConstructorReturn(this, (VxgCY.__proto__ || Object.getPrototypeOf(VxgCY)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mMCol.__proto__ || Object.getPrototypeOf(mMCol)).apply(this, arguments));
   }
 
-  return VxgCY;
+  return mMCol;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(VxgCY, templates);
-exports.VxgCY = VxgCY;
+_metalSoy2.default.register(mMCol, templates);
+exports.mMCol = mMCol;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[277]);
+},[285]);

@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OJjih = function (_Component) {
-  _inherits(OJjih, _Component);
+var nVzIE = function (_Component) {
+  _inherits(nVzIE, _Component);
 
-  function OJjih() {
-    _classCallCheck(this, OJjih);
+  function nVzIE() {
+    _classCallCheck(this, nVzIE);
 
-    return _possibleConstructorReturn(this, (OJjih.__proto__ || Object.getPrototypeOf(OJjih)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nVzIE.__proto__ || Object.getPrototypeOf(nVzIE)).apply(this, arguments));
   }
 
-  return OJjih;
+  return nVzIE;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(OJjih, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(nVzIE, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = OJjih;
+exports.default = nVzIE;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = OJjih;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.OJjih = undefined;
+exports.templates = exports.nVzIE = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace OJjih.
+   * @fileoverview Templates in namespace nVzIE.
    * @public
    */
 
-  goog.module('OJjih.incrementaldom');
+  goog.module('nVzIE.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -313,7 +313,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'OJjih.render';
+    $render.soyTemplateName = 'nVzIE.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,20 +322,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var OJjih = function (_Component) {
-  _inherits(OJjih, _Component);
+var nVzIE = function (_Component) {
+  _inherits(nVzIE, _Component);
 
-  function OJjih() {
-    _classCallCheck(this, OJjih);
+  function nVzIE() {
+    _classCallCheck(this, nVzIE);
 
-    return _possibleConstructorReturn(this, (OJjih.__proto__ || Object.getPrototypeOf(OJjih)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nVzIE.__proto__ || Object.getPrototypeOf(nVzIE)).apply(this, arguments));
   }
 
-  return OJjih;
+  return nVzIE;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(OJjih, templates);
-exports.OJjih = OJjih;
+_metalSoy2.default.register(nVzIE, templates);
+exports.nVzIE = nVzIE;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

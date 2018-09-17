@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ISfWI = function (_Component) {
-  _inherits(ISfWI, _Component);
+var gGdGc = function (_Component) {
+  _inherits(gGdGc, _Component);
 
-  function ISfWI() {
-    _classCallCheck(this, ISfWI);
+  function gGdGc() {
+    _classCallCheck(this, gGdGc);
 
-    return _possibleConstructorReturn(this, (ISfWI.__proto__ || Object.getPrototypeOf(ISfWI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gGdGc.__proto__ || Object.getPrototypeOf(gGdGc)).apply(this, arguments));
   }
 
-  return ISfWI;
+  return gGdGc;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ISfWI, _indexSoy2.default);
+_metalSoy2.default.register(gGdGc, _indexSoy2.default);
 
-exports.default = ISfWI;
+exports.default = gGdGc;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = ISfWI;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ISfWI = undefined;
+exports.templates = exports.gGdGc = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ISfWI.
+   * @fileoverview Templates in namespace gGdGc.
    * @public
    */
 
-  goog.module('ISfWI.incrementaldom');
+  goog.module('gGdGc.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -314,7 +314,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ISfWI.render';
+    $render.soyTemplateName = 'gGdGc.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -323,20 +323,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ISfWI = function (_Component) {
-  _inherits(ISfWI, _Component);
+var gGdGc = function (_Component) {
+  _inherits(gGdGc, _Component);
 
-  function ISfWI() {
-    _classCallCheck(this, ISfWI);
+  function gGdGc() {
+    _classCallCheck(this, gGdGc);
 
-    return _possibleConstructorReturn(this, (ISfWI.__proto__ || Object.getPrototypeOf(ISfWI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gGdGc.__proto__ || Object.getPrototypeOf(gGdGc)).apply(this, arguments));
   }
 
-  return ISfWI;
+  return gGdGc;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ISfWI, templates);
-exports.ISfWI = ISfWI;
+_metalSoy2.default.register(gGdGc, templates);
+exports.gGdGc = gGdGc;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

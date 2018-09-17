@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hwVLM = function (_Component) {
-  _inherits(hwVLM, _Component);
+var wKoDu = function (_Component) {
+  _inherits(wKoDu, _Component);
 
-  function hwVLM() {
-    _classCallCheck(this, hwVLM);
+  function wKoDu() {
+    _classCallCheck(this, wKoDu);
 
-    return _possibleConstructorReturn(this, (hwVLM.__proto__ || Object.getPrototypeOf(hwVLM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wKoDu.__proto__ || Object.getPrototypeOf(wKoDu)).apply(this, arguments));
   }
 
-  return hwVLM;
+  return wKoDu;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hwVLM, _thirdStepSoy2.default);
+_metalSoy2.default.register(wKoDu, _thirdStepSoy2.default);
 
-exports.default = hwVLM;
+exports.default = wKoDu;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = hwVLM;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.hwVLM = undefined;
+exports.templates = exports.wKoDu = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace hwVLM.
+   * @fileoverview Templates in namespace wKoDu.
    * @public
    */
 
-  goog.module('hwVLM.incrementaldom');
+  goog.module('wKoDu.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -266,7 +266,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'hwVLM.render';
+    $render.soyTemplateName = 'wKoDu.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -275,20 +275,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var hwVLM = function (_Component) {
-  _inherits(hwVLM, _Component);
+var wKoDu = function (_Component) {
+  _inherits(wKoDu, _Component);
 
-  function hwVLM() {
-    _classCallCheck(this, hwVLM);
+  function wKoDu() {
+    _classCallCheck(this, wKoDu);
 
-    return _possibleConstructorReturn(this, (hwVLM.__proto__ || Object.getPrototypeOf(hwVLM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wKoDu.__proto__ || Object.getPrototypeOf(wKoDu)).apply(this, arguments));
   }
 
-  return hwVLM;
+  return wKoDu;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(hwVLM, templates);
-exports.hwVLM = hwVLM;
+_metalSoy2.default.register(wKoDu, templates);
+exports.wKoDu = wKoDu;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

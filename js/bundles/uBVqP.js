@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([4],{
+webpackJsonppageComponent([14],{
 
-/***/ 285:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _firstStepSoy = __webpack_require__(286);
+var _indexSoy = __webpack_require__(272);
 
-var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OzLvQ = function (_Component) {
-  _inherits(OzLvQ, _Component);
+var uBVqP = function (_Component) {
+  _inherits(uBVqP, _Component);
 
-  function OzLvQ() {
-    _classCallCheck(this, OzLvQ);
+  function uBVqP() {
+    _classCallCheck(this, uBVqP);
 
-    return _possibleConstructorReturn(this, (OzLvQ.__proto__ || Object.getPrototypeOf(OzLvQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (uBVqP.__proto__ || Object.getPrototypeOf(uBVqP)).apply(this, arguments));
   }
 
-  return OzLvQ;
+  return uBVqP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(OzLvQ, _firstStepSoy2.default);
+_metalSoy2.default.register(uBVqP, _indexSoy2.default);
 
-exports.default = OzLvQ;
+exports.default = uBVqP;
 
 /***/ }),
 
-/***/ 286:
+/***/ 272:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = OzLvQ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.OzLvQ = undefined;
+exports.templates = exports.uBVqP = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from first-step.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace OzLvQ.
+   * @fileoverview Templates in namespace uBVqP.
    * @public
    */
 
-  goog.module('OzLvQ.incrementaldom');
+  goog.module('uBVqP.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,40 +152,76 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param516 = function param516() {
+    var param358 = function param358() {
       ie_open('h2');
-      var dyn33 = opt_data.page.title;
-      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
+      itext('What\'s NevinhaJs');
       ie_close('h2');
       ie_open('p');
-      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
+      itext('NevinhaJs is an inteligent javascript framework that helps developers to create components and motions in a very simple and fast way.');
       ie_close('p');
-      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
+      var dyn28 = opt_data.page.description;
+      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
       ie_close('p');
-      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
+      ie_open('article', null, null, 'id', '1');
+      ie_open('div', null, null, 'class', 'guide-btn-cta');
+      ie_open('a', null, null, 'class', 'btn btn-accent btn-lg', 'href', 'http://github.com.br/nevinhajs/boirlaplate', 'target', '_blank');
+      ie_void('span', null, null, 'class', 'icon-16-external download-btn');
+      itext('NevinhaJS Boirlaplate');
+      ie_close('a');
+      ie_close('div');
       ie_open('p');
-      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
+      ie_open('br');
+      ie_close('br');
       ie_close('p');
-      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('h2');
+      itext('Configuring');
+      ie_close('h2');
       ie_open('p');
-      itext('Finally, let\'s create our webpack.config file:');
+      itext('Assuming that you already have your ES6 environment configured with babel (if you dont know how to configure a babel environment, you can download our ');
+      ie_open('a', null, null, 'href', 'http://github.com.br/nevinhajs/boirlaplate');
+      itext('NevinhaJS Boirlaplate');
+      ie_close('a');
+      itext(' \u2B06), you just need to add in your package.json the nevinhajs through the command:');
       ie_close('p');
-      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'yarn add nevinha-js', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Now that you have completed the step 1, you can follow to the next section.');
+      itext('if you don\'t have yarn, you can use the npm command:');
       ie_close('p');
+      $templateAlias2({ code: 'npm install nevinha-js', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('We use JSX syntaxe by default, so you\'ll need to add the ');
+      ie_open('code');
+      itext('transform-react-jsx');
+      ie_close('code');
+      itext(' babel plugin to convert the JSX to javascript:');
+      ie_close('p');
+      $templateAlias2({ code: 'yarn add -D babel-plugin-transform-react-jsx', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('After that in your .babelrc file, you have to put the follow lines:');
+      ie_close('p');
+      $templateAlias2({ code: '"plugins": [\n  [\n  "transform-react-jsx",\n    { "pragma": "NevinhaDOM" }\n  ]\n]', mode: 'javascript' }, null, opt_ijData);
+      ie_open('h3');
+      itext('What\'s next?');
+      ie_close('h3');
+      ie_open('p');
+      itext('Now you know how to setup NevinhaJs in your project, let\'s see how to ');
+      ie_open('a', null, null, 'href', '/docs/basics/creating-your-fisrt-component.html');
+      itext('create our first component');
+      ie_close('a');
+      itext('.');
+      ie_close('p');
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param516 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param358 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'OzLvQ.render';
+    $render.soyTemplateName = 'uBVqP.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -195,24 +230,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var OzLvQ = function (_Component) {
-  _inherits(OzLvQ, _Component);
+var uBVqP = function (_Component) {
+  _inherits(uBVqP, _Component);
 
-  function OzLvQ() {
-    _classCallCheck(this, OzLvQ);
+  function uBVqP() {
+    _classCallCheck(this, uBVqP);
 
-    return _possibleConstructorReturn(this, (OzLvQ.__proto__ || Object.getPrototypeOf(OzLvQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (uBVqP.__proto__ || Object.getPrototypeOf(uBVqP)).apply(this, arguments));
   }
 
-  return OzLvQ;
+  return uBVqP;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(OzLvQ, templates);
-exports.OzLvQ = OzLvQ;
+_metalSoy2.default.register(uBVqP, templates);
+exports.uBVqP = uBVqP;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[285]);
+},[271]);

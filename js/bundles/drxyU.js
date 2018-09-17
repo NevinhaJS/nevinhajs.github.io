@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([14],{
+webpackJsonppageComponent([9],{
 
-/***/ 271:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(272);
+var _indexSoy = __webpack_require__(280);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var bkoWm = function (_Component) {
-  _inherits(bkoWm, _Component);
+var drxyU = function (_Component) {
+  _inherits(drxyU, _Component);
 
-  function bkoWm() {
-    _classCallCheck(this, bkoWm);
+  function drxyU() {
+    _classCallCheck(this, drxyU);
 
-    return _possibleConstructorReturn(this, (bkoWm.__proto__ || Object.getPrototypeOf(bkoWm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (drxyU.__proto__ || Object.getPrototypeOf(drxyU)).apply(this, arguments));
   }
 
-  return bkoWm;
+  return drxyU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(bkoWm, _indexSoy2.default);
+_metalSoy2.default.register(drxyU, _indexSoy2.default);
 
-exports.default = bkoWm;
+exports.default = drxyU;
 
 /***/ }),
 
-/***/ 272:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = bkoWm;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.bkoWm = undefined;
+exports.templates = exports.drxyU = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace bkoWm.
+   * @fileoverview Templates in namespace drxyU.
    * @public
    */
 
-  goog.module('bkoWm.incrementaldom');
+  goog.module('drxyU.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,8 +137,6 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
   var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
@@ -152,64 +150,26 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param358 = function param358() {
-      ie_open('h2');
-      itext('What\'s NevinhaJs');
-      ie_close('h2');
-      ie_open('p');
-      itext('NevinhaJs is an inteligent javascript framework that helps developers to create components and motions in a very simple and fast way.');
-      ie_close('p');
-      ie_open('p');
-      var dyn28 = opt_data.page.description;
-      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
-      ie_close('p');
+    var param477 = function param477() {
       ie_open('article', null, null, 'id', '1');
-      ie_open('div', null, null, 'class', 'guide-btn-cta');
-      ie_open('a', null, null, 'class', 'btn btn-accent btn-lg', 'href', 'http://github.com.br/nevinhajs/boirlaplate', 'target', '_blank');
-      ie_void('span', null, null, 'class', 'icon-16-external download-btn');
-      itext('NevinhaJS Boirlaplate');
-      ie_close('a');
-      ie_close('div');
-      ie_open('p');
-      ie_open('br');
-      ie_close('br');
-      ie_close('p');
       ie_open('h2');
-      itext('Configuring');
+      itext('What\'s Providers');
       ie_close('h2');
       ie_open('p');
-      itext('Assuming that you already have your ES6 environment configured with babel (if you dont know how to configure a babel environment, you can download our ');
-      ie_open('a', null, null, 'href', 'http://github.com.br/nevinhajs/boirlaplate');
-      itext('NevinhaJS Boirlaplate');
-      ie_close('a');
-      itext(' \u2B06), you just need to add in your package.json the nevinhajs through the command:');
+      itext('Providers are like NevinhaJs motions, they bring some pre defined behaviors for your application, but instead of just change your component, they changes your component and append another structure HTML in your parent component.');
       ie_close('p');
-      $templateAlias2({ code: 'yarn add nevinha-js', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('if you don\'t have yarn, you can use the npm command:');
+      itext('So far we have two providers implemented, but we\'re work to implement more, and in the near future, we\'ll separate the providers from the core of NevinhaJS in a especif module, in the case of you don\'t want to use providers in your application, you won\'t need load the provider code in the core of NevinhaJS library.');
       ie_close('p');
-      $templateAlias2({ code: 'npm install nevinha-js', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('We use JSX syntaxe by default, so you\'ll need to add the ');
-      ie_open('code');
-      itext('transform-react-jsx');
-      ie_close('code');
-      itext(' babel plugin to convert the JSX to javascript:');
-      ie_close('p');
-      $templateAlias2({ code: 'yarn add -D babel-plugin-transform-react-jsx', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('After that in your .babelrc file, you have to put the follow lines:');
-      ie_close('p');
-      $templateAlias2({ code: '"plugins": [\n  [\n  "transform-react-jsx",\n    { "pragma": "NevinhaDOM" }\n  ]\n]', mode: 'javascript' }, null, opt_ijData);
-      ie_open('h3');
+      ie_open('h2');
       itext('What\'s next?');
-      ie_close('h3');
+      ie_close('h2');
       ie_open('p');
-      itext('Now you know how to setup NevinhaJs in your project, let\'s see how to ');
-      ie_open('a', null, null, 'href', '/docs/basics/creating-your-fisrt-component.html');
-      itext('create our first component');
+      itext('Now that you know the theory about providers, you can follow reading about our ');
+      ie_open('a', null, null, 'href', '/docs/providers/sticky.html');
+      itext('sticky');
       ie_close('a');
-      itext('.');
+      itext(' provider and how to use providers in your NevinhaJs application.');
       ie_close('p');
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
@@ -217,11 +177,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param358 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param477 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'bkoWm.render';
+    $render.soyTemplateName = 'drxyU.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -230,24 +190,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var bkoWm = function (_Component) {
-  _inherits(bkoWm, _Component);
+var drxyU = function (_Component) {
+  _inherits(drxyU, _Component);
 
-  function bkoWm() {
-    _classCallCheck(this, bkoWm);
+  function drxyU() {
+    _classCallCheck(this, drxyU);
 
-    return _possibleConstructorReturn(this, (bkoWm.__proto__ || Object.getPrototypeOf(bkoWm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (drxyU.__proto__ || Object.getPrototypeOf(drxyU)).apply(this, arguments));
   }
 
-  return bkoWm;
+  return drxyU;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(bkoWm, templates);
-exports.bkoWm = bkoWm;
+_metalSoy2.default.register(drxyU, templates);
+exports.drxyU = drxyU;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[271]);
+},[279]);
