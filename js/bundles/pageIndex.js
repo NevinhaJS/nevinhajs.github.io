@@ -153,7 +153,8 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param161 = function param161() {
+    ie_open('div');
+    var param162 = function param162() {
       $header(opt_data, null, opt_ijData);
       $why(null, null, opt_ijData);
       $features(null, null, opt_ijData);
@@ -161,8 +162,9 @@ goog.loadModule(function (exports) {
       $examples(null, null, opt_ijData);
       $templateAlias2(opt_data, null, opt_ijData);
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param161 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param162 }, opt_data), null, opt_ijData);
     ie_void('script', null, null, 'src', './lib/bundle.js');
+    ie_close('div');
   }
   exports.render = $render;
   if (goog.DEBUG) {

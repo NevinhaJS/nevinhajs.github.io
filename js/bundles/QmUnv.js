@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([4],{
+webpackJsonppageComponent([2],{
 
-/***/ 285:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _firstStepSoy = __webpack_require__(286);
+var _secondStepSoy = __webpack_require__(290);
 
-var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
+var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var cdRcU = function (_Component) {
-  _inherits(cdRcU, _Component);
+var QmUnv = function (_Component) {
+  _inherits(QmUnv, _Component);
 
-  function cdRcU() {
-    _classCallCheck(this, cdRcU);
+  function QmUnv() {
+    _classCallCheck(this, QmUnv);
 
-    return _possibleConstructorReturn(this, (cdRcU.__proto__ || Object.getPrototypeOf(cdRcU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QmUnv.__proto__ || Object.getPrototypeOf(QmUnv)).apply(this, arguments));
   }
 
-  return cdRcU;
+  return QmUnv;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(cdRcU, _firstStepSoy2.default);
+_metalSoy2.default.register(QmUnv, _secondStepSoy2.default);
 
-exports.default = cdRcU;
+exports.default = QmUnv;
 
 /***/ }),
 
-/***/ 286:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = cdRcU;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.cdRcU = undefined;
+exports.templates = exports.QmUnv = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from first-step.soy.
+  // This file was automatically generated from second-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace cdRcU.
+   * @fileoverview Templates in namespace QmUnv.
    * @public
    */
 
-  goog.module('cdRcU.incrementaldom');
+  goog.module('QmUnv.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,40 +153,93 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param515 = function param515() {
+    var param552 = function param552() {
       ie_open('h2');
-      var dyn33 = opt_data.page.title;
-      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
+      var dyn34 = opt_data.page.title;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
       ie_close('h2');
       ie_open('p');
-      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
+      itext('Now that we have all of our environment configurated, we can follow creating our components. But before we do it, we need to create a folder called ');
+      ie_open('code');
+      itext('src');
+      ie_close('code');
+      itext(' and another folder called ');
+      ie_open('code');
+      itext('public');
+      ie_close('code');
+      itext('.');
       ie_close('p');
-      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
+      itext('First, let\'s create a ');
+      ie_open('code');
+      itext('index.html');
+      ie_close('code');
+      itext(' file in our ');
+      ie_open('code');
+      itext('public');
+      ie_close('code');
+      itext(' folder:');
       ie_close('p');
-      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <title>Document</title>\n    <link rel="stylesheet" type="text/css" href="./style.css">\n    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">\n</head>\n<body>\n    <div id="my-app" class="height"></div>\n    <script src="./bundle.js"><\/script>\n</body>\n</html>', mode: 'html' }, null, opt_ijData);
       ie_open('p');
-      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
+      itext('Now, let\'s create our app component. Inside of ');
+      ie_open('code');
+      itext('src');
+      ie_close('code');
+      itext(' folder, we\'ll create a ');
+      ie_open('code');
+      itext('app.js');
+      ie_close('code');
+      itext(' file, witch extends of NevinhaCompnonent and will be our app component file.');
       ie_close('p');
-      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Finally, let\'s create our webpack.config file:');
+      itext('Every NevinhaJs component needs to extends ');
+      ie_open('code');
+      itext('NevinhaComponent');
+      ie_close('code');
+      itext(' class, you don\'t need to extend from ');
+      ie_open('code');
+      itext('NevinhaComponent');
+      ie_close('code');
+      itext(' just if your component is a state-less component. Knowing that, let\'s import ');
+      ie_open('code');
+      itext('NevinhaComponent');
+      ie_close('code');
+      itext(', the ');
+      ie_open('code');
+      itext('render');
+      ie_close('code');
+      itext(' to render our NevinhaJs application in the ');
+      ie_open('code');
+      itext('#my-app');
+      ie_close('code');
+      itext(' element, and ');
+      ie_open('code');
+      itext('NevinhaDOM');
+      ie_close('code');
+      itext(', wich we won\'t use in the code but remember that we have put NevinhaDOM as a pragma of the ');
+      ie_open('code');
+      itext('transform-react-jsx');
+      ie_close('code');
+      itext(' babel plugin and every we will use JSX sintaxe, we\'ll need to import NevinhaDOM.');
       ie_close('p');
-      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Now that you have completed the step 1, you can follow to the next section.');
+      itext('So our first app component, will look something like this:');
+      ie_close('p');
+      $templateAlias2({ code: 'import {NevinhaComponent, render, NevinhaDOM} from \'nevinha-js\';\n\nclass App extends NevinhaComponent {\n    render() {\n        return (\n            <div>\n                some code come here!\n            </div>\n        );\n    }\n}\n\nconst $root = document.querySelector(\'#my-app\');\nrender(App, $root);', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Now you can follow for the next section, where we\'ll see how to update our components state, use props and animations.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param515 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param552 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'cdRcU.render';
+    $render.soyTemplateName = 'QmUnv.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -195,24 +248,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var cdRcU = function (_Component) {
-  _inherits(cdRcU, _Component);
+var QmUnv = function (_Component) {
+  _inherits(QmUnv, _Component);
 
-  function cdRcU() {
-    _classCallCheck(this, cdRcU);
+  function QmUnv() {
+    _classCallCheck(this, QmUnv);
 
-    return _possibleConstructorReturn(this, (cdRcU.__proto__ || Object.getPrototypeOf(cdRcU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QmUnv.__proto__ || Object.getPrototypeOf(QmUnv)).apply(this, arguments));
   }
 
-  return cdRcU;
+  return QmUnv;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(cdRcU, templates);
-exports.cdRcU = cdRcU;
+_metalSoy2.default.register(QmUnv, templates);
+exports.QmUnv = QmUnv;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[285]);
+},[289]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([8],{
+webpackJsonppageComponent([9],{
 
-/***/ 281:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _parallaxSoy = __webpack_require__(282);
+var _indexSoy = __webpack_require__(276);
 
-var _parallaxSoy2 = _interopRequireDefault(_parallaxSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SalDZ = function (_Component) {
-  _inherits(SalDZ, _Component);
+var YhEGe = function (_Component) {
+  _inherits(YhEGe, _Component);
 
-  function SalDZ() {
-    _classCallCheck(this, SalDZ);
+  function YhEGe() {
+    _classCallCheck(this, YhEGe);
 
-    return _possibleConstructorReturn(this, (SalDZ.__proto__ || Object.getPrototypeOf(SalDZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YhEGe.__proto__ || Object.getPrototypeOf(YhEGe)).apply(this, arguments));
   }
 
-  return SalDZ;
+  return YhEGe;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(SalDZ, _parallaxSoy2.default);
+_metalSoy2.default.register(YhEGe, _indexSoy2.default);
 
-exports.default = SalDZ;
+exports.default = YhEGe;
 
 /***/ }),
 
-/***/ 282:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = SalDZ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.SalDZ = undefined;
+exports.templates = exports.YhEGe = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from parallax.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace SalDZ.
+   * @fileoverview Templates in namespace YhEGe.
    * @public
    */
 
-  goog.module('SalDZ.incrementaldom');
+  goog.module('YhEGe.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -150,7 +150,7 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param485 = function param485() {
+    var param477 = function param477() {
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
       itext('What\'s Providers');
@@ -177,11 +177,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param485 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param477 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'SalDZ.render';
+    $render.soyTemplateName = 'YhEGe.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -190,24 +190,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var SalDZ = function (_Component) {
-  _inherits(SalDZ, _Component);
+var YhEGe = function (_Component) {
+  _inherits(YhEGe, _Component);
 
-  function SalDZ() {
-    _classCallCheck(this, SalDZ);
+  function YhEGe() {
+    _classCallCheck(this, YhEGe);
 
-    return _possibleConstructorReturn(this, (SalDZ.__proto__ || Object.getPrototypeOf(SalDZ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YhEGe.__proto__ || Object.getPrototypeOf(YhEGe)).apply(this, arguments));
   }
 
-  return SalDZ;
+  return YhEGe;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(SalDZ, templates);
-exports.SalDZ = SalDZ;
+_metalSoy2.default.register(YhEGe, templates);
+exports.YhEGe = YhEGe;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[281]);
+},[275]);

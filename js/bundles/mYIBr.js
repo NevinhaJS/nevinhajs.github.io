@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([14],{
+webpackJsonppageComponent([7],{
 
-/***/ 271:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _indexSoy = __webpack_require__(272);
+var _stickySoy = __webpack_require__(280);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _stickySoy2 = _interopRequireDefault(_stickySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var xznjf = function (_Component) {
-  _inherits(xznjf, _Component);
+var mYIBr = function (_Component) {
+  _inherits(mYIBr, _Component);
 
-  function xznjf() {
-    _classCallCheck(this, xznjf);
+  function mYIBr() {
+    _classCallCheck(this, mYIBr);
 
-    return _possibleConstructorReturn(this, (xznjf.__proto__ || Object.getPrototypeOf(xznjf)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mYIBr.__proto__ || Object.getPrototypeOf(mYIBr)).apply(this, arguments));
   }
 
-  return xznjf;
+  return mYIBr;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(xznjf, _indexSoy2.default);
+_metalSoy2.default.register(mYIBr, _stickySoy2.default);
 
-exports.default = xznjf;
+exports.default = mYIBr;
 
 /***/ }),
 
-/***/ 272:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = xznjf;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.xznjf = undefined;
+exports.templates = exports.mYIBr = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from sticky.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace xznjf.
+   * @fileoverview Templates in namespace mYIBr.
    * @public
    */
 
-  goog.module('xznjf.incrementaldom');
+  goog.module('mYIBr.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,64 +152,49 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param357 = function param357() {
-      ie_open('h2');
-      itext('What\'s NevinhaJs');
-      ie_close('h2');
-      ie_open('p');
-      itext('NevinhaJs is an inteligent javascript framework that helps developers to create components and motions in a very simple and fast way.');
-      ie_close('p');
-      ie_open('p');
-      var dyn28 = opt_data.page.description;
-      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
-      ie_close('p');
+    var param495 = function param495() {
+      ie_open('h6');
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
+      ie_close('h6');
       ie_open('article', null, null, 'id', '1');
-      ie_open('div', null, null, 'class', 'guide-btn-cta');
-      ie_open('a', null, null, 'class', 'btn btn-accent btn-lg', 'href', 'http://github.com.br/nevinhajs/boirlaplate', 'target', '_blank');
-      ie_void('span', null, null, 'class', 'icon-16-external download-btn');
-      itext('NevinhaJS Boirlaplate');
-      ie_close('a');
-      ie_close('div');
-      ie_open('p');
-      ie_open('br');
-      ie_close('br');
-      ie_close('p');
       ie_open('h2');
-      itext('Configuring');
+      itext('How to use');
       ie_close('h2');
       ie_open('p');
-      itext('Assuming that you already have your ES6 environment configured with babel (if you dont know how to configure a babel environment, you can download our ');
-      ie_open('a', null, null, 'href', 'http://github.com.br/nevinhajs/boirlaplate');
-      itext('NevinhaJS Boirlaplate');
-      ie_close('a');
-      itext(' \u2B06), you just need to add in your package.json the nevinhajs through the command:');
+      itext('In NevinhaJs, there\'s two ways to use providers in your application. Depending on how the provider has been implemented, you can use it as a inline provider, or as a component provider.');
       ie_close('p');
-      $templateAlias2({ code: 'yarn add nevinha-js', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('if you don\'t have yarn, you can use the npm command:');
-      ie_close('p');
-      $templateAlias2({ code: 'npm install nevinha-js', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('We use JSX syntaxe by default, so you\'ll need to add the ');
+      itext('In the case of the sticky provider, it has been implemented as a inline provider, so the way for using it is very simple, you just need to parse ');
       ie_open('code');
-      itext('transform-react-jsx');
+      itext('sticky');
       ie_close('code');
-      itext(' babel plugin to convert the JSX to javascript:');
+      itext(' as a props of your component or HTML element. You can see a use case of the sticky provider in the code bellow:');
       ie_close('p');
-      $templateAlias2({ code: 'yarn add -D babel-plugin-transform-react-jsx', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'const MyComponent = (props, children) => (\n  <section>\n    <header sticky>\n      This is my header fixed until the end of this section\n    </header>\n    <article>\n      <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har v\xE6rt bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for \xE5 lage et pr\xF8veeksemplar av en bok. Lorem Ipsum har t\xE5lt tidens tann usedvanlig godt, og har i tillegg til \xE5 best\xE5 gjennom fem \xE5rhundrer ogs\xE5 t\xE5lt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-\xE5rene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>\n\n      <br />\n\n      <p>Det er et velkjent faktum at lesere distraheres av lesbart innhold p\xE5 en side n\xE5r man ser p\xE5 dens layout. Poenget med \xE5 bruke Lorem Ipsum er at det har en mer eller mindre normal fordeling av bokstaver i ord, i motsetning til \'Innhold her, innhold her\', og gir inntrykk av \xE5 v\xE6re lesbar tekst. Mange webside- og sideombrekkingsprogrammer bruker n\xE5 Lorem Ipsum som sin standard for provisorisk tekst, og et s\xF8k etter \'Lorem Ipsum\' vil avdekke mang en uferdig webside. Ulike versjoner har sprunget frem i senere \xE5r, noen ved rene uhell og andre mer planlagte (med humor o.l.).</p>\n    </article>\n  </section>\n)', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('After that in your .babelrc file, you have to put the follow lines:');
+      ie_open('em');
+      ie_open('strong');
+      itext('Ps');
+      ie_close('strong');
+      itext(': In that example above, we\'re using a state-less component, but you can use a state-full component as you prefer.');
+      ie_close('em');
       ie_close('p');
-      $templateAlias2({ code: '"plugins": [\n  [\n  "transform-react-jsx",\n    { "pragma": "NevinhaDOM" }\n  ]\n]', mode: 'javascript' }, null, opt_ijData);
+      ie_open('h3');
+      itext('Custom sticky configuration');
+      ie_close('h3');
+      ie_open('p');
+      itext('You can also configure your sticky position, all that you need is informing an object as value of your sticky props with your configuration values. For example:');
+      ie_close('p');
+      $templateAlias2({ code: 'const MyComponent = (props, children) => (\n  <section>\n    <header sticky={{\n      top: "20px"\n    }}>\n      This is my header fixed until the end of this section\n    </header>\n    <article>(...)</article>\n  </section>\n)', mode: 'javascript' }, null, opt_ijData);
       ie_open('h3');
       itext('What\'s next?');
       ie_close('h3');
       ie_open('p');
-      itext('Now you know how to setup NevinhaJs in your project, let\'s see how to ');
-      ie_open('a', null, null, 'href', '/docs/basics/creating-your-fisrt-component.html');
-      itext('create our first component');
+      itext('Now that you know how to use Sticky Provider, you can learn about ');
+      ie_open('a', null, null, 'href', '/docs/providers/parallax.html');
+      itext('Parallax Provider in the next sextion');
       ie_close('a');
-      itext('.');
       ie_close('p');
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
@@ -217,11 +202,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param357 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param495 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'xznjf.render';
+    $render.soyTemplateName = 'mYIBr.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -230,24 +215,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var xznjf = function (_Component) {
-  _inherits(xznjf, _Component);
+var mYIBr = function (_Component) {
+  _inherits(mYIBr, _Component);
 
-  function xznjf() {
-    _classCallCheck(this, xznjf);
+  function mYIBr() {
+    _classCallCheck(this, mYIBr);
 
-    return _possibleConstructorReturn(this, (xznjf.__proto__ || Object.getPrototypeOf(xznjf)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mYIBr.__proto__ || Object.getPrototypeOf(mYIBr)).apply(this, arguments));
   }
 
-  return xznjf;
+  return mYIBr;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(xznjf, templates);
-exports.xznjf = xznjf;
+_metalSoy2.default.register(mYIBr, templates);
+exports.mYIBr = mYIBr;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[271]);
+},[279]);

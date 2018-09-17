@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var bjGGP = function (_Component) {
-  _inherits(bjGGP, _Component);
+var OJjih = function (_Component) {
+  _inherits(OJjih, _Component);
 
-  function bjGGP() {
-    _classCallCheck(this, bjGGP);
+  function OJjih() {
+    _classCallCheck(this, OJjih);
 
-    return _possibleConstructorReturn(this, (bjGGP.__proto__ || Object.getPrototypeOf(bjGGP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OJjih.__proto__ || Object.getPrototypeOf(OJjih)).apply(this, arguments));
   }
 
-  return bjGGP;
+  return OJjih;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(bjGGP, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(OJjih, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = bjGGP;
+exports.default = OJjih;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = bjGGP;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.bjGGP = undefined;
+exports.templates = exports.OJjih = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace bjGGP.
+   * @fileoverview Templates in namespace OJjih.
    * @public
    */
 
-  goog.module('bjGGP.incrementaldom');
+  goog.module('OJjih.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,7 +152,7 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param316 = function param316() {
+    var param317 = function param317() {
       ie_open('h6');
       var dyn27 = opt_data.page.description;
       if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
@@ -309,11 +309,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param316 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param317 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'bjGGP.render';
+    $render.soyTemplateName = 'OJjih.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,20 +322,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var bjGGP = function (_Component) {
-  _inherits(bjGGP, _Component);
+var OJjih = function (_Component) {
+  _inherits(OJjih, _Component);
 
-  function bjGGP() {
-    _classCallCheck(this, bjGGP);
+  function OJjih() {
+    _classCallCheck(this, OJjih);
 
-    return _possibleConstructorReturn(this, (bjGGP.__proto__ || Object.getPrototypeOf(bjGGP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OJjih.__proto__ || Object.getPrototypeOf(OJjih)).apply(this, arguments));
   }
 
-  return bjGGP;
+  return OJjih;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(bjGGP, templates);
-exports.bjGGP = bjGGP;
+_metalSoy2.default.register(OJjih, templates);
+exports.OJjih = OJjih;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

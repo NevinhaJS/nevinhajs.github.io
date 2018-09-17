@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var omMsR = function (_Component) {
-  _inherits(omMsR, _Component);
+var hwVLM = function (_Component) {
+  _inherits(hwVLM, _Component);
 
-  function omMsR() {
-    _classCallCheck(this, omMsR);
+  function hwVLM() {
+    _classCallCheck(this, hwVLM);
 
-    return _possibleConstructorReturn(this, (omMsR.__proto__ || Object.getPrototypeOf(omMsR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hwVLM.__proto__ || Object.getPrototypeOf(hwVLM)).apply(this, arguments));
   }
 
-  return omMsR;
+  return hwVLM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(omMsR, _thirdStepSoy2.default);
+_metalSoy2.default.register(hwVLM, _thirdStepSoy2.default);
 
-exports.default = omMsR;
+exports.default = hwVLM;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = omMsR;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.omMsR = undefined;
+exports.templates = exports.hwVLM = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace omMsR.
+   * @fileoverview Templates in namespace hwVLM.
    * @public
    */
 
-  goog.module('omMsR.incrementaldom');
+  goog.module('hwVLM.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,7 +153,7 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param572 = function param572() {
+    var param573 = function param573() {
       ie_open('h2');
       var dyn35 = opt_data.page.title;
       if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
@@ -262,11 +262,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param572 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param573 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'omMsR.render';
+    $render.soyTemplateName = 'hwVLM.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -275,20 +275,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var omMsR = function (_Component) {
-  _inherits(omMsR, _Component);
+var hwVLM = function (_Component) {
+  _inherits(hwVLM, _Component);
 
-  function omMsR() {
-    _classCallCheck(this, omMsR);
+  function hwVLM() {
+    _classCallCheck(this, hwVLM);
 
-    return _possibleConstructorReturn(this, (omMsR.__proto__ || Object.getPrototypeOf(omMsR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hwVLM.__proto__ || Object.getPrototypeOf(hwVLM)).apply(this, arguments));
   }
 
-  return omMsR;
+  return hwVLM;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(omMsR, templates);
-exports.omMsR = omMsR;
+_metalSoy2.default.register(hwVLM, templates);
+exports.hwVLM = hwVLM;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([7],{
+webpackJsonppageComponent([4],{
 
-/***/ 283:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(15);
 
 __webpack_require__(16);
 
-var _stickySoy = __webpack_require__(284);
+var _firstStepSoy = __webpack_require__(286);
 
-var _stickySoy2 = _interopRequireDefault(_stickySoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var buqKV = function (_Component) {
-  _inherits(buqKV, _Component);
+var OzLvQ = function (_Component) {
+  _inherits(OzLvQ, _Component);
 
-  function buqKV() {
-    _classCallCheck(this, buqKV);
+  function OzLvQ() {
+    _classCallCheck(this, OzLvQ);
 
-    return _possibleConstructorReturn(this, (buqKV.__proto__ || Object.getPrototypeOf(buqKV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OzLvQ.__proto__ || Object.getPrototypeOf(OzLvQ)).apply(this, arguments));
   }
 
-  return buqKV;
+  return OzLvQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(buqKV, _stickySoy2.default);
+_metalSoy2.default.register(OzLvQ, _firstStepSoy2.default);
 
-exports.default = buqKV;
+exports.default = OzLvQ;
 
 /***/ }),
 
-/***/ 284:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = buqKV;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.buqKV = undefined;
+exports.templates = exports.OzLvQ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from sticky.soy.
+  // This file was automatically generated from first-step.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace buqKV.
+   * @fileoverview Templates in namespace OzLvQ.
    * @public
    */
 
-  goog.module('buqKV.incrementaldom');
+  goog.module('OzLvQ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,12 +139,13 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,61 +153,40 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param494 = function param494() {
-      ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param516 = function param516() {
       ie_open('h2');
-      itext('How to use');
+      var dyn33 = opt_data.page.title;
+      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
       ie_close('h2');
       ie_open('p');
-      itext('In NevinhaJs, there\'s two ways to use providers in your application. Depending on how the provider has been implemented, you can use it as a inline provider, or as a component provider.');
+      itext('First, lets create our enviromment configuration, we can start creating our package.json, something like this:');
       ie_close('p');
+      $templateAlias2({ code: '{\n  "name": "nevinha-js-basic-example",\n  "version": "1.0.0",\n  "scripts": {\n    "start": "webpack-dev-server --content-base public --inline --hot",\n  }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('In the case of the sticky provider, it has been implemented as a inline provider, so the way for using it is very simple, you just need to parse ');
-      ie_open('code');
-      itext('sticky');
-      ie_close('code');
-      itext(' as a props of your component or HTML element. You can see a use case of the sticky provider in the code bellow:');
+      itext('Next you\'ll need to install webpack for creatting a local server and the babel dependecies to transpile your code:');
       ie_close('p');
-      $templateAlias2({ code: 'const MyComponent = (props, children) => (\n  <section>\n    <header sticky>\n      This is my header fixed until the end of this section\n    </header>\n    <article>\n      <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har v\xE6rt bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for \xE5 lage et pr\xF8veeksemplar av en bok. Lorem Ipsum har t\xE5lt tidens tann usedvanlig godt, og har i tillegg til \xE5 best\xE5 gjennom fem \xE5rhundrer ogs\xE5 t\xE5lt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-\xE5rene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>\n\n      <br />\n\n      <p>Det er et velkjent faktum at lesere distraheres av lesbart innhold p\xE5 en side n\xE5r man ser p\xE5 dens layout. Poenget med \xE5 bruke Lorem Ipsum er at det har en mer eller mindre normal fordeling av bokstaver i ord, i motsetning til \'Innhold her, innhold her\', og gir inntrykk av \xE5 v\xE6re lesbar tekst. Mange webside- og sideombrekkingsprogrammer bruker n\xE5 Lorem Ipsum som sin standard for provisorisk tekst, og et s\xF8k etter \'Lorem Ipsum\' vil avdekke mang en uferdig webside. Ulike versjoner har sprunget frem i senere \xE5r, noen ved rene uhell og andre mer planlagte (med humor o.l.).</p>\n    </article>\n  </section>\n)', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: '  yarn add webpack webpack-dev-server babel-core babel-eslint babel-loader babel-plugin-transform-react-jsx babel-preset-es2015 babel-preset-stage-0', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      ie_open('em');
-      ie_open('strong');
-      itext('Ps');
-      ie_close('strong');
-      itext(': In that example above, we\'re using a state-less component, but you can use a state-full component as you prefer.');
-      ie_close('em');
+      itext('After that, let\'s create a .babelrc file in our project, to configure the babel transpile and allow us to use es6 syntaxe:');
       ie_close('p');
-      ie_open('h3');
-      itext('Custom sticky configuration');
-      ie_close('h3');
+      $templateAlias2({ code: '{\n  "presets": [\n    "es2015",\n    "stage-0"\n  ],\n  "plugins": [\n    [\n      "transform-react-jsx",\n      { "pragma": "NevinhaDOM" }\n    ]\n  ]\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('You can also configure your sticky position, all that you need is informing an object as value of your sticky props with your configuration values. For example:');
+      itext('Finally, let\'s create our webpack.config file:');
       ie_close('p');
-      $templateAlias2({ code: 'const MyComponent = (props, children) => (\n  <section>\n    <header sticky={{\n      top: "20px"\n    }}>\n      This is my header fixed until the end of this section\n    </header>\n    <article>(...)</article>\n  </section>\n)', mode: 'javascript' }, null, opt_ijData);
-      ie_open('h3');
-      itext('What\'s next?');
-      ie_close('h3');
+      $templateAlias2({ code: 'const path = require(\'path\');\n\nfunction resolveModule(name) {\n    return path.resolve(__dirname, `src/${name}`);\n}\n\nmodule.exports = {\n    entry: [\n        \'core-js/es6/symbol\',\n        \'core-js/fn/array/find\',\n        \'core-js/fn/object/assign\',\n        \'core-js/fn/string/ends-with\',\n        resolveModule(\'index.js\')\n    ],\n\n    module: {\n        loaders: [\n            {exclude: /node_modules/, loader: \'babel-loader\', test: /\\.js$/}\n        ]\n    },\n\n    output: {\n        filename: \'bundle.js\',\n        path: path.resolve(\'./dist\')\n    },\n};', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Now that you know how to use Sticky Provider, you can learn about ');
-      ie_open('a', null, null, 'href', '/docs/providers/parallax.html');
-      itext('Parallax Provider in the next sextion');
-      ie_close('a');
+      itext('Now that you have completed the step 1, you can follow to the next section.');
       ie_close('p');
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param494 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param516 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'buqKV.render';
+    $render.soyTemplateName = 'OzLvQ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -215,24 +195,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var buqKV = function (_Component) {
-  _inherits(buqKV, _Component);
+var OzLvQ = function (_Component) {
+  _inherits(OzLvQ, _Component);
 
-  function buqKV() {
-    _classCallCheck(this, buqKV);
+  function OzLvQ() {
+    _classCallCheck(this, OzLvQ);
 
-    return _possibleConstructorReturn(this, (buqKV.__proto__ || Object.getPrototypeOf(buqKV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OzLvQ.__proto__ || Object.getPrototypeOf(OzLvQ)).apply(this, arguments));
   }
 
-  return buqKV;
+  return OzLvQ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(buqKV, templates);
-exports.buqKV = buqKV;
+_metalSoy2.default.register(OzLvQ, templates);
+exports.OzLvQ = OzLvQ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[283]);
+},[285]);

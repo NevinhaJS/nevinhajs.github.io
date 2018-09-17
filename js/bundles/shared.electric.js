@@ -5376,9 +5376,9 @@ goog.loadModule(function (exports) {
         ie_close('link');
         ie_open('link', null, null, 'href', 'https://fonts.googleapis.com/css?family=Merienda', 'rel', 'stylesheet');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-12/icon-12.css');
-        ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/galano/galano.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/icon-16/icon-16.css');
         ie_close('link');
@@ -5389,6 +5389,7 @@ goog.loadModule(function (exports) {
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/vendor/codemirror/theme/dracula.css');
         ie_close('link');
         ie_void('script', null, null, 'src', '/js/bundles/shared.electric.js');
+        ie_void('script', null, null, 'src', '/vendor/ga.js');
         ie_void('script', null, null, 'src', '/vendor/senna/senna.js');
         ie_void('script', null, null, 'src', '/vendor/codemirror/lib/codemirror.js');
         ie_void('script', null, null, 'src', '/vendor/codemirror/mode/css/css.js');
@@ -46620,25 +46621,25 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'posts-list');
     ie_open('div', null, null, 'class', 'container');
     if (opt_data.posts) {
-      var postList203 = opt_data.posts;
-      var postListLen203 = postList203.length;
-      for (var postIndex203 = 0; postIndex203 < postListLen203; postIndex203++) {
-        var postData203 = postList203[postIndex203];
+      var postList204 = opt_data.posts;
+      var postListLen204 = postList204.length;
+      for (var postIndex204 = 0; postIndex204 < postListLen204; postIndex204++) {
+        var postData204 = postList204[postIndex204];
         ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData203.url);
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData204.url);
         ie_open('small');
         itext('By ');
-        var dyn19 = postData203.author;
+        var dyn19 = postData204.author;
         if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
         itext(' ');
         ie_open('span');
         itext('| ');
-        var dyn20 = postData203.date;
+        var dyn20 = postData204.date;
         if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
         ie_close('span');
         ie_close('small');
         ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn21 = postData203.title;
+        var dyn21 = postData204.title;
         if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
         ie_close('h4');
         ie_close('a');
@@ -46790,7 +46791,7 @@ goog.loadModule(function (exports) {
    * @return {void}
    * @suppress {checkTypes}
    */
-  function __deltemplate_s221_d34389eb(opt_data, opt_ignored, opt_ijData) {
+  function __deltemplate_s222_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
     if (opt_data.page.icon) {
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
@@ -46801,11 +46802,11 @@ goog.loadModule(function (exports) {
     ie_close('span');
     ie_close('a');
   }
-  exports.__deltemplate_s221_d34389eb = __deltemplate_s221_d34389eb;
+  exports.__deltemplate_s222_d34389eb = __deltemplate_s222_d34389eb;
   if (goog.DEBUG) {
-    __deltemplate_s221_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s221_d34389eb';
+    __deltemplate_s222_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s222_d34389eb';
   }
-  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s221_d34389eb);
+  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s222_d34389eb);
 
   exports.render.params = ["section", "site"];
   exports.render.types = { "section": "?", "site": "?" };

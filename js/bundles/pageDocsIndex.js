@@ -227,19 +227,19 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'row');
     ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2 col-xs-16');
     ie_open('div', null, null, 'class', 'row');
-    var childIdList289 = opt_data.page.childIds;
-    var childIdListLen289 = childIdList289.length;
-    for (var childIdIndex289 = 0; childIdIndex289 < childIdListLen289; childIdIndex289++) {
-      var childIdData289 = childIdList289[childIdIndex289];
-      var topic__soy279 = opt_data.page.children[childIdData289];
-      if (!topic__soy279.hidden) {
+    var childIdList290 = opt_data.page.childIds;
+    var childIdListLen290 = childIdList290.length;
+    for (var childIdIndex290 = 0; childIdIndex290 < childIdListLen290; childIdIndex290++) {
+      var childIdData290 = childIdList290[childIdIndex290];
+      var topic__soy280 = opt_data.page.children[childIdData290];
+      if (!topic__soy280.hidden) {
         ie_open('div', null, null, 'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
-        ie_open('a', null, null, 'class', 'topic radial-out', 'href', topic__soy279.url);
+        ie_open('a', null, null, 'class', 'topic radial-out', 'href', topic__soy280.url);
         ie_open('div', null, null, 'class', 'topic-icon');
-        ie_void('span', null, null, 'class', 'icon-16-' + topic__soy279.icon);
+        ie_void('span', null, null, 'class', 'icon-16-' + topic__soy280.icon);
         ie_close('div');
         ie_open('h3', null, null, 'class', 'topic-title');
-        var dyn25 = topic__soy279.title;
+        var dyn25 = topic__soy280.title;
         if (typeof dyn25 == 'function') dyn25();else if (dyn25 != null) itext(dyn25);
         ie_close('h3');
         ie_close('a');
