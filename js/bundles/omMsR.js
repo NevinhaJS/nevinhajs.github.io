@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OOGqo = function (_Component) {
-  _inherits(OOGqo, _Component);
+var omMsR = function (_Component) {
+  _inherits(omMsR, _Component);
 
-  function OOGqo() {
-    _classCallCheck(this, OOGqo);
+  function omMsR() {
+    _classCallCheck(this, omMsR);
 
-    return _possibleConstructorReturn(this, (OOGqo.__proto__ || Object.getPrototypeOf(OOGqo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (omMsR.__proto__ || Object.getPrototypeOf(omMsR)).apply(this, arguments));
   }
 
-  return OOGqo;
+  return omMsR;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(OOGqo, _thirdStepSoy2.default);
+_metalSoy2.default.register(omMsR, _thirdStepSoy2.default);
 
-exports.default = OOGqo;
+exports.default = omMsR;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = OOGqo;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.OOGqo = undefined;
+exports.templates = exports.omMsR = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace OOGqo.
+   * @fileoverview Templates in namespace omMsR.
    * @public
    */
 
-  goog.module('OOGqo.incrementaldom');
+  goog.module('omMsR.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param373 = function param373() {
+    var param572 = function param572() {
       ie_open('h2');
-      var dyn29 = opt_data.page.title;
-      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
+      var dyn35 = opt_data.page.title;
+      if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
       ie_close('h2');
       ie_open('p');
       itext('So far we have created a very basic app component, wich don\'t have any state and don\'t use any NevinhaJs animation. Now it\'s time to create a basic component, that will have an input field and a text wich will reflect the value of the input.');
@@ -262,11 +262,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param373 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param572 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'OOGqo.render';
+    $render.soyTemplateName = 'omMsR.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -275,20 +275,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var OOGqo = function (_Component) {
-  _inherits(OOGqo, _Component);
+var omMsR = function (_Component) {
+  _inherits(omMsR, _Component);
 
-  function OOGqo() {
-    _classCallCheck(this, OOGqo);
+  function omMsR() {
+    _classCallCheck(this, omMsR);
 
-    return _possibleConstructorReturn(this, (OOGqo.__proto__ || Object.getPrototypeOf(OOGqo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (omMsR.__proto__ || Object.getPrototypeOf(omMsR)).apply(this, arguments));
   }
 
-  return OOGqo;
+  return omMsR;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(OOGqo, templates);
-exports.OOGqo = OOGqo;
+_metalSoy2.default.register(omMsR, templates);
+exports.omMsR = omMsR;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

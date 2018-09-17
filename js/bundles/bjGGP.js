@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lvKyQ = function (_Component) {
-  _inherits(lvKyQ, _Component);
+var bjGGP = function (_Component) {
+  _inherits(bjGGP, _Component);
 
-  function lvKyQ() {
-    _classCallCheck(this, lvKyQ);
+  function bjGGP() {
+    _classCallCheck(this, bjGGP);
 
-    return _possibleConstructorReturn(this, (lvKyQ.__proto__ || Object.getPrototypeOf(lvKyQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bjGGP.__proto__ || Object.getPrototypeOf(bjGGP)).apply(this, arguments));
   }
 
-  return lvKyQ;
+  return bjGGP;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lvKyQ, _creatingYourFisrtComponentSoy2.default);
+_metalSoy2.default.register(bjGGP, _creatingYourFisrtComponentSoy2.default);
 
-exports.default = lvKyQ;
+exports.default = bjGGP;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = lvKyQ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.lvKyQ = undefined;
+exports.templates = exports.bjGGP = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace lvKyQ.
+   * @fileoverview Templates in namespace bjGGP.
    * @public
    */
 
-  goog.module('lvKyQ.incrementaldom');
+  goog.module('bjGGP.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param409 = function param409() {
+    var param316 = function param316() {
       ie_open('h6');
-      var dyn30 = opt_data.page.description;
-      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
+      var dyn27 = opt_data.page.description;
+      if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -309,11 +309,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param409 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param316 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'lvKyQ.render';
+    $render.soyTemplateName = 'bjGGP.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -322,20 +322,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var lvKyQ = function (_Component) {
-  _inherits(lvKyQ, _Component);
+var bjGGP = function (_Component) {
+  _inherits(bjGGP, _Component);
 
-  function lvKyQ() {
-    _classCallCheck(this, lvKyQ);
+  function bjGGP() {
+    _classCallCheck(this, bjGGP);
 
-    return _possibleConstructorReturn(this, (lvKyQ.__proto__ || Object.getPrototypeOf(lvKyQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bjGGP.__proto__ || Object.getPrototypeOf(bjGGP)).apply(this, arguments));
   }
 
-  return lvKyQ;
+  return bjGGP;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(lvKyQ, templates);
-exports.lvKyQ = lvKyQ;
+_metalSoy2.default.register(bjGGP, templates);
+exports.bjGGP = bjGGP;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var trhMo = function (_Component) {
-  _inherits(trhMo, _Component);
+var plelj = function (_Component) {
+  _inherits(plelj, _Component);
 
-  function trhMo() {
-    _classCallCheck(this, trhMo);
+  function plelj() {
+    _classCallCheck(this, plelj);
 
-    return _possibleConstructorReturn(this, (trhMo.__proto__ || Object.getPrototypeOf(trhMo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (plelj.__proto__ || Object.getPrototypeOf(plelj)).apply(this, arguments));
   }
 
-  return trhMo;
+  return plelj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(trhMo, _indexSoy2.default);
+_metalSoy2.default.register(plelj, _indexSoy2.default);
 
-exports.default = trhMo;
+exports.default = plelj;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = trhMo;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.trhMo = undefined;
+exports.templates = exports.plelj = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace trhMo.
+   * @fileoverview Templates in namespace plelj.
    * @public
    */
 
-  goog.module('trhMo.incrementaldom');
+  goog.module('plelj.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param522 = function param522() {
+    var param429 = function param429() {
       ie_open('h6');
-      var dyn33 = opt_data.page.description;
-      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -234,11 +234,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param522 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param429 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'trhMo.render';
+    $render.soyTemplateName = 'plelj.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -247,20 +247,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var trhMo = function (_Component) {
-  _inherits(trhMo, _Component);
+var plelj = function (_Component) {
+  _inherits(plelj, _Component);
 
-  function trhMo() {
-    _classCallCheck(this, trhMo);
+  function plelj() {
+    _classCallCheck(this, plelj);
 
-    return _possibleConstructorReturn(this, (trhMo.__proto__ || Object.getPrototypeOf(trhMo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (plelj.__proto__ || Object.getPrototypeOf(plelj)).apply(this, arguments));
   }
 
-  return trhMo;
+  return plelj;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(trhMo, templates);
-exports.trhMo = trhMo;
+_metalSoy2.default.register(plelj, templates);
+exports.plelj = plelj;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

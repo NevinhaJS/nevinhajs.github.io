@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var jznQW = function (_Component) {
-  _inherits(jznQW, _Component);
+var LcKJh = function (_Component) {
+  _inherits(LcKJh, _Component);
 
-  function jznQW() {
-    _classCallCheck(this, jznQW);
+  function LcKJh() {
+    _classCallCheck(this, LcKJh);
 
-    return _possibleConstructorReturn(this, (jznQW.__proto__ || Object.getPrototypeOf(jznQW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LcKJh.__proto__ || Object.getPrototypeOf(LcKJh)).apply(this, arguments));
   }
 
-  return jznQW;
+  return LcKJh;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(jznQW, _motionsReferenceSoy2.default);
+_metalSoy2.default.register(LcKJh, _motionsReferenceSoy2.default);
 
-exports.default = jznQW;
+exports.default = LcKJh;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = jznQW;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.jznQW = undefined;
+exports.templates = exports.LcKJh = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace jznQW.
+   * @fileoverview Templates in namespace LcKJh.
    * @public
    */
 
-  goog.module('jznQW.incrementaldom');
+  goog.module('LcKJh.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -150,10 +150,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param558 = function param558() {
+    var param465 = function param465() {
       ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      var dyn31 = opt_data.page.description;
+      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -388,11 +388,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param558 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param465 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'jznQW.render';
+    $render.soyTemplateName = 'LcKJh.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -401,20 +401,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var jznQW = function (_Component) {
-  _inherits(jznQW, _Component);
+var LcKJh = function (_Component) {
+  _inherits(LcKJh, _Component);
 
-  function jznQW() {
-    _classCallCheck(this, jznQW);
+  function LcKJh() {
+    _classCallCheck(this, LcKJh);
 
-    return _possibleConstructorReturn(this, (jznQW.__proto__ || Object.getPrototypeOf(jznQW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LcKJh.__proto__ || Object.getPrototypeOf(LcKJh)).apply(this, arguments));
   }
 
-  return jznQW;
+  return LcKJh;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(jznQW, templates);
-exports.jznQW = jznQW;
+_metalSoy2.default.register(LcKJh, templates);
+exports.LcKJh = LcKJh;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

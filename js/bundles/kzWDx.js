@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HquAA = function (_Component) {
-  _inherits(HquAA, _Component);
+var kzWDx = function (_Component) {
+  _inherits(kzWDx, _Component);
 
-  function HquAA() {
-    _classCallCheck(this, HquAA);
+  function kzWDx() {
+    _classCallCheck(this, kzWDx);
 
-    return _possibleConstructorReturn(this, (HquAA.__proto__ || Object.getPrototypeOf(HquAA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kzWDx.__proto__ || Object.getPrototypeOf(kzWDx)).apply(this, arguments));
   }
 
-  return HquAA;
+  return kzWDx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(HquAA, _secondStepSoy2.default);
+_metalSoy2.default.register(kzWDx, _secondStepSoy2.default);
 
-exports.default = HquAA;
+exports.default = kzWDx;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = HquAA;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.HquAA = undefined;
+exports.templates = exports.kzWDx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace HquAA.
+   * @fileoverview Templates in namespace kzWDx.
    * @public
    */
 
-  goog.module('HquAA.incrementaldom');
+  goog.module('kzWDx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,10 +153,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param352 = function param352() {
+    var param551 = function param551() {
       ie_open('h2');
-      var dyn28 = opt_data.page.title;
-      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
+      var dyn34 = opt_data.page.title;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
       ie_close('h2');
       ie_open('p');
       itext('Now that we have all of our environment configurated, we can follow creating our components. But before we do it, we need to create a folder called ');
@@ -235,11 +235,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param352 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param551 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'HquAA.render';
+    $render.soyTemplateName = 'kzWDx.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -248,20 +248,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var HquAA = function (_Component) {
-  _inherits(HquAA, _Component);
+var kzWDx = function (_Component) {
+  _inherits(kzWDx, _Component);
 
-  function HquAA() {
-    _classCallCheck(this, HquAA);
+  function kzWDx() {
+    _classCallCheck(this, kzWDx);
 
-    return _possibleConstructorReturn(this, (HquAA.__proto__ || Object.getPrototypeOf(HquAA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kzWDx.__proto__ || Object.getPrototypeOf(kzWDx)).apply(this, arguments));
   }
 
-  return HquAA;
+  return kzWDx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(HquAA, templates);
-exports.HquAA = HquAA;
+_metalSoy2.default.register(kzWDx, templates);
+exports.kzWDx = kzWDx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
