@@ -10,18 +10,20 @@ description: "A component framework for making web animations development easier
 {template .render}
 	{@param site: ?}
 
-	{call main.render data="all"}
-		{param content kind="html"}
-			{call .header data="all" /}
-			{call .why /}
-			{call .features /}
-			{call .how /}
-			{call .examples /}
-			{call Footer.render data="all" /}
-		{/param}
-	{/call}
+  <div>
+    {call main.render data="all"}
+      {param content kind="html"}
+        {call .header data="all" /}
+        {call .why /}
+        {call .features /}
+        {call .how /}
+        {call .examples /}
+        {call Footer.render data="all" /}
+      {/param}
+    {/call}
 
-  <script src="./lib/bundle.js"></script>
+    <script src="./lib/bundle.js"></script>
+  </div>
 {/template}
 
 /**
